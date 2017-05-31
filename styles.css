@@ -1,17 +1,233 @@
-.hero-layout-transparent {
-  background: url('assets/intro.png') center / cover;
-  
+/* Typography styling */
+
+#title-avenir {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 }
-.hero-layout-transparent .mdl-layout__header,
-.hero-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
+
+#divider {
+	display: inline;
+	font-size: 24px;
+	color: #FFFFFF;
+	margin: 0px 8px;
 }
+
+#title-adobe {
+	font-family: "Adobe Caslon Pro", "Helvetica", "Arial", sans-serif;
+	color: #7BBED1;
+}
+
+.mdl-layout h1 {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	margin: 0;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0;
+	line-height: 28px;
+	color: #002443;
+
+}
+
+.mdl-layout h2 {
+	color: #FFFFFF;
+	font-family: "Adobe Caslon Pro", "Helvetica", "Arial", sans-serif;
+	line-height: 32px;
+	letter-spacing: 0px;
+}
+
+.mdl-layout h3 {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	letter-spacing: 0.01em;
+	line-height: 28px;
+	color: #000000;
+	opacity: 0.54;
+}
+
+.mdl-navigation h3 {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	letter-spacing: 0.01em;
+	line-height: 28px;
+	color: #FFFFFF;
+	opacity: 1.0;
+}
+
+.mdl-layout p {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	margin: 0px;
+	letter-spacing: 0.01em;
+	line-height: 24px;
+	color: #000000;
+	opacity: 0.87;
+}
+
+.mdl-layout .mdl-button {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	color: #006784;
+	background-color: #FFFFFF;
+	border: 2px solid #006784;
+}
+
+/*  Navigation bar styling */
 
 #nav-bar-color {
     background-color: #002443;
 }
+
+header.mdl-layout__header.is-casting-shadow {
+	background-color: #002443;
+}
+
+/* Portfolio section styling */
+
+div {
+	box-sizing: border-box; /*use border-box so that whatever "width" value is used will be maintained*/
+}
+
+.portfolio-max-width {
+	max-width: 920px;
+	width: 100%;
+	margin: auto;
+}
+
+.portfolio-background-color {
+	background-color: #F8F8F9;
+}
+
+.hero-cell {
+	position: relative;
+	max-height: 280px;
+}
+
+.hero-background-image {
+	position: relative;
+	height: 100%;
+	max-height: 280px;
+	width: 100%;
+}
+
+.hero-avatar {
+	position: absolute;
+	bottom: 16px;
+	left: 18%;
+	height: 124px;
+	width: 124px;
+	border-radius: 50%;
+}
+
+.hero-text-banner {
+	position: absolute;
+	bottom: 0px;
+	background-color: #000000;
+	opacity: 0.82;
+	color: #FFFFFF;
+	width: 100%;
+	max-width: 920px;
+	padding: 16px 0% 16px 36%;
+}
+
+.hero-text-banner h3 {
+	color: #FFFFFF;
+	opacity: 1.0;
+}
+
+/* Projects section styling */
+
+#projects-section {
+	margin-top: 20px;
+}
+
+#projects-section .mdl-card {
+	margin-bottom: 24px;
+}
+
+.wander-card {
+	height: 380px;
+	background: url('assets/wander-card-image@2x.png');
+	background-color: #006784;
+	background-repeat: no-repeat;
+	background-size: 460px;
+	background-position: 50% 50%;
+	}
+
+.ha-walk-card {
+	height: 380px;
+	background: url('assets/ha-walk-snapshot@2x.png');
+	background-color: #006784;
+	background-repeat: no-repeat;
+	background-size: 340px;
+	background-position: 50% 45%;
+}
+
+.kollect-card {
+	height: 380px;
+	background: url('assets/kollect-snapshot@2x.png');
+	background-color: #006784;
+	background-repeat: no-repeat;
+	background-size: 340px;
+	background-position: 50% 45%;
+}
+
+/* Footer Styling */
+
+footer.mdl-mini-footer {
+	height: 56px;
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 46px;
+	background-color: #002443;
+}
+
+/* Media queries to adjust to different screen sizes */
+
+@media screen and (max-width: 720px) {
+
+	.hero-background-image {
+		max-height: 180px;
+	}
+
+	.hero-text-banner {
+		position: relative;
+		padding: 16px;
+	}
+
+	.hero-text-banner br {
+		display: none;
+	}
+
+	.hero-avatar {
+		display: none;
+		position: relative;
+		bottom: 0px;
+		left: 0px;
+		margin: 14px auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	#divider {
+		margin: 0;
+	}
+
+	#title-avenir, #title-adobe {
+		letter-spacing: 0;
+	}
+
+	#wander-card-smaller-screen {
+	height: 380px;
+	background: url('assets/wander-card-image-smaller-screen@2x.png');
+	background-color: #006784;
+	background-repeat: no-repeat;
+	background-size: 840px;
+	background-position: 50% -30%;
+	}
+}
+
+
 
 
 
