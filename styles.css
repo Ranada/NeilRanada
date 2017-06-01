@@ -136,7 +136,7 @@ div {
 	position: absolute;
 	bottom: 0px;
 	background-color: #000000;
-	opacity: 0.55;
+	opacity: 0.60;
 	color: #FFFFFF;
 	width: 100%;
 	max-width: 920px;
@@ -172,7 +172,7 @@ div {
 	background: url('images/ha-walk-snapshot@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
-	background-size: 340px;
+	background-size: 480px;
 	background-position: 50% 45%;
 }
 
@@ -181,7 +181,7 @@ div {
 	background: url('images/kollect-snapshot@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
-	background-size: 340px;
+	background-size: 480px;
 	background-position: 50% 45%;
 }
 
@@ -218,6 +218,18 @@ footer.mdl-mini-footer {
 		bottom: 0px;
 		left: 0px;
 		margin: 14px auto;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.mdl-mini-footer__link-list li {
+		color: #002443;
+	}
+	.ha-walk-card {
+		background-size: 260px;
+	}
+	.kollect-card {
+		background-size: 260px;
 	}
 }
 
