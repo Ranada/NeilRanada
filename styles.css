@@ -100,6 +100,7 @@ div {
 .hero-cell {
 	position: relative;
 	max-height: 280px;
+	margin: 0px 16px;
 }
 
 .hero-background-image {
