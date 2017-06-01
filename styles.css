@@ -146,7 +146,7 @@ div {
 
 .wander-card {
 	height: 380px;
-	background: url('assets/wander-card-image@2x.png');
+	background: url('images/wander-card-image@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: 460px;
@@ -155,7 +155,7 @@ div {
 
 .ha-walk-card {
 	height: 380px;
-	background: url('assets/ha-walk-snapshot@2x.png');
+	background: url('images/ha-walk-snapshot@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: 340px;
@@ -164,7 +164,7 @@ div {
 
 .kollect-card {
 	height: 380px;
-	background: url('assets/kollect-snapshot@2x.png');
+	background: url('images/kollect-snapshot@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: 340px;
@@ -219,7 +219,7 @@ footer.mdl-mini-footer {
 
 	#wander-card-smaller-screen {
 	height: 380px;
-	background: url('assets/wander-card-image-smaller-screen@2x.png');
+	background: url('images/wander-card-image-smaller-screen@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: 840px;
