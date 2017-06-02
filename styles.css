@@ -159,7 +159,7 @@ div {
 }
 
 .wander-card {
-	height: 380px;
+	height: 512px;
 	background: url('images/wander-card-image@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
@@ -168,7 +168,7 @@ div {
 	}
 
 .ha-walk-card {
-	height: 380px;
+	height: 512px;
 	background: url('images/ha-walk-snapshot@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
@@ -177,7 +177,7 @@ div {
 }
 
 .kollect-card {
-	height: 380px;
+	height: 512px;
 	background: url('images/kollect-snapshot@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
@@ -222,14 +222,9 @@ footer.mdl-mini-footer {
 }
 
 @media screen and (max-width: 580px) {
+
 	.mdl-mini-footer__link-list li {
 		color: #002443;
-	}
-	.ha-walk-card {
-		background-size: 260px;
-	}
-	.kollect-card {
-		background-size: 260px;
 	}
 }
 
@@ -244,12 +239,21 @@ footer.mdl-mini-footer {
 	}
 
 	#wander-card-smaller-screen {
-	height: 380px;
+	height: 312px;
 	background: url('images/wander-card-image-smaller-screen@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
-	background-size: 840px;
-	background-position: 50% -30%;
+	background-size: 620px;
+	background-position: 50% 6px;
+	}
+
+	.ha-walk-card {
+		height: 312px;
+		background-size: 260px;
+	}
+	.kollect-card {
+		height: 312px;
+		background-size: 260px;
 	}
 }
 
