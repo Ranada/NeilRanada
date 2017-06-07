@@ -69,6 +69,7 @@ a.mdl-navigation__link {
 	color: #006784;
 	background-color: #FFFFFF;
 	border: 2px solid #006784;
+	font-weight: 700;
 }
 
 .mdl-mini-footer__link-list li {
@@ -123,10 +124,10 @@ div {
 	position: relative;
 	height: 290px;
 	margin: 0px 16px;
-	background-image: url('images/hero_background_image@2x.png');
+	background-image: url('images/hero.jpg');
 	background-repeat: no-repeat;
-	background-size: auto 100%;
-	background-position: 50% 50%;
+	background-size: cover;
+	background-position: center;
 }
 
 .hero-background-image {
@@ -172,30 +173,30 @@ div {
 }
 
 .wander-card {
-	height: 512px;
-	background: url('images/wander-card-image@2x.png');
+	height: 500px;
+	background: url('images/wander@2x.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
-	background-size: 460px;
-	background-position: 50% 50%;
+	background-size: cover;
+	background-position: center;
 	}
 
 .ha-walk-card {
-	height: 512px;
-	background: url('images/ha-walk-snapshot@2x.png');
+	height: 500px;
+	background: url('images/hawalk-mockup@2x.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
-	background-size: 480px;
-	background-position: 50% 45%;
+	background-size: cover;
+	background-position: center 0;
 }
 
 .kollect-card {
-	height: 512px;
-	background: url('images/kollect-snapshot@2x.png');
+	height: 500px;
+	background: url('images/1@2x.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
-	background-size: 480px;
-	background-position: 50% 45%;
+	background-size: cover;
+	background-position: center;
 }
 
 /* Footer Styling */
@@ -215,13 +216,16 @@ footer.mdl-mini-footer {
 	height: 100%;
 }
 
-#resume-button {
+.mdl-button.centered-button {
 	display: block;
+	width: 20%;
+	margin: 8px auto;
 }
 
-#resume-cell {
-	width: 200px;
-	margin: 8px auto;
+/* Process page styling starts here */
+
+.design-process {
+	height: 1200px;
 }
 
 /* Media queries to adjust to different screen sizes */
@@ -268,21 +272,21 @@ footer.mdl-mini-footer {
 	}
 
 	#wander-card-smaller-screen {
-	height: 312px;
-	background: url('images/wander-card-image-smaller-screen@2x.png');
+	height: 328px;
+	background: url('images/wander-small-screen@2x.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
-	background-size: 620px;
-	background-position: 50% 6px;
+	background-size: cover;
+	background-position: center;
 	}
 
 	.ha-walk-card {
-		height: 312px;
-		background-size: 260px;
+		height: 328px;
+		background-size: cover;
 	}
 	.kollect-card {
-		height: 312px;
-		background-size: 260px;
+		height: 328px;
+		background-size: cover;
 	}
 }
 
