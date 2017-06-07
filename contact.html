@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil Ranada | UX Designer Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="material.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+	
+	<!-- Header section starts here. Div shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
+  		<header class="mdl-layout__header">
+    		<div class="mdl-layout__header-row" id="nav-bar-color">
+      			<!-- Title -->
+      			<div class="mdl-layout-title">
+      				<span id="title-avenir">Neil Ranada</span>
+      				<span id="divider"> | </span>
+      				<span id="title-adobe">UX Designer</span>
+      			</div>
+      			<!-- Spacer added to align navigation to the right -->
+      			<div class="mdl-layout-spacer"></div>
+      			<!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
+      			<nav class="mdl-navigation mdl-layout--large-screen-only">
+        			<a class="mdl-navigation__link" href="index.html">PORTFOLIO</a>
+        			<a class="mdl-navigation__link" href="process.html">PROCESS</a>
+        			<a class="mdl-navigation__link" href="about.html">ABOUT</a>
+        			<a class="mdl-navigation__link active-link" href="contact.html">CONTACT</a>
+     		 	</nav>
+    		</div>
+  		</header>
+
+  		<!-- Left sliding menu drawer for smaller screen sizes -->
+  		<div class="mdl-layout__drawer">
+    		<span class="mdl-layout-title">Menu</span>
+    		<nav class="mdl-navigation">
+      			<a class="mdl-navigation__link" href="index.html">PORTFOLIO</a>
+      			<a class="mdl-navigation__link" href="process.html">PROCESS</a>
+      			<a class="mdl-navigation__link" href="about.html">ABOUT</a>
+      			<a class="mdl-navigation__link" id="active-drawer-link" href="contact.html">CONTACT</a>
+    		</nav>
+  		</div>
+
+  	<!-- Main content section starts here -->
+  		<main class="mdl-layout__content">
+        <div class="portfolio-max-width">
+      		<div class="mdl-grid" id="content-section">
+      			<div class="mdl-cell mdl-cell--12-col">
+      				<h1>RESUME</h1>
+      			</div>
+      			<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+      					 <img src="neil-ranada-ux-designer-resume.png" alt="Your browser does not support this image. Please use the Download Resume button." class="resume-pdf">
+      			</div>
+            <div class="mdl-cell mdl-cell--12-col" id="resume-cell">
+                <!-- Accent-colored raised button with ripple -->
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" id="resume-button" href="">DOWNLOAD RESUME</a>
+            </div>
+      		</div>
+        </div>
+    	</main>
+
+
+    <!-- footer section starts here -->
+    	<footer class="mdl-mini-footer">
+  			<div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">
+      &copy; Neil Ranada | UX Designer, 2017
+    </div>
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="">CONTACT</a></li>
+      <li><a href="">RESUME</a></li>
+      <li><a href="">GITHUB</a></li>
+      <li><a href="">LINKEDIN</a></li>
+    </ul>
+  </div>
+</footer>
+	</div>
+    <script src="./material.min.js"></script>
+</body>
+
+</html>

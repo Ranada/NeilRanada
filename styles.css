@@ -90,6 +90,19 @@ header.mdl-layout__header.is-casting-shadow {
 	background-color: #002443;
 }
 
+/* Displays acitve link in menu for large screens */
+
+.active-link {
+	border-bottom: 4px solid #7BBED1;
+	height: 60px;
+}
+
+/* Displays active link in menu for small screens */
+
+#active-drawer-link {
+		color: #002443;
+	}
+
 /* Portfolio section styling */
 
 div {
@@ -150,7 +163,7 @@ div {
 
 /* Projects section styling */
 
-#projects-section {
+#content-section {
 	margin-top: 20px;
 }
 
@@ -193,6 +206,22 @@ footer.mdl-mini-footer {
 	padding-top: 10px;
 	padding-bottom: 46px;
 	background-color: #002443;
+}
+
+/* Resume styling */
+
+.resume-pdf {
+	width: 100%;
+	height: 100%;
+}
+
+#resume-button {
+	display: block;
+}
+
+#resume-cell {
+	width: 200px;
+	margin: 8px auto;
 }
 
 /* Media queries to adjust to different screen sizes */
