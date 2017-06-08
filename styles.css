@@ -228,6 +228,12 @@ footer.mdl-mini-footer {
 	height: 1200px;
 }
 
+/* About page styling starts here */
+
+.about-hero-image {
+	width: 100%;
+}
+
 /* Media queries to adjust to different screen sizes */
 
 @media screen and (max-width: 720px) {
