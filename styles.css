@@ -196,7 +196,7 @@ div {
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position-x: center;
 }
 
 /* Footer Styling */
