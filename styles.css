@@ -72,9 +72,22 @@ a.mdl-navigation__link {
 	font-weight: 700;
 }
 
-.mdl-mini-footer__link-list li {
+.footer-font {
+	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+}
+
+#footer-divider {
+	position: relative;
+	top: 2px;
+	font-size: 18px;
+	color: #FFFFFF;
+	margin: 0px 4px;
+}
+
+.mdl-mini-footer__link-list li a {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 	font-size: 14px;
+	font-weight: 400;
 	margin: 0px;
 	letter-spacing: 0.01em;
 	line-height: 24px;
