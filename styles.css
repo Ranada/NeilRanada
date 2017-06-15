@@ -137,7 +137,7 @@ div {
 	position: relative;
 	height: 290px;
 	margin: 0px 16px;
-	background-image: url('images/hero.jpg');
+	background-image: url('images/hero-background@2x.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -187,7 +187,7 @@ div {
 
 .wander-card {
 	height: 500px;
-	background: url('images/wander@2x.jpg');
+	background: url('images/wander-card@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -196,7 +196,7 @@ div {
 
 .ha-walk-card {
 	height: 500px;
-	background: url('images/hawalk-mockup@2x.jpg');
+	background: url('images/hawalk-mockup@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -205,7 +205,7 @@ div {
 
 .kollect-card {
 	height: 500px;
-	background: url('images/kollect-mockup@2x.jpg');
+	background: url('images/kollect-mockup@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -292,7 +292,7 @@ footer.mdl-mini-footer {
 
 	#wander-card-smaller-screen {
 	height: 328px;
-	background: url('images/wander-small-screen@2x.jpg');
+	background: url('images/wander-small-screen@2x.png');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
