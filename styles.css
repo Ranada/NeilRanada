@@ -87,7 +87,6 @@ a.mdl-navigation__link {
 .mdl-mini-footer__link-list li a {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 	font-size: 14px;
-	font-weight: 400;
 	margin: 0px;
 	letter-spacing: 0.01em;
 	line-height: 24px;
@@ -291,6 +290,13 @@ footer.mdl-mini-footer {
 	}
 }
 
+@media screen and (min-width: 480px) {
+
+	#hide-at-large-screens {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 480px) {
 
 	#divider {
@@ -299,6 +305,10 @@ footer.mdl-mini-footer {
 
 	#title-avenir, #title-adobe {
 		letter-spacing: 0;
+	}
+
+	#hide-at-small-screens {
+		display: none;
 	}
 
 	#wander-card-smaller-screen {
