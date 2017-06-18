@@ -18,20 +18,20 @@
 
 .mdl-layout h1 {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0px;
+	color: #002443;
+}
+
+.mdl-layout h2 {
+	font-family: "Adobe Caslon Pro", "Helvetica", "Arial", sans-serif;
 	margin: 0;
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0;
 	line-height: 28px;
-	color: #002443;
-
-}
-
-.mdl-layout h2 {
 	color: #FFFFFF;
-	font-family: "Adobe Caslon Pro", "Helvetica", "Arial", sans-serif;
-	line-height: 32px;
-	letter-spacing: 0px;
 }
 
 .mdl-layout h3 {
@@ -136,7 +136,7 @@ div {
 .hero-cell {
 	position: relative;
 	height: 290px;
-	margin: 0px 16px;
+	margin: 0px 16px 16px 16px;
 	background-image: url('images/hero-background@2x.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -153,7 +153,7 @@ div {
 .hero-avatar {
 	position: absolute;
 	bottom: 16px;
-	left: 18%;
+	left: 110px;
 	height: 124px;
 	width: 124px;
 	border-radius: 50%;
@@ -163,11 +163,17 @@ div {
 	position: absolute;
 	bottom: 0px;
 	background-color: #000000;
-	opacity: 0.60;
+	opacity: 0.76;
 	color: #FFFFFF;
 	width: 100%;
 	max-width: 920px;
-	padding: 16px 0% 16px 36%;
+	padding: 16px 0% 16px 260px;
+}
+
+.hero-text-banner h2 {
+	color: #7BBED1;
+	line-height: 32px;
+	opacity: 1.0;
 }
 
 .hero-text-banner h3 {
@@ -177,11 +183,16 @@ div {
 
 /* Projects section styling */
 
-#content-section {
-	margin-top: 20px;
+.mdl-cell.projects-header {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-#projects-section .mdl-card {
+.mdl-cell h1 {
+	margin: 0;
+}
+
+.projects-section .mdl-card {
 	margin-bottom: 24px;
 }
 
@@ -275,7 +286,7 @@ footer.mdl-mini-footer {
 
 @media screen and (max-width: 580px) {
 
-	.mdl-mini-footer__link-list li {
+	.mdl-mini-footer__link-list li a {
 		color: #002443;
 	}
 }
