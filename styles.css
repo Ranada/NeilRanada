@@ -66,10 +66,8 @@ a.mdl-navigation__link {
 
 .mdl-layout .mdl-button {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
-	color: #006784;
-	background-color: #FFFFFF;
-	border: 2px solid #006784;
-	font-weight: 700;
+	color: #FFFFFF;
+	background-color: #006784;
 }
 
 .footer-font {
@@ -113,7 +111,7 @@ header.mdl-layout__header.is-casting-shadow {
 /* Displays active link in menu for small screens */
 
 #active-drawer-link {
-		color: #002443;
+		color: #006784;
 	}
 
 /* Portfolio section styling */
@@ -149,33 +147,50 @@ div {
 	width: 100%;
 }
 
-.hero-avatar {
+.hero-avatar-cell {
 	position: absolute;
 	bottom: 16px;
 	left: 110px;
 	height: 124px;
 	width: 124px;
 	border-radius: 50%;
+	z-index: 3;
 }
 
-.hero-text-banner {
+.hero-avatar-image {
+	height: 100%;
+	width: 100%;
+}
+
+.hero-text {
 	position: absolute;
 	bottom: 0px;
-	background-color: #000000;
-	opacity: 0.76;
 	color: #FFFFFF;
 	width: 100%;
 	max-width: 920px;
 	padding: 16px 0% 16px 260px;
+	z-index: 2;
 }
 
-.hero-text-banner h2 {
+.hero-text-banner {
+	position: absolute;
+	height: 92px;
+	bottom: 0px;
+	background-color: #282c35;
+	opacity: 0.85;
+	width: 100%;
+	max-width: 920px;
+	padding: 16px 0% 16px 260px;
+	z-index: 1;
+}
+
+.hero-text h2 {
 	color: #7BBED1;
 	line-height: 32px;
 	opacity: 1.0;
 }
 
-.hero-text-banner h3 {
+.hero-text h3 {
 	color: #FFFFFF;
 	opacity: 1.0;
 }
@@ -193,6 +208,26 @@ div {
 
 .projects-section .mdl-card {
 	margin-bottom: 24px;
+}
+
+h2.mdl-card__title-text {
+    z-index: 2;
+}
+
+.card-banner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #000000;
+	opacity: 0.30;
+	width: 100%;
+	height: 60px;
+	max-width: 920px;
+	z-index: 1;
+}
+
+.mdl-card__title {
+	position: relative; /* position made relative to allow card-banner to align properly */
 }
 
 .wander-card {
@@ -259,27 +294,52 @@ footer.mdl-mini-footer {
 
 /* Media queries to adjust to different screen sizes */
 
+@media screen and (max-width: 840px) {
+
+	.hero-text-banner {
+		height: 120px;
+	}
+}
+
 @media screen and (max-width: 720px) {
 
 	.hero-background-image {
 		max-height: 180px;
 	}
 
-	.hero-text-banner {
-		position: absolute;
+	.hero-avatar-cell {
+		position: relative;
+		top: 76px;
+		left: 0px; /* use left 0px to keep avatar centered since position is relative */
+		margin: auto;
+	}
+
+	.hero-text {
 		padding: 16px;
 	}
 
-	.hero-text-banner br {
-		display: none;
+	.hero-text-banner {
+		height: 100%;
 	}
+}
 
-	.hero-avatar {
-		display: none;
+@media screen and (max-width: 620px) { /* breakpoint for avatar image */
+
+	.hero-avatar-cell {
 		position: relative;
-		bottom: 0px;
-		left: 0px;
-		margin: 14px auto;
+		top: 50px;
+		left: 0px; /* use left 0px to keep avatar centered since position is relative */
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 520px) { /* breakpoint for avatar image */
+
+	.hero-avatar-cell {
+		position: relative;
+		top: 16px;
+		left: 0px; /* use left 0px to keep avatar centered since position is relative */
+		margin: auto;
 	}
 }
 
