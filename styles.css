@@ -399,19 +399,18 @@ footer.mdl-mini-footer {
 @media screen and (max-width: 400px) {
 
 	.hero-avatar-cell {
-		height: 100px;
-		width: 100px;
-	}
-}
-
-@media screen and (max-width: 360px) {
-
-	.hero-avatar-cell {
 		top: 8px;
 	}
 
 	.hero-text {
 		padding: 16px 16px 8px 16px;
+	}
+}
+
+@media screen and (max-width: 354px) {
+	.hero-avatar-cell {
+		height: 100px;
+		width: 100px;
 	}
 }
 
