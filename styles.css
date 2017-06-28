@@ -54,6 +54,19 @@ a.mdl-navigation__link {
 	opacity: 1.0;
 }
 
+#hero-name {
+	font-family: "Avenir";
+	color: #FFFFFF;	
+}
+
+#hero-divider {
+	display: inline;
+	font-size: 28px;
+	color: #FFFFFF;
+	margin: 0px 8px;
+	font-weight: 100;
+}
+
 .mdl-layout p {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 	font-size: 14px;
@@ -150,7 +163,7 @@ div {
 .hero-avatar-cell {
 	position: absolute;
 	bottom: 16px;
-	left: 110px;
+	left: 95px;
 	height: 124px;
 	width: 124px;
 	border-radius: 50%;
@@ -168,7 +181,7 @@ div {
 	color: #FFFFFF;
 	width: 100%;
 	max-width: 920px;
-	padding: 16px 0% 16px 260px;
+	padding: 16px 0% 16px 245px;
 	z-index: 2;
 }
 
@@ -180,7 +193,6 @@ div {
 	opacity: 0.85;
 	width: 100%;
 	max-width: 920px;
-	padding: 16px 0% 16px 260px;
 	z-index: 1;
 }
 
@@ -188,6 +200,7 @@ div {
 	color: #7BBED1;
 	line-height: 32px;
 	opacity: 1.0;
+	display: inline;
 }
 
 .hero-text h3 {
@@ -299,9 +312,6 @@ footer.mdl-mini-footer {
 	.hero-text-banner {
 		height: 120px;
 	}
-}
-
-@media screen and (max-width: 720px) {
 
 	.hero-background-image {
 		max-height: 180px;
@@ -317,29 +327,25 @@ footer.mdl-mini-footer {
 	.hero-text {
 		padding: 16px;
 	}
-
-	.hero-text-banner {
-		height: 100%;
-	}
 }
 
 @media screen and (max-width: 620px) { /* breakpoint for avatar image */
 
 	.hero-avatar-cell {
 		position: relative;
-		top: 50px;
-		left: 0px; /* use left 0px to keep avatar centered since position is relative */
-		margin: auto;
-	}
-}
-
-@media screen and (max-width: 520px) { /* breakpoint for avatar image */
-
-	.hero-avatar-cell {
-		position: relative;
 		top: 16px;
 		left: 0px; /* use left 0px to keep avatar centered since position is relative */
 		margin: auto;
+	}
+
+	.hero-text-banner {
+		height: 100%;
+	}
+	.hero-text h2 {
+		display: block;
+	}
+	#hero-divider {
+		display: none;
 	}
 }
 
