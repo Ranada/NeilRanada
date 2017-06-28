@@ -39,7 +39,7 @@
 	font-size: 16px;
 	margin: 0px;
 	letter-spacing: 0.01em;
-	line-height: 28px;
+	line-height: 24px;
 	color: #000000;
 	opacity: 0.54;
 }
@@ -187,7 +187,7 @@ div {
 
 .hero-text-banner {
 	position: absolute;
-	height: 92px;
+	height: 90px;
 	bottom: 0px;
 	background-color: #282c35;
 	opacity: 0.85;
@@ -319,7 +319,7 @@ footer.mdl-mini-footer {
 
 	.hero-avatar-cell {
 		position: relative;
-		top: 76px;
+		top: 88px;
 		left: 0px; /* use left 0px to keep avatar centered since position is relative */
 		margin: auto;
 	}
@@ -378,12 +378,12 @@ footer.mdl-mini-footer {
 	}
 
 	#wander-card-smaller-screen {
-	height: 328px;
-	background: url('images/wander-small-screen@2x.png');
-	background-color: #006784;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+		height: 328px;
+		background: url('images/wander-small-screen@2x.png');
+		background-color: #006784;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 
 	.ha-walk-card {
@@ -396,6 +396,24 @@ footer.mdl-mini-footer {
 	}
 }
 
+@media screen and (max-width: 400px) {
+
+	.hero-avatar-cell {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	.hero-avatar-cell {
+		top: 8px;
+	}
+
+	.hero-text {
+		padding: 16px 16px 8px 16px;
+	}
+}
 
 
 
