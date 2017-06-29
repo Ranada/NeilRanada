@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil Ranada | UX Designer Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="material.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+	
+	<!-- Header section starts here. Div shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
+  		<header class="mdl-layout__header">
+    		<div class="mdl-layout__header-row" id="nav-bar-color">
+      			<!-- Title -->
+      			<div class="mdl-layout-title">
+              <span id="title-avenir">Neil Ranada</span>
+              <span id="divider"> | </span>
+              <span id="title-adobe">UX <span id="hide-at-small-screens">Research & Design</span><span id="hide-at-large-screens">Designer</span></span>
+            </div>
+      			<!-- Spacer added to align navigation to the right -->
+      			<div class="mdl-layout-spacer"></div>
+      			<!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
+      			<nav class="mdl-navigation mdl-layout--large-screen-only">
+        			<a class="mdl-navigation__link" href="index.html">PORTFOLIO</a>
+        			<a class="mdl-navigation__link" href="process.html">PROCESS</a>
+              <a class="mdl-navigation__link" href="resume.html">RESUME</a>
+        			<a class="mdl-navigation__link active-link" href="about.html">ABOUT</a>
+        			<a class="mdl-navigation__link" href="contact.html">CONTACT</a>
+     		 	</nav>
+    		</div>
+  		</header>
+
+  		<!-- Left sliding menu drawer for smaller screen sizes -->
+  		<div class="mdl-layout__drawer">
+    		<span class="mdl-layout-title">Menu</span>
+    		<nav class="mdl-navigation">
+      			<a class="mdl-navigation__link" href="index.html">PORTFOLIO</a>
+      			<a class="mdl-navigation__link" href="process.html">PROCESS</a>
+            <a class="mdl-navigation__link" href="resume.html">RESUME</a>
+      			<a class="mdl-navigation__link" id="active-drawer-link" href="about.html">ABOUT</a>
+      			<a class="mdl-navigation__link" href="contact.html">CONTACT</a>
+    		</nav>
+  		</div>
+
+  	<!-- Main content section starts here -->
+  		<main class="mdl-layout__content">
+          <div class="portfolio-max-width">
+              
+              <div class="mdl-cell mdl-cell--12-col section-header">
+                  <h1>ABOUT ME</h1>
+              </div>
+
+              <div class="about-me-cell">
+
+                  <div class="hero-text">
+                      <h2 id="hero-name">Neil Ranada</h2>
+                      <span id="hero-divider">|</span>
+                      <h2>UX Researcher & Designer</h2>
+                      
+                      <div class="location">
+                          <img src="images/ic_location_on_white_18dp.png"><h3>Los Angeles, CA</h3>
+                      </div>
+                      
+                      <p>Hi, I’m Neil. I’m a User Experience Researcher and Designer based out of Los Angeles, CA.</p>
+                      <p>I have 10 years of professional experience with a background in Aviation, Aerospace, and Defense. I was a Navy Helicopter Pilot while holding various managerial roles. I’ve been solving problems in small teams throughout my career.</p>
+                      <p>I’m interested in making mobile apps, websites, and other digital products easier to use for people. Technology should make our lives easier not harder. A well-intentioned but poorly designed product can lead to a person experiencing friction and unpleasantness.</p>
+                      <p>What’s the cost of friction? Friction can result in a customer being discouraged from buying your products or using your services. It can also distract your workers from doing productive work. That’s time, resources, and money $$$ I’d like to help you save!</p>
+                      <p>In my free time, I like to surf, hike, and travel.</p>
+                      <p>Contact me if you think I’m a good fit and want to work with me. Or, if you just want to say “hi” and chat, that’s cool too!</p>
+                  </div>
+                  
+                  <div class="about-text-banner">
+                  </div>
+                      
+                  <!-- Accent-colored raised button with ripple -->
+                  <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" id="contact-me-button" href="">CONTACT ME</a>
+              </div>    
+          </div>
+      </main>
+
+
+    <!-- footer section starts here -->
+    	<footer class="mdl-mini-footer">
+  			<div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo footer-font">
+      &copy; Neil Ranada<span id="footer-divider">|</span>UX Designer, 2017
+    </div>
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="">GITHUB</a></li>
+      <li><a href="">LINKEDIN</a></li>
+      <li><a href="">TWITTER</a></li>
+      <li><a href="">INSTAGRAM</a></li>
+    </ul>
+  </div>
+</footer>
+	</div>
+    <script src="./material.min.js"></script>
+</body>
+
+</html>

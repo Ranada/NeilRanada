@@ -67,6 +67,10 @@ a.mdl-navigation__link {
 	font-weight: 100;
 }
 
+.mdl-cell.section-header {
+	margin: 16px 16px 0 16px;
+}
+
 .mdl-layout p {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 	font-size: 14px;
@@ -179,9 +183,8 @@ div {
 	position: absolute;
 	bottom: 0px;
 	color: #FFFFFF;
-	width: 100%;
-	max-width: 920px;
-	padding: 16px 0% 16px 245px;
+	width: calc(100% - 16px);
+	padding: 16px 16px 16px 242px;
 	z-index: 2;
 }
 
@@ -301,8 +304,64 @@ footer.mdl-mini-footer {
 
 /* About page styling starts here */
 
-.about-hero-image {
-	width: 100%;
+.about-me-cell {
+	position: relative;
+	height: 658px;
+	margin: 8px 16px 16px 16px;
+	background-image: url('images/about-me-photo@2x.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.about-text-banner {
+	position: absolute;
+	height: 658px;
+	width: 480px;
+	right: 24px;
+	padding: 16px;
+	background-color: #282c35;
+	opacity: 0.70;
+	z-index: 1;
+}
+
+.about-me-cell .hero-text {
+	position: absolute;
+	min-height: 658px;
+	width: 480px;
+	top: 0px;
+	right: 24px;
+	color: #FFFFFF;
+	max-width: 920px;
+	padding: 16px 16px 16px 16px;
+	line-height: 0;
+	z-index: 2;
+}
+
+.location {
+	margin: 16px 0 16px 0;
+}
+
+.location img {
+	position: relative;
+	left: -2px;
+}
+
+.location h3 {
+	display: inline-block;
+	padding-left: 4px;
+}
+
+.about-me-cell .hero-text p {
+	color: #FFFFFF;
+	margin-bottom: 16px;
+}
+
+#contact-me-button {
+	position: absolute;
+	bottom: 16px;
+	right: 362px;
+	z-index: 3;
 }
 
 /* Media queries to adjust to different screen sizes */
