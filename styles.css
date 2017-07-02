@@ -469,7 +469,7 @@ footer.mdl-mini-footer {
 	}
 }
 
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 360px) {
 	.hero-avatar-cell {
 		height: 100px;
 		width: 100px;
