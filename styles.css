@@ -322,16 +322,6 @@ footer.mdl-mini-footer {
 	background-position: center;
 }
 
-.about-text-banner {
-	height: 658px;
-	width: 480px;
-	right: 24px;
-	padding: 16px;
-	background-color: #282c35;
-	opacity: 0.70;
-	z-index: 1;
-}
-
 .about-text h2 {
 	color: #7BBED1;
 	line-height: 32px;
@@ -349,12 +339,13 @@ footer.mdl-mini-footer {
 }
 
 .location {
-	margin: 16px 0 16px 0;
+	margin: 8px 0 16px 0;
 }
 
 .location img {
 	position: relative;
 	left: -2px;
+	padding-bottom: 4px;
 }
 
 .location h3 {
@@ -364,6 +355,10 @@ footer.mdl-mini-footer {
 	opacity: 1;
 }
 
+.about-container {
+	position: relative; /* allows any elements positioned "absolute" within the about-container */
+}
+
 .about-container .about-text p {
 	color: #FFFFFF;
 	margin-bottom: 16px;
@@ -371,6 +366,29 @@ footer.mdl-mini-footer {
 }
 
 /* Media queries to adjust to different screen sizes */
+
+@media screen and (min-width: 840px) {
+
+	.about-text {
+		position: absolute;
+    	top: 0;
+    	right: 16px;
+    	width: 480px;
+    	background-color: inherit;
+	}
+
+	.about-text-banner {
+		position: absolute;
+		top: 0;
+		right: 32px;
+		height: 658px;
+		width: 480px;
+		padding: 16px;
+		background-color: #282c35;
+		opacity: 0.70;
+		z-index: 1;
+	}
+}
 
 @media screen and (max-width: 840px) {
 
@@ -391,6 +409,11 @@ footer.mdl-mini-footer {
 
 	.hero-text {
 		padding: 16px;
+	}
+
+	.about-me-photo {
+		background-image: url('images/about-me-photo-smaller-screen.jpg'); 
+		height: 454px; 
 	}
 }
 
@@ -417,6 +440,10 @@ footer.mdl-mini-footer {
 
 	#hero-divider {
 		display: none;
+	}
+
+	.about-me-photo {
+		height: 330px;
 	}
 }
 
@@ -473,6 +500,10 @@ footer.mdl-mini-footer {
 		height: 328px;
 		background-size: cover;
 	}
+
+	.about-me-photo {
+		height: 252px;
+	}
 }
 
 @media screen and (max-width: 374px) {
@@ -481,6 +512,14 @@ footer.mdl-mini-footer {
 	.hero-avatar-cell {
 		height: 84px;
 		width: 84px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+
+	.about-me-photo {
+		height: 184px;
 	}
 }
 
