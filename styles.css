@@ -277,6 +277,10 @@ div {
 	background-position-x: center;
 }
 
+.mdl-card__actions.mdl-card--border {
+	padding: 8px 16px;
+}
+
 /* Footer Styling */
 
 footer.mdl-mini-footer {
