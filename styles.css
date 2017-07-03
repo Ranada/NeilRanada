@@ -412,8 +412,10 @@ footer.mdl-mini-footer {
 	}
 
 	.about-me-photo {
+		height: 454px;
 		background-image: url('images/about-me-photo-smaller-screen.jpg'); 
-		height: 454px; 
+		background-size: 820px; 
+		margin-bottom: 0; /* close gap between photo and about me text */
 	}
 }
 
