@@ -190,7 +190,7 @@ div {
 
 .hero-text-banner {
 	position: absolute;
-	height: 90px;
+	height: 92px;
 	bottom: 0px;
 	background-color: #282c35;
 	opacity: 0.85;
@@ -209,6 +209,7 @@ div {
 .hero-text h3 {
 	color: #FFFFFF;
 	opacity: 1.0;
+	margin: 8px 0 0 0;
 }
 
 /* Projects section styling */
@@ -307,7 +308,7 @@ footer.mdl-mini-footer {
 
 /* About page styling starts here */
 
-.about-me-cell {
+.about-me-photo {
 	position: relative;
 	height: 658px;
 	margin: 8px 16px 16px 16px;
@@ -318,7 +319,6 @@ footer.mdl-mini-footer {
 }
 
 .about-text-banner {
-	position: absolute;
 	height: 658px;
 	width: 480px;
 	right: 24px;
@@ -328,16 +328,19 @@ footer.mdl-mini-footer {
 	z-index: 1;
 }
 
-.about-me-cell .hero-text {
-	position: absolute;
-	min-height: 658px;
-	width: 480px;
-	top: 0px;
-	right: 24px;
+.about-text h2 {
+	color: #7BBED1;
+	line-height: 32px;
+	opacity: 1.0;
+	display: inline;
+}
+
+.about-text {
+	bottom: 0px;
 	color: #FFFFFF;
-	max-width: 920px;
+	background-color: #282c35;	
+	margin: 0 16px;
 	padding: 16px 16px 16px 16px;
-	line-height: 0;
 	z-index: 2;
 }
 
@@ -352,19 +355,15 @@ footer.mdl-mini-footer {
 
 .location h3 {
 	display: inline-block;
+	color: #FFFFFF;
 	padding-left: 4px;
+	opacity: 1;
 }
 
-.about-me-cell .hero-text p {
+.about-container .about-text p {
 	color: #FFFFFF;
 	margin-bottom: 16px;
-}
-
-#contact-me-button {
-	position: absolute;
-	bottom: 16px;
-	right: 362px;
-	z-index: 3;
+	opacity: 1;
 }
 
 /* Media queries to adjust to different screen sizes */
@@ -381,7 +380,7 @@ footer.mdl-mini-footer {
 
 	.hero-avatar-cell {
 		position: relative;
-		top: 88px;
+		top: 80px;
 		left: 0px; /* use left 0px to keep avatar centered since position is relative */
 		margin: auto;
 	}
@@ -403,9 +402,15 @@ footer.mdl-mini-footer {
 	.hero-text-banner {
 		height: 100%;
 	}
+
 	.hero-text h2 {
 		display: block;
 	}
+
+	.about-text h2 {
+		display: block;
+	}
+
 	#hero-divider {
 		display: none;
 	}
@@ -439,6 +444,14 @@ footer.mdl-mini-footer {
 		display: none;
 	}
 
+	.hero-avatar-cell {
+		top: 8px;
+	}
+
+	.hero-text {
+		padding: 16px 16px 8px 16px;
+	}
+
 	#wander-card-smaller-screen {
 		height: 328px;
 		background: url('images/wander-small-screen@2x.png');
@@ -458,23 +471,17 @@ footer.mdl-mini-footer {
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 374px) {
+
 
 	.hero-avatar-cell {
-		top: 8px;
-	}
-
-	.hero-text {
-		padding: 16px 16px 8px 16px;
+		height: 84px;
+		width: 84px;
 	}
 }
 
-@media screen and (max-width: 360px) {
-	.hero-avatar-cell {
-		height: 100px;
-		width: 100px;
-	}
-}
+	
+
 
 
 
