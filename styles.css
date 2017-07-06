@@ -74,7 +74,7 @@ a.mdl-navigation__link {
 .mdl-layout p {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 	font-size: 14px;
-	margin: 0px;
+	margin: 0 0 16px;
 	letter-spacing: 0.01em;
 	line-height: 24px;
 	color: #000000;
@@ -85,6 +85,15 @@ a.mdl-navigation__link {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 	color: #FFFFFF;
 	background-color: #006784;
+}
+
+.mdl-layout .mdl-button:hover {
+    background-color: #7BBED1;
+}
+
+.mdl-layout a {
+	color: #006784;
+	text-decoration: none;
 }
 
 .footer-font {
@@ -365,6 +374,46 @@ footer.mdl-mini-footer {
 	opacity: 1;
 }
 
+/* Contact page styling starts here */
+
+.contact-section {
+
+	margin: 0 8px;
+}
+
+.contact-header {
+
+	margin: 16px 0;
+}
+
+.message-image {
+
+	width: 48px;
+	margin: 16px auto 16px;
+}
+
+.contact-section h2 {
+
+	color: #002443;
+	margin: 0 auto;
+}
+
+.contact-section .mdl-card__supporting-text {
+
+	max-width: 550px;
+	margin: auto;
+}
+
+.contact-section .mdl-textfield {
+
+	width: 100%;
+}
+
+button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent {
+
+	background-color: #006784;
+}
+
 /* Media queries to adjust to different screen sizes */
 
 @media screen and (min-width: 840px) {
@@ -385,7 +434,7 @@ footer.mdl-mini-footer {
 		width: 480px;
 		padding: 16px;
 		background-color: #282c35;
-		opacity: 0.70;
+		opacity: 0.78;
 		z-index: 1;
 	}
 }

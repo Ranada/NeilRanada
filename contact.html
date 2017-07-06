@@ -20,10 +20,10 @@
     		<div class="mdl-layout__header-row" id="nav-bar-color">
       			<!-- Title -->
       			<div class="mdl-layout-title">
-      				<span id="title-avenir">Neil Ranada</span>
-      				<span id="divider"> | </span>
-      				<span id="title-adobe">UX Designer</span>
-      			</div>
+              <span id="title-avenir">Neil Ranada</span>
+              <span id="divider"> | </span>
+              <span id="title-adobe">UX <span id="hide-at-small-screens">Research & Design</span><span id="hide-at-large-screens">Designer</span></span>
+            </div>
       			<!-- Spacer added to align navigation to the right -->
       			<div class="mdl-layout-spacer"></div>
       			<!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
@@ -45,27 +45,42 @@
       			<a class="mdl-navigation__link" href="process.html">PROCESS</a>
             <a class="mdl-navigation__link" href="resume.html">RESUME</a>
       			<a class="mdl-navigation__link" href="about.html">ABOUT</a>
-      			<a class="mdl-navigation__link centered-button" id="active-drawer-link" href="contact.html">CONTACT</a>
+      			<a class="mdl-navigation__link" id="active-drawer-link" href="contact.html">CONTACT</a>
     		</nav>
   		</div>
 
   	<!-- Main content section starts here -->
   		<main class="mdl-layout__content">
-        <div class="portfolio-max-width">
-      		<div class="mdl-grid" id="content-section">
-      			<div class="mdl-cell mdl-cell--12-col">
-      				<h1>CONTACT</h1>
-      			</div>
-      			<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-      					 <p>E-mail form goes here</p>
-      			</div>
-            <div class="mdl-cell mdl-cell--12-col" id="resume-cell">
-                <!-- Accent-colored raised button with ripple -->
-                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" id="resume-button" href="">SEND MESSAGE</a>
-            </div>
-      		</div>
-        </div>
-    	</main>
+          <div class="portfolio-max-width">
+              
+              <div class="mdl-cell mdl-cell--12-col section-header">
+                  <h1>CONTACT ME</h1>
+              </div>
+
+              <div class="contact-section">
+                  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+
+                          <img class="message-image" src=" images/email@2x.png" border="0" alt="">
+                          <h2>Let's Chat</h2>
+
+                      <div class="mdl-card__supporting-text">
+                          <p>
+                              Send me a note to start a conversation about awesome things we can make together. I'm available in Los Angeles and Orange County with the option to work remotely. 
+                          </p>  
+                          <p>
+                              Or, just say "hello". Let's chat about design and other good stuff.
+                          </p>
+                          <p>
+                              Email me at <a href="mailto:neil.ranada@gmail.com">neil.ranada@gmail.com</a> or use the button below to get in touch.
+                          </p> 
+                              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" id="contact-me-button" href="https://neilranada.typeform.com/to/rkqu5I" target="_blank">GET IN TOUCH</a>
+                              <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
 
 
     <!-- footer section starts here -->
