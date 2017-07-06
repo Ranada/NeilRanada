@@ -96,6 +96,10 @@ a.mdl-navigation__link {
 	text-decoration: none;
 }
 
+.projects-section .mdl-card p {
+	margin-bottom: 0;
+}
+
 .footer-font {
 	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
 }
