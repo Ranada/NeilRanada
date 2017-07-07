@@ -164,7 +164,7 @@ div {
 	position: relative;
 	height: 290px;
 	margin: 0px 16px 16px 16px;
-	background-image: url('images/hero-background@2x.png');
+	background-image: url('images/hero-background@2x.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -265,7 +265,7 @@ div {
 
 .wander-card {
 	height: 500px;
-	background: url('images/wander-card@2x.png');
+	background: url('images/wander-card@2x.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -274,7 +274,7 @@ div {
 
 .ha-walk-card {
 	height: 500px;
-	background: url('images/hawalk-mockup@2x.png');
+	background: url('images/hawalk-mockup@2x.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -283,7 +283,7 @@ div {
 
 .kollect-card {
 	height: 500px;
-	background: url('images/kollect-mockup@2x.png');
+	background: url('images/kollect-mockup@2x.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -540,7 +540,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 	#wander-card-smaller-screen {
 		height: 328px;
-		background: url('images/wander-small-screen@2x.png');
+		background: url('images/wander-small-screen@2x.jpg');
 		background-color: #006784;
 		background-repeat: no-repeat;
 		background-size: cover;
