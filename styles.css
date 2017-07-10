@@ -1,7 +1,7 @@
 /* Typography styling */
 
 #title-avenir {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #divider {
@@ -12,12 +12,12 @@
 }
 
 #title-adobe {
-	font-family: "Adobe Caslon Pro", "Helvetica", "Arial", sans-serif;
+	font-family: "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
 	color: #7BBED1;
 }
 
 .mdl-layout h1 {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0px;
@@ -25,7 +25,7 @@
 }
 
 .mdl-layout h2 {
-	font-family: "Adobe Caslon Pro", "Helvetica", "Arial", sans-serif;
+	font-family: "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
 	margin: 0;
 	font-size: 24px;
 	line-height: 32px;
@@ -35,7 +35,7 @@
 }
 
 .mdl-layout h3 {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin: 0px;
 	letter-spacing: 0.01em;
@@ -45,7 +45,7 @@
 }
 
 a.mdl-navigation__link {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin: 0px;
 	letter-spacing: 0.01em;
@@ -55,7 +55,7 @@ a.mdl-navigation__link {
 }
 
 #hero-name {
-	font-family: "Avenir";
+	font-family: Avenir;
 	color: #FFFFFF;	
 }
 
@@ -72,7 +72,7 @@ a.mdl-navigation__link {
 }
 
 .mdl-layout p {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	margin: 0 0 16px;
 	letter-spacing: 0.01em;
@@ -82,7 +82,7 @@ a.mdl-navigation__link {
 }
 
 .mdl-layout .mdl-button {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
 	background-color: #006784;
 }
@@ -101,7 +101,7 @@ a.mdl-navigation__link {
 }
 
 .footer-font {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #footer-divider {
@@ -113,7 +113,7 @@ a.mdl-navigation__link {
 }
 
 .mdl-mini-footer__link-list li a {
-	font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	margin: 0px;
 	letter-spacing: 0.01em;
@@ -222,7 +222,6 @@ div {
 .hero-text h3 {
 	color: #FFFFFF;
 	opacity: 1.0;
-	margin: 8px 0 0 0;
 }
 
 /* Projects section styling */
@@ -287,7 +286,7 @@ div {
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-x: center;
+	background-position: center;
 }
 
 .mdl-card__actions.mdl-card--border {
