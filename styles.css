@@ -530,23 +530,15 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	#divider {
 		margin: 0;
 	}
-
-	#title-avenir, #title-adobe {
-		letter-spacing: 0;
-	}
-
 	#hide-at-small-screens {
 		display: none;
 	}
-
 	.hero-avatar-cell {
 		top: 8px;
 	}
-
 	.hero-text {
 		padding: 16px 16px 8px 16px;
 	}
-
 	#wander-card-smaller-screen {
 		height: 328px;
 		background: url('images/wander-small-screen@2x.jpg');
@@ -555,7 +547,6 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		background-size: cover;
 		background-position: center;
 	}
-
 	.ha-walk-card {
 		height: 328px;
 		background-size: cover;
@@ -564,7 +555,6 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		height: 328px;
 		background-size: cover;
 	}
-
 	.about-me-photo {
 		height: 252px;
 	}
@@ -581,7 +571,9 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 @media screen and (max-width: 360px) {
 
-
+	.mdl-layout .mdl-layout-title {
+		letter-spacing: 0;
+	}
 	.about-me-photo {
 		height: 184px;
 	}
