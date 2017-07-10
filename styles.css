@@ -420,7 +420,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 /* Media queries to adjust to different screen sizes */
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 841px) {
 
 	.about-text {
 		position: absolute;
