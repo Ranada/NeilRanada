@@ -1,23 +1,7 @@
 /* Typography styling */
 
-#title-avenir {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-
-#divider {
-	display: inline;
-	font-size: 24px;
-	color: #FFFFFF;
-	margin: 0px 8px;
-}
-
-#title-adobe {
-	font-family: "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
-	color: #7BBED1;
-}
-
 .mdl-layout h1 {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-family: Avenir, "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0px;
@@ -30,11 +14,16 @@
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0;
-	line-height: 28px;
 	color: #FFFFFF;
 }
 
 .mdl-layout h3 {
+	font-family: Avenir, "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.mdl-layout h4 {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin: 0px;
@@ -52,19 +41,6 @@ a.mdl-navigation__link {
 	line-height: 28px;
 	color: #FFFFFF;
 	opacity: 1.0;
-}
-
-#hero-name {
-	font-family: Avenir;
-	color: #FFFFFF;	
-}
-
-#hero-divider {
-	display: inline;
-	font-size: 28px;
-	color: #FFFFFF;
-	margin: 0px 8px;
-	font-weight: 100;
 }
 
 .mdl-cell.section-header {
@@ -129,6 +105,22 @@ a.mdl-navigation__link {
 
 header.mdl-layout__header.is-casting-shadow {
 	background-color: #002443;
+}
+
+.logo-title {
+	display: inline-block;
+}
+
+#divider {
+	display: inline;
+	font-size: 24px;
+	color: #FFFFFF;
+	margin: 0px 8px;
+}
+
+h3.logo-title-highlight {
+	color: #7BBED1;
+	display: inline-block;
 }
 
 /* Displays acitve link in menu for large screens */
@@ -213,15 +205,28 @@ div {
 }
 
 .hero-text h2 {
-	color: #7BBED1;
-	line-height: 32px;
+	font-family: Avenir;
+	color: #FFFFFF;	
 	opacity: 1.0;
 	display: inline;
 }
 
-.hero-text h3 {
+#hero-divider {
+	display: inline;
+	font-size: 28px;
+	color: #FFFFFF;
+	margin: 0px 8px;
+	font-weight: 100;
+}
+
+.hero-text .hero-title-highlight {
+	color: #7BBED1;
+}
+
+.hero-text h4 {
 	color: #FFFFFF;
 	opacity: 1.0;
+	margin-top: 4px;
 }
 
 /* Projects section styling */
@@ -242,8 +247,13 @@ div {
 .card-title {
 	position: absolute;
 	bottom: 0;
-	margin: 0 16px 16px 0;
+	margin: 0 16px 6px 0;
     z-index: 2;
+}
+
+h2.mdl-card__title-text {
+	font-family: "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
+	line-height: 28px;
 }
 
 .card-banner {
@@ -253,7 +263,7 @@ div {
 	background-color: #000000;
 	opacity: 0.30;
 	width: 100%;
-	height: 64px;
+	height: 50px;
 	max-width: 920px;
 	z-index: 1;
 }
