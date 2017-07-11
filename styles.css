@@ -1,7 +1,7 @@
 /* Typography styling */
 
 .mdl-layout h1 {
-	font-family: Avenir, "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0px;
@@ -18,13 +18,13 @@
 }
 
 .mdl-layout h3 {
-	font-family: Avenir, "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	color: #FFFFFF;
 }
 
 .mdl-layout h4 {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin: 0px;
 	letter-spacing: 0.01em;
