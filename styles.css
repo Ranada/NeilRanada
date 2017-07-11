@@ -535,6 +535,8 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	}
 	.hero-avatar-cell {
 		top: 8px;
+		height: 116px;
+		width: 116px;
 	}
 	.hero-text {
 		padding: 16px 16px 8px 16px;
