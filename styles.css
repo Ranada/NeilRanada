@@ -429,6 +429,35 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 /* Media queries to adjust to different screen sizes */
 
+@media screen and (max-width: 860px) {
+
+	.hero-text-banner {
+		height: 120px;
+	}
+
+	.hero-text {
+		padding: 16px;
+	}
+
+	.hero-background-image {
+		max-height: 180px;
+	}
+
+	.hero-avatar-cell {
+		position: relative;
+		top: 80px;
+		left: 0px; /* use left 0px to keep avatar centered since position is relative */
+		margin: auto;
+	}
+
+	.about-me-photo {
+		height: 454px;
+		background-image: url('images/about-me-photo-smaller-screen.jpg'); 
+		background-size: 820px; 
+		margin-bottom: 0; /* close gap between photo and about me text */
+	}
+}
+
 @media screen and (min-width: 841px) {
 
 	.about-text {
@@ -449,35 +478,6 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		background-color: #282c35;
 		opacity: 0.78;
 		z-index: 1;
-	}
-}
-
-@media screen and (max-width: 840px) {
-
-	.hero-text-banner {
-		height: 120px;
-	}
-
-	.hero-background-image {
-		max-height: 180px;
-	}
-
-	.hero-avatar-cell {
-		position: relative;
-		top: 80px;
-		left: 0px; /* use left 0px to keep avatar centered since position is relative */
-		margin: auto;
-	}
-
-	.hero-text {
-		padding: 16px;
-	}
-
-	.about-me-photo {
-		height: 454px;
-		background-image: url('images/about-me-photo-smaller-screen.jpg'); 
-		background-size: 820px; 
-		margin-bottom: 0; /* close gap between photo and about me text */
 	}
 }
 
