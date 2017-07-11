@@ -188,7 +188,6 @@ div {
 	position: absolute;
 	bottom: 0px;
 	color: #FFFFFF;
-	width: calc(100% - 16px);
 	padding: 16px 16px 16px 242px;
 	z-index: 2;
 }
@@ -437,6 +436,10 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 	.hero-text {
 		padding: 16px;
+    	position: relative;
+    	width: 585px;
+    	margin: auto;
+    	top: 198px;
 	}
 
 	.hero-background-image {
@@ -445,7 +448,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 	.hero-avatar-cell {
 		position: relative;
-		top: 80px;
+		bottom: 8px;
 		left: 0px; /* use left 0px to keep avatar centered since position is relative */
 		margin: auto;
 	}
@@ -492,6 +495,12 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 	.hero-text-banner {
 		height: 100%;
+	}
+
+	.hero-text {
+		position: absolute;
+		width: 100%;
+		top: initial; /* to overide positioning from previous media query */
 	}
 
 	.hero-text h2 {
