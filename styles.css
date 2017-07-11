@@ -543,7 +543,6 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		display: none;
 	}
 	.hero-avatar-cell {
-		top: 8px;
 		height: 116px;
 		width: 116px;
 	}
@@ -571,16 +570,16 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	}
 }
 
-@media screen and (max-width: 374px) {
-
+@media screen and (max-width: 400px) {
 
 	.hero-avatar-cell {
-		height: 92px;
-		width: 92px;
+		height: 108px;
+		width: 108px;
 	}
 }
 
 @media screen and (max-width: 360px) {
+
 
 	.mdl-layout .mdl-layout-title {
 		letter-spacing: 0;
@@ -590,6 +589,13 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	}
 }
 
+@media screen and (max-width: 359px) {
+
+	.hero-avatar-cell {
+		height: 82px;
+		width: 82px;
+	}
+}
 	
 
 
