@@ -171,8 +171,8 @@ div {
     margin-top: 0;
     background-image: url(images/hero-background@2x.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: auto 100%;
+    background-position: 0%;
 }
 
 .hero-content {
@@ -418,6 +418,9 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		display: block;
 		margin: 0 auto;
 	}
+	.projects-section .hero-cell {
+		background-position: 40%;
+	}
 }
 
 @media screen and (max-width: 720px) {
@@ -505,6 +508,16 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		height: 184px;
 	}
 }
+
+@media screen and (max-width: 320px) {
+
+	.hero-photo {
+		height: 118px;
+		width: 118px;
+	}
+}
+
+
 
 
 	
