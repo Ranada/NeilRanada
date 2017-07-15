@@ -185,11 +185,11 @@ div {
 }
 
 .hero-photo {
-	height: 168px;
-	width: 168px;
+	height: 162px;
+	width: 162px;
 	display: inline-block;
 	position: relative;
-	top: 28px;
+	top: 24px;
 }
 
 .hero-photo img {
