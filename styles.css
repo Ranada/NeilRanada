@@ -1,40 +1,52 @@
 /* Typography styling */
 
 .mdl-layout h1 {
-	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 24px;
-	line-height: 32px;
+	font-family: "Adobe-Caslon-Pro", Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 45px;
+	line-height: 48px;
 	letter-spacing: 0px;
 	color: #002443;
 }
 
 .mdl-layout h2 {
-	font-family: "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
-	margin: 0;
-	font-size: 24px;
-	line-height: 32px;
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 34px;
+	line-height: 40px;
 	letter-spacing: 0;
-	color: #FFFFFF;
+	color: #002443;
 }
 
 .mdl-layout h3 {
-	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 20px;
-	color: #FFFFFF;
-}
-
-.mdl-layout h4 {
-	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	margin: 0px;
-	letter-spacing: 0.01em;
-	line-height: 24px;
+	font-family: "Adobe-Caslon-Pro", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 40px;
 	color: #000000;
 	opacity: 0.54;
 }
 
+.mdl-layout h4 {
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	margin: 0px;
+	letter-spacing: 0.01em;
+	line-height: 32px;
+	color: #000000;
+	opacity: 0.87;
+}
+
+.mdl-layout h5 { /* Used for nav bar title */
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	margin: 0px;
+	letter-spacing: 0.005em;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 400;
+	opacity: 0.87;
+}
+
 a.mdl-navigation__link {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin: 0px;
 	letter-spacing: 0.01em;
@@ -43,22 +55,22 @@ a.mdl-navigation__link {
 	opacity: 1.0;
 }
 
-.mdl-cell.section-header {
-	margin: 16px 16px 0 16px;
+.content-header {
+	margin: 24px 8px 8px;
 }
 
 .mdl-layout p {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	margin: 0 0 16px;
-	letter-spacing: 0.01em;
-	line-height: 24px;
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	margin: 0 0 20px;
+	letter-spacing: 0;
+	line-height: 28px;
 	color: #000000;
-	opacity: 0.87;
+	opacity: 0.84;
 }
 
 .mdl-layout .mdl-button {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-family: Avenir, Robot, Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
 	background-color: #006784;
 }
@@ -99,16 +111,15 @@ a.mdl-navigation__link {
 
 /*  Navigation bar styling */
 
-#nav-bar-color {
-    background-color: #002443;
-}
-
-header.mdl-layout__header.is-casting-shadow {
+header.mdl-layout__header {
 	background-color: #002443;
 }
 
-.logo-title {
+.mdl-layout-title .logo-title {
 	display: inline-block;
+	font-family: Avenir;
+	color: #FFFFFF;
+	opacity: 1;
 }
 
 #divider {
@@ -118,9 +129,11 @@ header.mdl-layout__header.is-casting-shadow {
 	margin: 0px 8px;
 }
 
-h3.logo-title-highlight {
+.mdl-layout-title .logo-title-highlight {
 	color: #7BBED1;
+	font-family: Avenir;
 	display: inline-block;
+	opacity: 1;
 }
 
 /* Displays acitve link in menu for large screens */
@@ -136,78 +149,82 @@ h3.logo-title-highlight {
 		color: #006784;
 	}
 
+/* Content section max width for each page */
+
+.content-section-max-width {
+
+	max-width: 1040px;
+}
+
 /* Portfolio section styling */
 
 div {
 	box-sizing: border-box; /*use border-box so that whatever "width" value is used will be maintained*/
 }
 
-.portfolio-max-width {
-	max-width: 920px;
-	width: 100%;
-	margin: auto;
-}
-
 .portfolio-background-color {
 	background-color: #F8F8F9;
 }
 
-.hero-cell {
-	position: relative;
-	height: 290px;
-	margin: 0px 16px 16px 16px;
-	background-image: url('images/hero-background@2x.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.projects-section .hero-cell {
+    position: relative;
+    margin-top: 0;
+    background-image: url(images/hero-background@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.hero-background-image {
+.hero-content {
 	position: relative;
-	height: 100%;
-	max-height: 280px;
-	width: 100%;
-}
-
-.hero-avatar-cell {
-	position: absolute;
-	bottom: 16px;
-	left: 95px;
-	height: 124px;
-	width: 124px;
-	border-radius: 50%;
+	height: 412px;
+	max-width: 918px;
+	padding: 24px;
+	margin: 0 auto;
 	z-index: 3;
 }
 
-.hero-avatar-image {
+.hero-photo {
+	height: 168px;
+	width: 168px;
+	display: inline-block;
+	position: relative;
+	top: 28px;
+}
+
+.hero-photo img {
 	height: 100%;
 	width: 100%;
 }
 
 .hero-text {
-	position: absolute;
-	bottom: 0px;
-	color: #FFFFFF;
-	padding: 16px 16px 16px 242px;
-	z-index: 2;
+	display: inline-block;
+	max-width: 677px;
+	margin-left: 24px;
+	position: relative;
+	top: 100px;
 }
 
 .hero-text-banner {
 	position: absolute;
-	height: 92px;
+	height: 412px;
 	bottom: 0px;
-	background-color: #282c35;
-	opacity: 0.85;
+	background-color: #F8F8F9;
+	opacity: 0.74;
 	width: 100%;
-	max-width: 920px;
 	z-index: 1;
 }
 
+.hero-text h1 {
+	margin: 0;
+}
+
 .hero-text h2 {
-	font-family: Avenir;
-	color: #FFFFFF;	
-	opacity: 1.0;
-	display: inline;
+	margin: 0;
+}
+
+.hero-text h4 {
+	margin: 16px 0 0 0;
 }
 
 #hero-divider {
@@ -219,20 +236,13 @@ div {
 }
 
 .hero-text .hero-title-highlight {
-	color: #7BBED1;
-}
-
-.hero-text h4 {
-	color: #FFFFFF;
-	opacity: 1.0;
-	margin-top: 4px;
+	color: #006784;
 }
 
 /* Projects section styling */
 
-.mdl-cell.projects-header {
-	margin-top: 0;
-	margin-bottom: 0;
+.mdl-grid.projects-section.content-section-max-width {
+	padding-top: 0; /* removes extra space above hero section */
 }
 
 .mdl-cell h1 {
@@ -243,10 +253,12 @@ div {
 	margin-bottom: 24px;
 }
 
-.card-title {
+.card-title h3 {
 	position: absolute;
 	bottom: 0;
 	margin: 0 16px 6px 0;
+	color: #FFFFFF;
+	opacity: 1.0; /* overide default h3 0.54 opacity */
     z-index: 2;
 }
 
@@ -262,8 +274,7 @@ h2.mdl-card__title-text {
 	background-color: #000000;
 	opacity: 0.30;
 	width: 100%;
-	height: 50px;
-	max-width: 920px;
+	height: 60px;
 	z-index: 1;
 }
 
@@ -336,54 +347,21 @@ footer.mdl-mini-footer {
 .about-me-photo {
 	position: relative;
 	height: 658px;
-	margin: 8px 16px 16px 16px;
 	background-image: url('images/about-me-photo@2x.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-.about-text h2 {
-	color: #7BBED1;
-	line-height: 32px;
-	opacity: 1.0;
-	display: inline;
+.about-content .hero-text {
+
+	margin: 32px 16px 16px
 }
 
-.about-text {
-	bottom: 0px;
-	color: #FFFFFF;
-	background-color: #282c35;	
-	margin: 0 16px;
-	padding: 16px 16px 16px 16px;
-	z-index: 2;
-}
-
-.location {
-	margin: 8px 0 16px 0;
-}
-
-.location img {
-	position: relative;
-	left: -2px;
-	padding-bottom: 4px;
-}
-
-.location h3 {
-	display: inline-block;
-	color: #FFFFFF;
-	padding-left: 4px;
-	opacity: 1;
-}
-
-.about-container {
-	position: relative; /* allows any elements positioned "absolute" within the about-container */
-}
-
-.about-container .about-text p {
-	color: #FFFFFF;
-	margin-bottom: 16px;
-	opacity: 1;
+.about-content .hero-text h4 {
+	margin: 24px 0 12px;
+	color: #000000;
+	opacity: 0.54;
 }
 
 /* Contact page styling starts here */
@@ -404,7 +382,7 @@ footer.mdl-mini-footer {
 	margin: 16px auto 16px;
 }
 
-.contact-section h2 {
+.contact-section .mdl-card h2 {
 
 	color: #002443;
 	margin: 0 auto;
@@ -428,99 +406,47 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 /* Media queries to adjust to different screen sizes */
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 960px) {
 
-	.hero-text-banner {
-		height: 120px;
+	.hero-photo {
+		position: initial;
+		display: block;
+		margin: 0 auto 24px;
 	}
-
 	.hero-text {
-		padding: 16px;
-    	position: relative;
-    	width: 585px;
-    	margin: auto;
-    	top: 198px;
-	}
-
-	.hero-background-image {
-		max-height: 180px;
-	}
-
-	.hero-avatar-cell {
-		position: relative;
-		bottom: 8px;
-		left: 0px; /* use left 0px to keep avatar centered since position is relative */
-		margin: auto;
-	}
-
-	.about-me-photo {
-		height: 454px;
-		background-image: url('images/about-me-photo-smaller-screen.jpg'); 
-		background-size: 820px; 
-		margin-bottom: 0; /* close gap between photo and about me text */
+		position: initial;
+		display: block;
+		margin: 0 auto;
 	}
 }
 
-@media screen and (min-width: 841px) {
+@media screen and (max-width: 720px) {
 
-	.about-text {
-		position: absolute;
-    	top: 0;
-    	right: 16px;
-    	width: 480px;
-    	background-color: inherit;
-	}
-
-	.about-text-banner {
-		position: absolute;
-		top: 0;
-		right: 32px;
-		height: 658px;
-		width: 480px;
-		padding: 16px;
-		background-color: #282c35;
-		opacity: 0.78;
-		z-index: 1;
-	}
-}
-
-@media screen and (max-width: 620px) { /* breakpoint for avatar image */
-
-	.hero-avatar-cell {
-		position: relative;
-		top: 16px;
-		left: 0px; /* use left 0px to keep avatar centered since position is relative */
-		margin: auto;
-	}
-
-	.hero-text-banner {
-		height: 100%;
-	}
-
-	.hero-text {
-		position: absolute;
-		width: 100%;
-		top: initial; /* to overide positioning from previous media query */
+	.hero-text h1 {
+		font-size: 34px;
+		line-height: 40px;
 	}
 
 	.hero-text h2 {
-		display: block;
+		font-size: 24px;
+		line-height: 32px;
 	}
 
-	.about-text h2 {
-		display: block;
+	.hero-text h4 {
+		font-size: 20px;
+		margin-top: 12px;
+		line-height: 28px;
 	}
+}
 
-	#hero-divider {
-		display: none;
-	}
+@media screen and (max-width: 600px) {
 
 	.about-me-photo {
 		height: 330px;
 	}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 580px) { /* breakpoint for hero image */
 
 	.mdl-mini-footer__link-list li a {
 		color: #002443;
@@ -542,13 +468,12 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	#hide-at-small-screens {
 		display: none;
 	}
-	.hero-avatar-cell {
-		height: 116px;
-		width: 116px;
+
+	.hero-photo {
+		height: 136px;
+		width: 136px;
 	}
-	.hero-text {
-		padding: 16px 16px 8px 16px;
-	}
+	
 	#wander-card-smaller-screen {
 		height: 328px;
 		background: url('images/wander-small-screen@2x.jpg');
@@ -570,14 +495,6 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	}
 }
 
-@media screen and (max-width: 400px) {
-
-	.hero-avatar-cell {
-		height: 108px;
-		width: 108px;
-	}
-}
-
 @media screen and (max-width: 360px) {
 
 
@@ -589,13 +506,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	}
 }
 
-@media screen and (max-width: 359px) {
 
-	.hero-avatar-cell {
-		height: 82px;
-		width: 82px;
-	}
-}
 	
 
 

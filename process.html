@@ -19,25 +19,23 @@
 	<!-- Header section starts here. Div shows a header, even in smaller screens. -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
   		<header class="mdl-layout__header">
-    		<div class="mdl-layout__header-row" id="nav-bar-color">
-      			<!-- Title -->
-      			<div class="mdl-layout-title">
-      				<span id="title-avenir">Neil Ranada</span>
-      				<span id="divider"> | </span>
-      				<span id="title-adobe">UX Designer</span>
-      			</div>
-      			<!-- Spacer added to align navigation to the right -->
-      			<div class="mdl-layout-spacer"></div>
-      			<!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
-      			<nav class="mdl-navigation mdl-layout--large-screen-only">
-        			<a class="mdl-navigation__link" href="index.html">PORTFOLIO</a>
-        			<a class="mdl-navigation__link active-link" href="process.html">PROCESS</a>
+        <div class="mdl-layout__header-row" id="nav-bar-color">
+            <!-- Title -->
+            <div class="mdl-layout-title">
+              <h4 class="logo-title">Neil Ranada</h4><span id="divider"> | </span><h4 class="logo-title-highlight">UX <span id="hide-at-small-screens">Research & Design</span><span id="hide-at-large-screens">Designer</span></h4>
+            </div>
+            <!-- Spacer added to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+              <a class="mdl-navigation__link" href="index.html">PORTFOLIO</a>
+              <a class="mdl-navigation__link active-link" href="process.html">PROCESS</a>
               <a class="mdl-navigation__link" href="resume.html">RESUME</a>
-        			<a class="mdl-navigation__link" href="about.html">ABOUT</a>
-        			<a class="mdl-navigation__link" href="contact.html">CONTACT</a>
-     		 	</nav>
-    		</div>
-  		</header>
+              <a class="mdl-navigation__link" href="about.html">ABOUT</a>
+              <a class="mdl-navigation__link" href="contact.html">CONTACT</a>
+          </nav>
+        </div>
+      </header>
 
   		<!-- Left sliding menu drawer for smaller screen sizes -->
   		<div class="mdl-layout__drawer">
@@ -51,41 +49,37 @@
     		</nav>
   		</div>
 
-  	<!-- Main content section starts here -->
+  	<!-- Content section starts here -->
   		<main class="mdl-layout__content">
-        <div class="portfolio-max-width">
-      		<div class="mdl-grid" id="content-section">
-      			<div class="mdl-cell mdl-cell--12-col">
-      				<h1>MY DESIGN PROCESS</h1>
-      			</div>
-      			<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-      					 <img src="images/process.jpg" alt="design process drawing" class="design-process">
-      			</div>
-            <div class="mdl-cell mdl-cell--12-col">
-                <!-- Accent-colored raised button with ripple -->
-                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised centered-button" href="">LET'S COLLABORATE</a>
-            </div>
-      		</div>
-        </div>
+      		<div class="mdl-grid process-section content-section-max-width">
+      				<h2 class="content-header">MY DESIGN PROCESS</h2>
+      			  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+      				    <img src="images/process.jpg" alt="design process drawing" class="design-process">
+      			  </div>
+              <div class="mdl-cell mdl-cell--12-col">
+                  <!-- Accent-colored raised button with ripple -->
+                  <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised centered-button" href="">LET'S COLLABORATE</a>
+              </div>
+          </div>
+      <!-- Content section ends here -->
+      
+      <!-- footer section starts here -->
+          <footer class="mdl-mini-footer">
+              <div class="mdl-mini-footer__left-section">
+                  <div class="mdl-logo footer-font">
+                      &copy; Neil Ranada<span id="footer-divider">|</span>UX Research & Design, 2017
+                  </div>
+              </div>
+              <div class="mdl-mini-footer__right-section">
+                  <ul class="mdl-mini-footer__link-list">
+                      <li><a href="">GITHUB</a></li>
+                      <li><a href="">LINKEDIN</a></li>
+                      <li><a href="">TWITTER</a></li>
+                      <li><a href="">INSTAGRAM</a></li>
+                  </ul>
+              </div>
+          </footer>
     	</main>
-
-
-    <!-- footer section starts here -->
-    	<footer class="mdl-mini-footer">
-  			<div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo footer-font">
-      &copy; Neil Ranada<span id="footer-divider">|</span>UX Designer, 2017
-    </div>
-  </div>
-  <div class="mdl-mini-footer__right-section">
-    <ul class="mdl-mini-footer__link-list">
-      <li><a href="">GITHUB</a></li>
-      <li><a href="">LINKEDIN</a></li>
-      <li><a href="">TWITTER</a></li>
-      <li><a href="">INSTAGRAM</a></li>
-    </ul>
-  </div>
-</footer>
 	</div>
     <script src="./material.min.js"></script>
 </body>
