@@ -499,6 +499,14 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		margin-top: 8px;
 		line-height: 24px;
 	}
+	.mdl-layout h2 { /* to match hero text h2 */
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.mdl-card h4 {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -549,9 +557,15 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	.about-me-photo {
 		height: 252px;
 	}
+	.hero-content {
+		display: table;
+	}
+	.hero-text {
+		display: table-cell;
+		vertical-align: middle;
+	}
 	.hero-photo {
-		height: 68px;
-		width: 68px;
+		display: none;
 	}
 }
 
@@ -563,19 +577,6 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	}
 	.about-me-photo {
 		height: 184px;
-	}
-}
-
-@media screen and (max-width: 320px) {
-
-	.hero-content {
-		display: table;
-	}
-	.hero-text {
-		vertical-align: middle;
-	}
-	.hero-photo {
-		display: none;
 	}
 }
 
