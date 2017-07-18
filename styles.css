@@ -18,7 +18,7 @@
 
 .mdl-layout h3 {
 	font-family: "Adobe-Caslon-Pro", Roboto, Helvetica, Arial, sans-serif;
-	font-size: 32px;
+	font-size: 26px;
 	line-height: 40px;
 	color: #000000;
 	opacity: 0.54;
@@ -26,28 +26,33 @@
 
 .mdl-layout h4 {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 	margin: 0px;
 	letter-spacing: 0.01em;
-	line-height: 32px;
+	line-height: 28px;
 	color: #000000;
 	opacity: 0.87;
+
 }
 
-.mdl-layout h5 { /* Used for nav bar title */
+.mdl-layout-title h4 {
+	letter-spacing: 0.005em;
+	opacity: 1;
+}
+
+.mdl-layout p {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	margin: 0px;
-	letter-spacing: 0.005em;
-	line-height: 24px;
+	letter-spacing: 0;
+	line-height: 32px;
 	color: #000000;
-	font-weight: 400;
 	opacity: 0.87;
+	margin-top: 32px;
 }
 
 a.mdl-navigation__link {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 16px;
 	margin: 0px;
 	letter-spacing: 0.01em;
 	line-height: 28px;
@@ -57,22 +62,31 @@ a.mdl-navigation__link {
 
 .content-header {
 	margin: 24px 8px 8px;
+	width: 100%;
 }
 
-.mdl-layout p {
-	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 20px;
-	margin: 0 0 20px;
-	letter-spacing: 0;
-	line-height: 28px;
-	color: #000000;
-	opacity: 0.84;
+.content-items {
+	max-width: 720px;
+	margin: 40px auto;
+}
+
+.content-items h2 {
+	margin: 0;
+}
+
+.content-items h4 {
+	margin-top: 28px;
+}
+
+.content-items p {
+	margin-top: 28px;
 }
 
 .mdl-layout .mdl-button {
 	font-family: Avenir, Robot, Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
 	background-color: #006784;
+	margin-top: 24px;
 }
 
 .mdl-layout .mdl-button:hover {
@@ -84,8 +98,24 @@ a.mdl-navigation__link {
 	text-decoration: none;
 }
 
-.projects-section .mdl-card p {
-	margin-bottom: 0;
+.mdl-card .mdl-card__title {
+
+	height: 298px;
+}
+
+.mdl-card__supporting-text {
+
+	min-height: 192px;
+}
+
+.mdl-card p {
+	margin-top: 8px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.mdl-card .mdl-button {
+	margin-top: 0;
 }
 
 .footer-font {
@@ -122,7 +152,7 @@ header.mdl-layout__header {
 	opacity: 1;
 }
 
-#divider {
+.mdl-layout-title .divider {
 	display: inline;
 	font-size: 24px;
 	color: #FFFFFF;
@@ -130,9 +160,17 @@ header.mdl-layout__header {
 }
 
 .mdl-layout-title .logo-title-highlight {
-	color: #7BBED1;
+	color: #FFFFFF;
 	font-family: Avenir;
 	display: inline-block;
+	opacity: 1;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+	opacity: 0.50;
+}
+
+.mdl-navigation__link.active-link {
 	opacity: 1;
 }
 
@@ -153,7 +191,7 @@ header.mdl-layout__header {
 
 .content-section-max-width {
 
-	max-width: 1040px;
+	max-width: 960px;
 }
 
 /* Portfolio section styling */
@@ -171,14 +209,14 @@ div {
     margin-top: 0;
     background-image: url(images/hero-background@2x.jpg);
     background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: 0%;
+    background-size: cover;
+    background-position: center 100%;
 }
 
 .hero-content {
 	position: relative;
-	height: 412px;
-	max-width: 918px;
+	height: 270px;
+	max-width: 800px;
 	padding: 24px;
 	margin: 0 auto;
 	z-index: 3;
@@ -189,7 +227,7 @@ div {
 	width: 162px;
 	display: inline-block;
 	position: relative;
-	top: 24px;
+	bottom: 28px;
 }
 
 .hero-photo img {
@@ -199,10 +237,10 @@ div {
 
 .hero-text {
 	display: inline-block;
-	max-width: 677px;
+	max-width: 565px;
 	margin-left: 24px;
 	position: relative;
-	top: 100px;
+	top: 46px;
 }
 
 .hero-text-banner {
@@ -223,7 +261,7 @@ div {
 	margin: 0;
 }
 
-.hero-text h4 {
+.hero-text p {
 	margin: 16px 0 0 0;
 }
 
@@ -235,7 +273,7 @@ div {
 	font-weight: 100;
 }
 
-.hero-text .hero-title-highlight {
+.mdl-layout .highlight {
 	color: #006784;
 }
 
@@ -346,7 +384,7 @@ footer.mdl-mini-footer {
 
 .about-me-photo {
 	position: relative;
-	height: 658px;
+	height: 522px;
 	background-image: url('images/about-me-photo@2x.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -355,13 +393,11 @@ footer.mdl-mini-footer {
 
 .about-content .hero-text {
 
-	margin: 32px 16px 16px
+	margin: 40px auto;
 }
 
 .about-content .hero-text h4 {
 	margin: 24px 0 12px;
-	color: #000000;
-	opacity: 0.54;
 }
 
 /* Contact page styling starts here */
@@ -405,6 +441,28 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 }
 
 /* Media queries to adjust to different screen sizes */
+
+@media screen and (min-width: 1025px ) {
+
+	.mdl-layout .mdl-layout__header-row {
+		max-width: 1010px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.mdl-layout-title h4 {
+		font-size: 24px;
+	}
+	.mdl-layout-title .divider {
+		font-size: 28px;
+	}
+	.mdl-layout__header-row .mdl-navigation__link:last-child {
+		padding-right: 42px;
+	}
+	a.mdl-navigation__link {
+		font-size: 16px;
+	}
+}
 
 @media screen and (max-width: 960px) {
 
@@ -465,7 +523,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 
 @media screen and (max-width: 480px) {
 
-	#divider {
+	.mdl-layout-title .divider {
 		margin: 0;
 	}
 	#hide-at-small-screens {
