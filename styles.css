@@ -87,8 +87,8 @@ a.mdl-navigation__link {
 	opacity: 1.0;
 }
 
-.content-header {
-	margin: 24px 8px 8px;
+.mdl-layout .content-header {
+	margin: 16px 8px;
 	width: 100%;
 }
 
@@ -420,9 +420,6 @@ footer.mdl-mini-footer {
 	display: block;
 	width: 48px;
 	margin: 0 auto;
-}
-.contact-page h4 {
-	text-align: center;
 }
 button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent {
 	background-color: #006784;
