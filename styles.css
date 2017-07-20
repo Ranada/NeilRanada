@@ -6,6 +6,7 @@
 	line-height: 48px;
 	letter-spacing: 0px;
 	color: #002443;
+	margin-top: 16px;
 }
 
 .mdl-layout h2 {
@@ -91,12 +92,11 @@ a.mdl-navigation__link {
 	width: 100%;
 }
 
-.content-items {
+.content-items-max-width {
 	max-width: 720px;
 	padding: 24px;
-	margin: 16px auto 0;
+	margin: 0 auto;
 }
-
 .mdl-layout .mdl-button {
 	font-family: Avenir, Robot, Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
@@ -203,9 +203,16 @@ header.mdl-layout__header {
 
 /* Content section max width for each page */
 
-.content-section-max-width {
+.max-width {
 
 	max-width: 960px;
+}
+
+/* Default photo size to fill div */
+
+img {
+	height: 100%;
+	width: 100%;
 }
 
 /* Portfolio section styling */
@@ -218,7 +225,7 @@ div {
 	background-color: #F8F8F9;
 }
 
-.projects-section .hero-cell {
+.portfolio-page .hero-cell {
     position: relative;
     margin-top: 0;
     background-image: url(images/hero-background@2x.jpg);
@@ -236,7 +243,7 @@ div {
 	z-index: 3;
 }
 
-.hero-photo {
+.avatar {
 	height: 162px;
 	width: 162px;
 	display: inline-block;
@@ -244,7 +251,7 @@ div {
 	bottom: 28px;
 }
 
-.hero-photo img {
+.avatar img {
 	height: 100%;
 	width: 100%;
 }
@@ -293,18 +300,12 @@ div {
 
 /* Projects section styling */
 
-.mdl-grid.projects-section.content-section-max-width {
+.mdl-grid.portfolio-page.max-width {
 	padding-top: 0; /* removes extra space above hero section */
 }
-
-.mdl-cell h1 {
-	margin: 0;
-}
-
-.projects-section .mdl-card {
+.portfolio-page .mdl-card {
 	margin-bottom: 24px;
 }
-
 .card-title h3 {
 	position: absolute;
 	bottom: 0;
@@ -313,12 +314,10 @@ div {
 	opacity: 1.0; /* overide default h3 0.54 opacity */
     z-index: 2;
 }
-
 h2.mdl-card__title-text {
 	font-family: "Adobe-Caslon-Pro", Helvetica, Arial, sans-serif;
 	line-height: 28px;
 }
-
 .card-banner {
 	position: absolute;
 	bottom: 0;
@@ -329,11 +328,9 @@ h2.mdl-card__title-text {
 	height: 50px;
 	z-index: 1;
 }
-
 .mdl-card__title {
 	position: relative; /* position made relative to allow card-banner to align properly */
 }
-
 .wander-card {
 	height: 500px;
 	background: url('images/wander-card@2x.jpg');
@@ -342,7 +339,6 @@ h2.mdl-card__title-text {
 	background-size: cover;
 	background-position: center;
 	}
-
 .ha-walk-card {
 	height: 500px;
 	background: url('images/hawalk-mockup@2x.jpg');
@@ -351,7 +347,6 @@ h2.mdl-card__title-text {
 	background-size: cover;
 	background-position: center 0;
 }
-
 .kollect-card {
 	height: 500px;
 	background: url('images/kollect-mockup@2x.jpg');
@@ -360,11 +355,9 @@ h2.mdl-card__title-text {
 	background-size: cover;
 	background-position: center;
 }
-
 .mdl-card ul {
 	margin: 8px 0 0;
 }
-
 .mdl-card__actions.mdl-card--border {
 	padding: 8px 16px;
 }
@@ -401,12 +394,14 @@ footer.mdl-mini-footer {
 /* About page styling starts here */
 
 .about-me-photo {
-	position: relative;
+	background-image: url(images/about-me-photo@2x.png);
 	height: 522px;
-	background-image: url('images/about-me-photo@2x.png');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.about-content h1 {
+	margin-bottom: 0;
 }
 .about-content h2 {
 	margin: 0;
@@ -417,42 +412,19 @@ footer.mdl-mini-footer {
 
 /* Contact page styling starts here */
 
-.contact-section {
-
-	margin: 0 8px;
-}
-
-.contact-header {
-
-	margin: 16px 0;
-}
-
-.message-image {
-
+.email {
+	display: block;
 	width: 48px;
-	margin: 16px auto 16px;
-}
-
-.contact-section .mdl-card h2 {
-
-	color: #002443;
 	margin: 0 auto;
 }
-
-.contact-section .mdl-card__supporting-text {
-
-	max-width: 550px;
-	margin: auto;
+.contact-page h4 {
+	text-align: center;
 }
-
-.contact-section .mdl-textfield {
-
-	width: 100%;
-}
-
 button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent {
-
 	background-color: #006784;
+}
+.contact-photo {
+	margin-top: 40px;
 }
 
 /* Media queries to adjust to different screen sizes */
@@ -481,7 +453,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	.hero-content {
 		padding: 16px;
 	}
-	.hero-photo {
+	.avatar {
 		position: initial;
 		display: block;
 		height: 100px;
@@ -493,7 +465,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		display: block;
 		margin: 0 auto;
 	}
-	.projects-section .hero-cell {
+	.portfolio-page .hero-cell {
 		background-position: 40%;
 	}
 	.mdl-layout h1 {
@@ -569,7 +541,7 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		display: table-cell;
 		vertical-align: middle;
 	}
-	.hero-photo {
+	.avatar {
 		display: none;
 	}
 }
