@@ -208,11 +208,15 @@ header.mdl-layout__header {
 	max-width: 960px;
 }
 
-/* Default photo size to fill div */
+/* Default styles*/
 
 img {
 	height: 100%;
 	width: 100%;
+}
+
+.content-background-color {
+	background-color: #FFFFFF;
 }
 
 /* Portfolio section styling */
