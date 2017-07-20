@@ -310,7 +310,7 @@ h2.mdl-card__title-text {
 	bottom: 0;
 	left: 0;
 	background-color: #000000;
-	opacity: 0.30;
+	opacity: 0.36;
 	width: 100%;
 	height: 60px;
 	z-index: 1;
@@ -345,6 +345,10 @@ h2.mdl-card__title-text {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+.mdl-card ul {
+	margin: 8px 0 0;
 }
 
 .mdl-card__actions.mdl-card--border {
@@ -448,16 +452,13 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 		max-width: 1010px;
 		width: 100%;
 		margin: 0 auto;
-		padding: 0;
+		padding: 0 16px;
 	}
 	.mdl-layout-title h4 {
 		font-size: 24px;
 	}
 	.mdl-layout-title .divider {
 		font-size: 28px;
-	}
-	.mdl-layout__header-row .mdl-navigation__link:last-child {
-		padding-right: 42px;
 	}
 	a.mdl-navigation__link {
 		font-size: 16px;
