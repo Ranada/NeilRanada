@@ -88,7 +88,7 @@ a.mdl-navigation__link {
 }
 
 .mdl-layout .content-header {
-	margin: 16px 8px;
+	margin: 16px 8px 0;
 	width: 100%;
 }
 
