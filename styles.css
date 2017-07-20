@@ -210,11 +210,6 @@ header.mdl-layout__header {
 
 /* Default styles*/
 
-img {
-	height: 100%;
-	width: 100%;
-}
-
 .content-background-color {
 	background-color: #FFFFFF;
 }
@@ -416,16 +411,9 @@ footer.mdl-mini-footer {
 
 /* Contact page styling starts here */
 
-.email {
-	display: block;
-	width: 48px;
-	margin: 0 auto;
-}
-button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent {
-	background-color: #006784;
-}
 .contact-photo {
-	margin-top: 40px;
+	margin: 40px 0 16px;
+	width: 100%;
 }
 
 /* Media queries to adjust to different screen sizes */
