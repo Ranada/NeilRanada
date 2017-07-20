@@ -18,21 +18,30 @@
 
 .mdl-layout h3 {
 	font-family: "Adobe-Caslon-Pro", Roboto, Helvetica, Arial, sans-serif;
-	font-size: 26px;
-	line-height: 40px;
+	font-size: 24px;
+	line-height: 28px;
 	color: #000000;
 	opacity: 0.54;
+	margin: 0 0 24px;
 }
 
 .mdl-layout h4 {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
-	margin: 0px;
+	margin: 0 0 24px;
 	letter-spacing: 0.01em;
 	line-height: 28px;
 	color: #000000;
-	opacity: 0.87;
+	opacity: 0.54;
 
+}
+
+.mdl-layout-title h4 {
+	margin: 0; 			/*removes  24px margin for nav bar title */
+}
+
+.hero-text h4 {
+	opacity: 0.87; /* Opacity increased to stand out from grey background */
 }
 
 .mdl-layout-title h4 {
@@ -40,6 +49,19 @@
 	opacity: 1;
 }
 
+.mdl-layout h5 { /* Subheader used for cards */
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	letter-spacing: 0.01em;
+	line-height: 24px;
+	color: #000000;
+	opacity: 0.54;
+	font-weight: 400;
+}
+.mdl-layout .mdl-card__supporting-text h5 {
+	opacity: 0.87;
+}
 .mdl-layout p {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
@@ -48,7 +70,11 @@
 	line-height: 32px;
 	color: #000000;
 	opacity: 0.87;
-	margin-top: 32px;
+	margin: 0 0 24px;
+}
+
+.mdl-layout li {
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 }
 
 a.mdl-navigation__link {
@@ -67,26 +93,14 @@ a.mdl-navigation__link {
 
 .content-items {
 	max-width: 720px;
-	margin: 40px auto;
-}
-
-.content-items h2 {
-	margin: 0;
-}
-
-.content-items h4 {
-	margin-top: 28px;
-}
-
-.content-items p {
-	margin-top: 28px;
+	padding: 24px;
+	margin: 16px auto 0;
 }
 
 .mdl-layout .mdl-button {
 	font-family: Avenir, Robot, Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
 	background-color: #006784;
-	margin-top: 24px;
 }
 
 .mdl-layout .mdl-button:hover {
@@ -261,7 +275,7 @@ div {
 	margin: 0;
 }
 
-.hero-text p {
+.hero-text h4 {
 	margin: 16px 0 0 0;
 }
 
@@ -312,7 +326,7 @@ h2.mdl-card__title-text {
 	background-color: #000000;
 	opacity: 0.36;
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	z-index: 1;
 }
 
@@ -394,14 +408,11 @@ footer.mdl-mini-footer {
 	background-size: cover;
 	background-position: center;
 }
-
-.about-content .hero-text {
-
-	margin: 40px auto;
+.about-content h2 {
+	margin: 0;
 }
-
-.about-content .hero-text h4 {
-	margin: 24px 0 12px;
+.about-content h4 {
+	margin: 24px 0;
 }
 
 /* Contact page styling starts here */
@@ -485,26 +496,19 @@ button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-butt
 	.projects-section .hero-cell {
 		background-position: 40%;
 	}
-	.hero-text h1 {
+	.mdl-layout h1 {
 		font-size: 34px;
 		line-height: 40px;
 	}
-
-	.hero-text h2 {
+	.mdl-layout h2 {
 		font-size: 24px;
 		line-height: 32px;
 	}
-
-	.hero-text p {
+	.mdl-layout h4 {
 		font-size: 16px;
-		margin-top: 8px;
 		line-height: 24px;
 	}
-	.mdl-layout h2 { /* to match hero text h2 */
-		font-size: 24px;
-		line-height: 32px;
-	}
-	.mdl-card h4 {
+	.mdl-layout p {
 		font-size: 16px;
 		line-height: 24px;
 	}
