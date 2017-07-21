@@ -141,7 +141,7 @@ a.mdl-navigation__link {
 	top: 2px;
 	font-size: 18px;
 	color: #FFFFFF;
-	margin: 0px 4px;
+	margin: 0px 6px;
 }
 
 .mdl-mini-footer__link-list li a {
@@ -370,6 +370,22 @@ footer.mdl-mini-footer {
 	padding-bottom: 46px;
 	background-color: #002443;
 }
+.footer-content {
+	display: flex;
+	max-width: 928px;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.mdl-mini-footer__left-section {
+	margin-right: 24px;
+}
+.mdl-layout .mdl-mini-footer__link-list li {
+	margin-right: 24px;
+}
+.mdl-mini-footer__right-section li:last-child { /*removes right margin to make nav links flush with max width */
+	margin-right: 0;
+}
 
 /* Resume styling */
 
@@ -394,10 +410,11 @@ footer.mdl-mini-footer {
 
 .about-me-photo {
 	background-image: url(images/about-me-photo@2x.png);
-	height: 522px;
+	height: 372px;
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 16px 0 40px;
 }
 .about-content h1 {
 	margin-bottom: 0;
@@ -475,6 +492,12 @@ footer.mdl-mini-footer {
 	}
 }
 
+@media screen and (max-width: 840px) {
+	.footer-content {
+		display: block; /* returns footer nav links from flex to block to re-position to bottom of page */
+	}
+}
+
 @media screen and (max-width: 600px) {
 
 	.about-me-photo {
@@ -532,6 +555,9 @@ footer.mdl-mini-footer {
 	}
 	.avatar {
 		display: none;
+	}
+	.footer.mdl-mini-footer {
+		height: 92px;
 	}
 }
 
