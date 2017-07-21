@@ -208,12 +208,6 @@ header.mdl-layout__header {
 	max-width: 960px;
 }
 
-/* Default styles*/
-
-.content-background-color {
-	background-color: #FFFFFF;
-}
-
 /* Portfolio section styling */
 
 div {
@@ -410,11 +404,6 @@ footer.mdl-mini-footer {
 
 .about-me-photo {
 	background-image: url(images/about-me-photo@2x.png);
-	height: 372px;
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 16px 0 40px;
 }
 .about-content h1 {
 	margin-bottom: 0;
@@ -422,15 +411,24 @@ footer.mdl-mini-footer {
 .about-content h2 {
 	margin: 0;
 }
-.about-content h4 {
-	margin: 24px 0;
-}
 
 /* Contact page styling starts here */
 
 .contact-photo {
-	margin: 40px 0 16px;
-	width: 100%;
+	background: url('images/contact-photo@2x.png');
+}
+
+/* Default styles*/
+
+.content-background-color {
+	background-color: #FFFFFF;
+}
+.background-photo-style {
+	height: 378px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 24px 0;
 }
 
 /* Media queries to adjust to different screen sizes */
@@ -503,10 +501,6 @@ footer.mdl-mini-footer {
 	.about-me-photo {
 		height: 330px;
 	}
-}
-
-@media screen and (max-width: 580px) { /* breakpoint for hero image */
-
 	.mdl-mini-footer__link-list li a {
 		color: #002443;
 	}
