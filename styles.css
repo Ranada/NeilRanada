@@ -112,11 +112,6 @@ a.mdl-navigation__link {
 	text-decoration: none;
 }
 
-.mdl-card .mdl-card__title {
-
-	height: 298px;
-}
-
 .mdl-card__supporting-text {
 
 	min-height: 192px;
@@ -424,7 +419,7 @@ footer.mdl-mini-footer {
 	background-color: #FFFFFF;
 }
 .background-photo-style {
-	height: 378px;
+	height: 378px; /* 16:9 aspect ratio for photos in large screens is 672px width : 378px height */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -433,7 +428,7 @@ footer.mdl-mini-footer {
 
 /* Media queries to adjust to different screen sizes */
 
-@media screen and (min-width: 1025px ) {
+@media screen and (min-width: 1025px) {
 
 	.mdl-layout .mdl-layout__header-row {
 		max-width: 1010px;
@@ -496,13 +491,28 @@ footer.mdl-mini-footer {
 	}
 }
 
+@media screen and (min-width: 840px) {
+		.card-background-style {
+		height: 298px;
+	}
+}
+
+@media screen and (max-width: 839px) {
+		.card-background-style {
+		height: 363px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 
-	.about-me-photo {
-		height: 330px;
+	.background-photo-style {
+		height: 292px; /* 16:9 aspect ratio is 520px width and 292px height*/ 
 	}
 	.mdl-mini-footer__link-list li a {
 		color: #002443;
+	}
+	.card-background-style {
+		height: 244px;
 	}
 }
 
@@ -522,23 +532,18 @@ footer.mdl-mini-footer {
 		display: none;
 	}
 	#wander-card-smaller-screen {
-		height: 328px;
 		background: url('images/wander-small-screen@2x.jpg');
 		background-color: #006784;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 	}
-	.ha-walk-card {
-		height: 328px;
+	.card-background-style {
+		height: 216px; /* for square aspect ratio */
 		background-size: cover;
 	}
-	.kollect-card {
-		height: 328px;
-		background-size: cover;
-	}
-	.about-me-photo {
-		height: 252px;
+	.background-photo-style {
+		height: 225px; /* 16:9 aspect ratio give 400px width and 225px height*/
 	}
 	.hero-content {
 		display: table;
@@ -550,8 +555,18 @@ footer.mdl-mini-footer {
 	.avatar {
 		display: none;
 	}
+	.card-background-style {
+		height: 185.5px;
+	}
 	.footer.mdl-mini-footer {
 		height: 92px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.card-background-style {
+		height: 336px;
 	}
 }
 
@@ -561,8 +576,18 @@ footer.mdl-mini-footer {
 	.mdl-layout .mdl-layout-title {
 		letter-spacing: 0;
 	}
-	.about-me-photo {
-		height: 184px;
+	.background-photo-style {
+		height: 158px; /* 16:9 aspect ratio gives 280px height and 158px width*/
+	}
+	.card-background-style {
+		height: 296px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.card-background-style {
+		height: 256px;
 	}
 }
 
