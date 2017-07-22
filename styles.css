@@ -503,6 +503,16 @@ footer.mdl-mini-footer {
 	}
 }
 
+@media screen and (max-width: 720px) {
+
+	.bottom-photo {
+		margin-bottom: 0; /* reduce bottom white space to match white space around photo */
+	}
+	.card-background-style {
+		height: 304px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 
 	.background-photo-style {
