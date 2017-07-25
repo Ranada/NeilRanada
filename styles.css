@@ -422,14 +422,14 @@ footer.mdl-mini-footer {
     background-position: center;
     margin: 24px 16px;
 }
-.background-photo-scale-down {
+.background-photo-scalable {
 	height: 378px; /* 16:9 aspect ratio for photos in large screens is 672px width : 378px height */
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
     margin: 24px 16px;
 }
-.header-photo-style {
+.header-photo-scalable {
 	height: 522px; /* 16:9 aspect ratio for photos in large screens is 928px width : 522px height */
     background-repeat: no-repeat;
     background-size: cover;
@@ -502,6 +502,12 @@ footer.mdl-mini-footer {
 	}
 }
 
+@media screen and (max-width: 840px) {
+		.header-photo-scalable {
+		height: 454px;
+	}
+}
+
 @media screen and (max-width: 839px) {
 		.card-background-style {
 		height: 363px;
@@ -516,6 +522,9 @@ footer.mdl-mini-footer {
 	.card-background-style {
 		height: 304px;
 	}
+	.header-photo-scalable {
+		height: 387px;
+	}
 }
 
 @media screen and (max-width: 719px) {
@@ -529,11 +538,14 @@ footer.mdl-mini-footer {
 
 @media screen and (max-width: 600px) {
 
-	.background-scale-down {
+	.background-scalable {
 		height: 292px; /* 16:9 aspect ratio is 520px width and 292px height*/ 
 	}
 	.card-background-style {
 		height: 244px;
+	}
+	.header-photo-scalable {
+		height: 320px;
 	}
 }
 
@@ -563,7 +575,7 @@ footer.mdl-mini-footer {
 		height: 216px; /* for square aspect ratio */
 		background-size: cover;
 	}
-	.background-photo-scale-down {
+	.background-photo-scalable {
 		height: 225px; /* 16:9 aspect ratio give 400px width and 225px height*/
 	}
 	.hero-content {
@@ -579,6 +591,12 @@ footer.mdl-mini-footer {
 	.card-background-style {
 		height: 185.5px;
 	}
+	.header-photo-scalable {
+		height: 448px;
+	}
+	.about-me-photo {
+		background-position: 35% center;
+	}
 	.footer.mdl-mini-footer {
 		height: 92px;
 	}
@@ -589,11 +607,14 @@ footer.mdl-mini-footer {
 	.card-background-style {
 		height: 336px;
 	}
+	.header-photo-scalable {
+		height: 368px;
+	}
 }
 
 @media screen and (max-width: 360px) {
 
-	.background-photo-scale-down {
+	.background-photo-scalable {
 		height: 158px; /* 16:9 aspect ratio gives 280px height and 158px width*/
 	}
 	.card-background-style {
@@ -601,6 +622,9 @@ footer.mdl-mini-footer {
 	}
 	.mdl-mini-footer {
 		height: 94px;
+	}
+	.header-photo-scalable {
+		height: 328px;
 	}
 }
 
