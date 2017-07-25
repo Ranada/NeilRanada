@@ -6,7 +6,7 @@
 	line-height: 48px;
 	letter-spacing: 0px;
 	color: #002443;
-	margin-top: 16px;
+	margin: 16px 16px 0;
 }
 
 .mdl-layout h2 {
@@ -15,6 +15,7 @@
 	line-height: 40px;
 	letter-spacing: 0;
 	color: #002443;
+	margin: 0 16px 24px;
 }
 
 .mdl-layout h3 {
@@ -23,29 +24,24 @@
 	line-height: 28px;
 	color: #000000;
 	opacity: 0.54;
-	margin: 0 0 24px;
+	margin: 0 0 16px;
 }
 
 .mdl-layout h4 {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
-	margin: 0 0 24px;
 	letter-spacing: 0.01em;
 	line-height: 28px;
 	color: #000000;
 	opacity: 0.54;
-
-}
-
-.mdl-layout-title h4 {
-	margin: 0; 			/*removes  24px margin for nav bar title */
+	margin: 0 16px 24px;
 }
 
 .hero-text h4 {
 	opacity: 0.87; /* Opacity increased to stand out from grey background */
 }
 
-.mdl-layout-title h4 {
+.mdl-layout-title {
 	letter-spacing: 0.005em;
 	opacity: 1;
 }
@@ -71,7 +67,7 @@
 	line-height: 32px;
 	color: #000000;
 	opacity: 0.87;
-	margin: 0 0 24px;
+	margin: 0 16px 24px;
 }
 
 .mdl-layout li {
@@ -94,9 +90,14 @@ a.mdl-navigation__link {
 
 .content-items-max-width {
 	max-width: 720px;
-	padding: 24px;
+	padding: 24px 0;
 	margin: 0 auto;
 }
+
+.content-items-max-width .mdl-button{
+	margin-left: 16px;
+}
+
 .mdl-layout .mdl-button {
 	font-family: Avenir, Robot, Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
@@ -156,7 +157,7 @@ header.mdl-layout__header {
 
 .mdl-layout-title .logo-title {
 	display: inline-block;
-	font-family: Avenir;
+	font-family: "Adobe-Caslon-Pro";
 	color: #FFFFFF;
 	opacity: 1;
 }
@@ -170,7 +171,7 @@ header.mdl-layout__header {
 
 .mdl-layout-title .logo-title-highlight {
 	color: #FFFFFF;
-	font-family: Avenir;
+	font-family: "Adobe-Caslon-Pro";
 	display: inline-block;
 	opacity: 1;
 }
@@ -215,6 +216,7 @@ div {
 
 .portfolio-page .hero-cell {
     position: relative;
+    height: 388px;
     margin-top: 0;
     background-image: url(images/hero-background@2x.jpg);
     background-repeat: no-repeat;
@@ -224,19 +226,19 @@ div {
 
 .hero-content {
 	position: relative;
-	height: 270px;
+	height: 100%;
 	max-width: 800px;
-	padding: 24px;
+	padding: 118px 24px;
 	margin: 0 auto;
 	z-index: 3;
 }
 
 .avatar {
-	height: 162px;
-	width: 162px;
+	height: 152px;
+	width: 152px;
 	display: inline-block;
 	position: relative;
-	bottom: 28px;
+	bottom: 74px;
 }
 
 .avatar img {
@@ -248,13 +250,11 @@ div {
 	display: inline-block;
 	max-width: 565px;
 	margin-left: 24px;
-	position: relative;
-	top: 46px;
 }
 
 .hero-text-banner {
 	position: absolute;
-	height: 412px;
+	height: 100%;
 	bottom: 0px;
 	background-color: #F8F8F9;
 	opacity: 0.74;
@@ -403,9 +403,6 @@ footer.mdl-mini-footer {
 .about-content h1 {
 	margin-bottom: 0;
 }
-.about-content h2 {
-	margin: 0;
-}
 
 /* Contact page styling starts here */
 
@@ -423,7 +420,13 @@ footer.mdl-mini-footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 24px 0;
+    margin: 24px 16px;
+}
+.header-photo-style {
+	height: 522px; /* 16:9 aspect ratio for photos in large screens is 928px width : 522px height */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Media queries to adjust to different screen sizes */
@@ -436,14 +439,17 @@ footer.mdl-mini-footer {
 		margin: 0 auto;
 		padding: 0 16px;
 	}
-	.mdl-layout-title h4 {
-		font-size: 24px;
+	.logo-title, .logo-title-highlight {
+		font-size: 26px;
 	}
 	.mdl-layout-title .divider {
-		font-size: 28px;
+		font-size: 30px;
 	}
 	a.mdl-navigation__link {
 		font-size: 16px;
+	}
+	.content-header {
+		display: none;
 	}
 }
 
@@ -453,11 +459,7 @@ footer.mdl-mini-footer {
 		padding: 16px;
 	}
 	.avatar {
-		position: initial;
-		display: block;
-		height: 100px;
-		width: 100px;
-		margin: 0 auto 16px;
+		display: none;
 	}
 	.hero-text {
 		position: initial;
@@ -505,6 +507,10 @@ footer.mdl-mini-footer {
 	.card-background-style {
 		height: 304px;
 	}
+}
+
+@media screen and (max-width: 719px) {
+
 	.footer-content {
 		display: block; /* returns footer nav links from flex to block to re-position to bottom of page */
 	}
@@ -578,10 +584,6 @@ footer.mdl-mini-footer {
 
 @media screen and (max-width: 360px) {
 
-
-	.mdl-layout .mdl-layout-title {
-		letter-spacing: 0;
-	}
 	.background-photo-style {
 		height: 158px; /* 16:9 aspect ratio gives 280px height and 158px width*/
 	}
@@ -600,6 +602,9 @@ footer.mdl-mini-footer {
 	}
 	.mdl-layout .mdl-mini-footer__link-list li {
 		margin-right: 16px;
+	}
+	.footer-font {
+		font-size: 12px;
 	}
 }
 
