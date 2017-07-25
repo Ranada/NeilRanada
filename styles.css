@@ -6,7 +6,7 @@
 	line-height: 48px;
 	letter-spacing: 0px;
 	color: #002443;
-	margin: 16px 16px 0;
+	margin: 16px;
 }
 
 .mdl-layout h2 {
@@ -415,10 +415,17 @@ footer.mdl-mini-footer {
 .content-background-color {
 	background-color: #FFFFFF;
 }
-.background-photo-style {
+.background-photo-maintain-height {
 	height: 378px; /* 16:9 aspect ratio for photos in large screens is 672px width : 378px height */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
+    background-position: center;
+    margin: 24px 16px;
+}
+.background-photo-scale-down {
+	height: 378px; /* 16:9 aspect ratio for photos in large screens is 672px width : 378px height */
+    background-repeat: no-repeat;
+    background-size: auto 100%;
     background-position: center;
     margin: 24px 16px;
 }
@@ -457,13 +464,15 @@ footer.mdl-mini-footer {
 
 	.hero-content {
 		padding: 16px;
+		display: table;
 	}
 	.avatar {
 		display: none;
 	}
 	.hero-text {
 		position: initial;
-		display: block;
+		display: table-cell;
+		vertical-align: middle;
 		margin: 0 auto;
 	}
 	.portfolio-page .hero-cell {
@@ -520,7 +529,7 @@ footer.mdl-mini-footer {
 
 @media screen and (max-width: 600px) {
 
-	.background-photo-style {
+	.background-scale-down {
 		height: 292px; /* 16:9 aspect ratio is 520px width and 292px height*/ 
 	}
 	.card-background-style {
@@ -554,7 +563,7 @@ footer.mdl-mini-footer {
 		height: 216px; /* for square aspect ratio */
 		background-size: cover;
 	}
-	.background-photo-style {
+	.background-photo-scale-down {
 		height: 225px; /* 16:9 aspect ratio give 400px width and 225px height*/
 	}
 	.hero-content {
@@ -584,7 +593,7 @@ footer.mdl-mini-footer {
 
 @media screen and (max-width: 360px) {
 
-	.background-photo-style {
+	.background-photo-scale-down {
 		height: 158px; /* 16:9 aspect ratio gives 280px height and 158px width*/
 	}
 	.card-background-style {
