@@ -29,10 +29,7 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="index.html">PROJECTS</a>
-                <a class="mdl-navigation__link" href="resume.html">RESUME</a>
-                <a class="mdl-navigation__link active-link" href="about.html">ABOUT</a>
-                <a class="mdl-navigation__link" href="contact.html">CONTACT</a>
+                <a class="mdl-navigation__link" href="index.html">BACK TO HOMEPAGE</a>
             </nav>
         </div>
       </header>
@@ -43,27 +40,56 @@
     		<nav class="mdl-navigation">
       			<a class="mdl-navigation__link" href="index.html">PROJECTS</a>
             <a class="mdl-navigation__link" href="resume.html">RESUME</a>
-      			<a class="mdl-navigation__link" id="active-drawer-link" href="about.html">ABOUT</a>
+      			<a class="mdl-navigation__link" href="about.html">ABOUT</a>
       			<a class="mdl-navigation__link" href="contact.html">CONTACT</a>
     		</nav>
   		</div>
 
   	<!-- Content section starts here -->
       <main class="mdl-layout__content">
+
+          <!-- Table of contents vertical navigation menu -->
           <div class="mdl-grid about-page max-width">
-              <h4 class="content-header">ABOUT</h4>
+              <div class="table-of-contents">
+                  <span class="mdl-layout-title">I want to view...</span>
+                  <nav class="mdl-navigation">
+                      <a class="mdl-navigation__link active-drawer-link" href="">Summary</a>
+                      <a class="mdl-navigation__link" href="">Research</a>
+                          <ul>
+                              <li><a class="mdl-navigation__link sub-link" href="">User personas</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="">Competitive analysis</a></li>
+                          </ul>
+                      <a class="mdl-navigation__link" href="">Design</a>
+                          <ul>
+                              <li><a class="mdl-navigation__link sub-link" href="">User stories</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="">User flows</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="">Wireframe sketches</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="">Prototype</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="">Mockup</a></li>
+                          </ul>
+                      <a class="mdl-navigation__link" href="">Testing</a>
+                          <ul>
+                              <li><a class="mdl-navigation__link sub-link" href="">Click heatmaps</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="">Usability videos</a></li>
+                          </ul>
+                      <a class="mdl-navigation__link" href="">Results</a>
+                  </nav>
+              </div>
+
+              <!-- Content starts here -->
+              <h4 class="content-header">Wander</h4>
               <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp content-background-color">
-                  <div class="about-me-photo header-photo-scalable"></div>
-                  <div class="about-content content-items-max-width">    
-                      <h1>Neil Ranada</h1>
-                      <h2 class="highlight">User Experience Research & Design</h2>
-                      <h4>LOS ANGELES, CA</h4>
-                      <p>Hi, I’m Neil. I’m a User Experience Researcher and Designer based out of Los Angeles, CA.</p>
-                      <p>I have 10 years of professional experience with a background in Aviation, Aerospace, and Defense. I was a Navy Helicopter Pilot and held various program management roles. I’ve been solving problems in small teams throughout my career.</p>
-                      <p>I’m interested in making mobile apps, websites, and other digital products easier to use. Technology should make our lives easier not harder. A well-intentioned but poorly designed product can lead to a person experiencing frustration.</p>
-                      <p>Frustration can cost you. It can result in customers being discouraged from buying your products or using your services. It can also distract your workers from doing productive work. That’s time, resources, and money $$$ I’d like to help you save!</p>
-                      <p>In my free time, I like to surf, hike, and travel.</p>
-                      <p>Get in touch if you want to collaborate on a project or get to know me better. I'd love to chat with you.</p>
+                  <div class="wander-header-photo header-photo-scalable"></div>
+                  <div class="case-study content-items-max-width">    
+                      <h1 class="main-title">Wander</h1>
+                      <h2 class="highlight">UX Research & Design: giving people more control over their map experience</h2>
+                      <h4 class="snapshot">UX Researcher and Designer: Neil Ranada <br>Project time: 4 months<br>Project location: San Diego, CA</h4>
+                      <h1 class="section-title">Summary</h1>
+                      <hr>
+                      <p>Do you love to travel? A well-planned walking path is one of the best ways see things, especially if you’re tight on time. I designed an Android travel app called Wander to make it easier to plan walking paths.</p>
+                      <h2>Problem</h2>
+                      <p>Most travel apps rely on computer-generated walking paths. Sometimes these paths don’t make sense, are unsafe, or not exactly what you want to do. Most frustratingly, travel apps give you little control to make changes.</p>
+                      <img src="images/wander/triposo-city-walks@2x.png">
 
                       <!-- Accent-colored raised button with ripple -->
                       <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" href="https://neilranada.typeform.com/to/rkqu5I" data-hide-footer=true target="_blank">GET IN TOUCH</a>

@@ -37,6 +37,11 @@
 	margin: 0 16px 24px;
 }
 
+.mdl-layout a {
+	color: #006784;
+	text-decoration: none;
+}
+
 .hero-text h4 {
 	opacity: 0.87; /* Opacity increased to stand out from grey background */
 }
@@ -44,6 +49,10 @@
 .mdl-layout-title {
 	letter-spacing: 0.005em;
 	opacity: 1;
+}
+
+.table-of-contents .mdl-layout-title {
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 }
 
 .mdl-layout h5 { /* Subheader used for cards */
@@ -106,11 +115,6 @@ a.mdl-navigation__link {
 
 .mdl-layout .mdl-button:hover {
     background-color: #7BBED1;
-}
-
-.mdl-layout a {
-	color: #006784;
-	text-decoration: none;
 }
 
 .mdl-card__supporting-text {
@@ -180,6 +184,10 @@ header.mdl-layout__header {
 	opacity: 0.50;
 }
 
+.mdl-layout__header-row .mdl-navigation__link:hover {
+	opacity: 1;
+}
+
 .mdl-navigation__link.active-link {
 	opacity: 1;
 }
@@ -187,13 +195,13 @@ header.mdl-layout__header {
 /* Displays acitve link in menu for large screens */
 
 .active-link {
-	border-bottom: 4px solid #7BBED1;
+	border-bottom: 3px solid #7BBED1;
 	height: 60px;
 }
 
 /* Displays active link in menu for small screens */
 
-#active-drawer-link {
+.mdl-navigation__link.active-drawer-link {
 		color: #006784;
 	}
 
@@ -350,6 +358,12 @@ h2.mdl-card__title-text {
 	padding: 8px 16px;
 }
 
+/* Wander case study styling */
+
+.wander-header-photo {
+	background: url('images/wander/wander-header-photo@2x.jpg');
+}
+
 /* Footer Styling */
 
 footer.mdl-mini-footer {
@@ -416,7 +430,7 @@ footer.mdl-mini-footer {
 	background-color: #FFFFFF;
 }
 .background-photo-maintain-height {
-	height: 378px; /* 16:9 aspect ratio for photos in large screens is 672px width : 378px height */
+	height: 387px; /* 16:9 aspect ratio for photos in large screens is 672px width : 387px height */
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
@@ -436,7 +450,85 @@ footer.mdl-mini-footer {
     background-position: center;
 }
 
+/* Table of contents styling */
+
+.table-of-contents {
+	position: fixed;
+	left: 0;
+	top: 64px;
+	width: 250px;
+	height: 100%;
+	padding: 24px;
+}
+
+.table-of-contents .mdl-layout-title {
+	padding-bottom: 16px;
+}
+
+.table-of-contents .mdl-navigation {
+	flex-direction: column;
+}
+
+.table-of-contents .mdl-navigation__link {
+	color: rgba(0, 0, 0, 0.54);
+	padding-bottom: 8px;
+	font-weight: 700;
+}
+
+.table-of-contents ul {
+	margin: 0 0 8px;
+	list-style: none;
+}
+
+.table-of-contents .sub-link {
+	font-weight: initial;
+}
+
+.table-of-contents li.mdl-navigation__link {
+	font-weight: initial;
+}
+
+.table-of-contents .active-drawer-link {
+		color: #006784;
+	}
+
+.table-of-contents .mdl-navigation a:hover {
+	color: #7BBED1;
+}
+
+/* General case study styling */
+
+.case-study .main-title {
+	margin-bottom: 0;
+}
+.case-study .highlight {
+	margin-bottom: 40px;
+}
+.case-study h4 {
+	line-height: 32px;
+}
+.case-study .snapshot {
+	margin-bottom: 40px;
+}
+.case-study .section-title {
+	margin-bottom: 8px;
+	text-align: center;
+	position: relative; /* used to give reference point for section title underline */
+}
+.case-study hr {
+    width: 50px;
+    height: 1px;
+    background-color: #002443;
+    margin: 0 auto 24px;
+}
+
 /* Media queries to adjust to different screen sizes */
+
+@media screen and (max-width: 1279px) {
+	.table-of-contents {
+		display: none;
+	}
+}
 
 @media screen and (min-width: 1025px) {
 
@@ -497,6 +589,13 @@ footer.mdl-mini-footer {
 }
 	
 @media screen and (min-width: 840px) {
+
+		.mdl-layout .mdl-cell {
+			margin-top: 16px;
+		}
+		.mdl-cell.mdl-cell--12-col.hero-cell {
+			margin-top: 0;
+		}
 		.card-background-style {
 		height: 298px;
 	}
@@ -632,6 +731,9 @@ footer.mdl-mini-footer {
 
 	.card-background-style {
 		height: 256px;
+	}
+	.header-photo-scalable {
+		height: 288px;
 	}
 	.mdl-layout .mdl-mini-footer__link-list li {
 		margin-right: 16px;
