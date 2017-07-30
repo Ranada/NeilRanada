@@ -20,18 +20,23 @@
 	<!-- Header section starts here. Div shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
       <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <div class="mdl-layout-title">
-                <span class="logo-title">Neil Ranada</span><span class="divider"> | </span><span class="logo-title-highlight">UX</span>
-            </div>
-            <!-- Spacer added to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
-            <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="index.html">BACK TO HOMEPAGE</a>
-            </nav>
-        </div>
+          <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <a href="index.html">
+                 <div class="mdl-layout-title">
+                      <span class="logo-title">Neil Ranada</span><span class="divider"> | </span><span class="logo-title-highlight">UX</span>
+                 </div>
+              </a>            
+              <!-- Spacer added to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation for large screen sizes.  Hidden at smaller screen sizes. -->
+              <nav class="mdl-navigation mdl-layout--large-screen-only">
+                  <a class="mdl-navigation__link" href="index.html">PROJECTS</a>
+                  <a class="mdl-navigation__link" href="resume.html">RESUME</a>
+                  <a class="mdl-navigation__link" href="about.html">ABOUT</a>
+                  <a class="mdl-navigation__link" href="contact.html">CONTACT</a>
+              </nav>
+          </div>
       </header>
 
   		<!-- Left sliding menu drawer for smaller screen sizes -->
@@ -69,10 +74,10 @@
                           </ul>
                       <a class="mdl-navigation__link" href="">Testing</a>
                           <ul>
-                              <li><a class="mdl-navigation__link sub-link" href="">Click heatmaps</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="">Heatmaps</a></li>
                               <li><a class="mdl-navigation__link sub-link" href="">Usability videos</a></li>
                           </ul>
-                      <a class="mdl-navigation__link" href="">Results</a>
+                      <a class="mdl-navigation__link" href="">Conclusion</a>
                   </nav>
               </div>
 
@@ -87,9 +92,37 @@
                       <h1 class="section-title">Summary</h1>
                       <hr>
                       <p>Do you love to travel? A well-planned walking path is one of the best ways see things, especially if you’re tight on time. I designed an Android travel app called Wander to make it easier to plan walking paths.</p>
+
                       <h2>Problem</h2>
                       <p>Most travel apps rely on computer-generated walking paths. Sometimes these paths don’t make sense, are unsafe, or not exactly what you want to do. Most frustratingly, travel apps give you little control to make changes.</p>
-                      <img src="images/wander/triposo-city-walks@2x.png">
+
+                      <h2>Solution</h2>
+                      <p>Dial back technology and use a time-tested way of getting directions: drawing on a map. Digital maps with routes drawn by people, not computers.</p>
+                      <p>Wander is an Android platform that allows people to create, select, edit, vote, and share walking paths. The goal is to give users more control.</p>
+
+                      <h2>Discovery</h2>
+                      <p>I once went on a solo adventure to Kyoto, Japan. The old capital is full of incredible history and sights. I underestimated its vastness and only had two and a half days to see it.</p>
+
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/fushima-inari-shrine.jpg);"></div>
+                      <h6>Fushimi Inari Shrine, Kyoto, Japan. Photo by Neil Ranada.</h6>
+
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/golden-pavilion.jpg);"></div>
+                      <h6>Golden Pavilion, Kyoto, Japan. Photo by Neil Ranada.</h6>
+
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/higashiyama-district.jpg);"></div>
+                      <h6>Higashiyama Historic District, Kyoto, Japan. Photo by Neil Ranada.</h6>
+
+                      <p>It turns out Kyoto is a walkable city. A Japanese travel guide gave me paper maps breaking down the city into sections. Each map section showed suggested walking routes. But it was raining, and it became a pain to use my rain-soaked maps without tearing them apart.</p>
+
+                      <img class="tall-image" src="images/wander/kyoto-map@2x.png">
+
+
+
+                      <!-- add content above this line for now -->
+
+                      <p><a href="https://xd.adobe.com/view/41545c7a-8638-473b-92bd-716e5b0270c8/" target="_blank"> View Adobe XD prototype.</a></p>
+
+                      <div class="background-photo-portfolio-view-maintain-height" style="background-image:url(images/wander/triposo-city-walks@2x.png);"></div>
 
                       <!-- Accent-colored raised button with ripple -->
                       <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" href="https://neilranada.typeform.com/to/rkqu5I" data-hide-footer=true target="_blank">GET IN TOUCH</a>

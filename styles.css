@@ -15,7 +15,7 @@
 	line-height: 40px;
 	letter-spacing: 0;
 	color: #002443;
-	margin: 0 16px 24px;
+	margin: 0 16px 16px;
 }
 
 .mdl-layout h3 {
@@ -34,7 +34,7 @@
 	line-height: 28px;
 	color: #000000;
 	opacity: 0.54;
-	margin: 0 16px 24px;
+	margin: 0 16px 16px;
 }
 
 .mdl-layout a {
@@ -77,6 +77,18 @@
 	color: #000000;
 	opacity: 0.87;
 	margin: 0 16px 24px;
+}
+
+.mdl-layout h6 { /* caption */
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	letter-spacing: 0.01em;
+	line-height: 24px;
+	color: #000000;
+	opacity: 0.54;
+	font-weight: 400;
+	margin: 0 16px 40px;
 }
 
 .mdl-layout li {
@@ -418,6 +430,10 @@ footer.mdl-mini-footer {
 	margin-bottom: 0;
 }
 
+.about-content h4 {
+	margin: 24px 16px;
+}
+
 /* Contact page styling starts here */
 
 .contact-photo {
@@ -429,6 +445,15 @@ footer.mdl-mini-footer {
 .content-background-color {
 	background-color: #FFFFFF;
 }
+
+.mdl-layout img {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 16px 0 24px;
+	padding: 0 16px;
+}
+
 .background-photo-maintain-height {
 	height: 387px; /* 16:9 aspect ratio for photos in large screens is 672px width : 387px height */
     background-repeat: no-repeat;
@@ -436,10 +461,17 @@ footer.mdl-mini-footer {
     background-position: center;
     margin: 24px 16px;
 }
-.background-photo-scalable {
-	height: 378px; /* 16:9 aspect ratio for photos in large screens is 672px width : 378px height */
+.background-photo-portfolio-view-maintain-height {
+	height: 520px; /* 16:9 aspect ratio for photos in large screens is 672px width : 387px height */
     background-repeat: no-repeat;
     background-size: auto 100%;
+    background-position: center;
+    margin: 24px 16px;
+}
+.background-photo-scalable {
+	height: 512px; /* 4:3 aspect ratio for photos in large screens is 688px width : 512px height */
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     margin: 24px 16px;
 }
@@ -462,7 +494,8 @@ footer.mdl-mini-footer {
 }
 
 .table-of-contents .mdl-layout-title {
-	padding-bottom: 16px;
+	padding-bottom: 24px;
+	font-weight: 500;
 }
 
 .table-of-contents .mdl-navigation {
@@ -511,15 +544,14 @@ footer.mdl-mini-footer {
 	margin-bottom: 40px;
 }
 .case-study .section-title {
-	margin-bottom: 8px;
-	text-align: center;
+	margin-bottom: 0; /* to bring hr closer to section title */
 	position: relative; /* used to give reference point for section title underline */
 }
 .case-study hr {
-    width: 50px;
+    max-width: 688px;
     height: 1px;
     background-color: #002443;
-    margin: 0 auto 24px;
+    margin: 0 16px 24px;
 }
 
 /* Media queries to adjust to different screen sizes */
@@ -633,12 +665,13 @@ footer.mdl-mini-footer {
 	}
 	.mdl-mini-footer__link-list li a {
 		color: #002443;	/* changed footer links to dark blue to contast against white background after display block */
+	}
 }
 
 @media screen and (max-width: 600px) {
 
-	.background-scalable {
-		height: 292px; /* 16:9 aspect ratio is 520px width and 292px height*/ 
+	.background-photo-scalable {
+		height: 402px; /* 4:3 aspect ratio is 536px width and 402px height*/ 
 	}
 	.card-background-style {
 		height: 244px;
@@ -675,7 +708,7 @@ footer.mdl-mini-footer {
 		background-size: cover;
 	}
 	.background-photo-scalable {
-		height: 225px; /* 16:9 aspect ratio give 400px width and 225px height*/
+		height: 312px; /* 4:3 aspect ratio give 416px width and 312px height*/
 	}
 	.hero-content {
 		display: table;
@@ -709,12 +742,15 @@ footer.mdl-mini-footer {
 	.header-photo-scalable {
 		height: 368px;
 	}
+	.background-photo-scalable {
+		height: 252px; /* 4:3 aspect ratio with 336px width and 252px height */
+	}
 }
 
 @media screen and (max-width: 360px) {
 
 	.background-photo-scalable {
-		height: 158px; /* 16:9 aspect ratio gives 280px height and 158px width*/
+		height: 222px; /* 4:3 aspect ratio gives 396px height and 222px width */
 	}
 	.card-background-style {
 		height: 296px;
@@ -734,6 +770,9 @@ footer.mdl-mini-footer {
 	}
 	.header-photo-scalable {
 		height: 288px;
+	}
+	.background-photo-style {
+		height: 192px; /* 4:3 aspect ratio gives 256px height and 192px width */
 	}
 	.mdl-layout .mdl-mini-footer__link-list li {
 		margin-right: 16px;
