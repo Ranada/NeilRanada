@@ -93,6 +93,16 @@
 
 .mdl-layout li {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	color: rgba(0,0, 0, 0.54);
+}
+
+.mdl-layout .mdl-card li {
+	font-size: 14px;
+}
+
+.case-study li {
+	font-size: 20px;
+	margin-bottom: 16px;
 }
 
 a.mdl-navigation__link {
@@ -450,7 +460,7 @@ footer.mdl-mini-footer {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
-	margin: 16px 0 24px;
+	margin: 16px 0 8px;
 	padding: 0 16px;
 }
 
@@ -473,7 +483,7 @@ footer.mdl-mini-footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 24px 16px;
+    margin: 24px 16px 8px;
 }
 .header-photo-scalable {
 	height: 522px; /* 16:9 aspect ratio for photos in large screens is 928px width : 522px height */
@@ -486,6 +496,10 @@ footer.mdl-mini-footer {
 	background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
+}
+
+.mdl-layout .bottom-spacer {
+	margin-bottom: 40px;
 }
 
 /* Table of contents styling */
@@ -625,6 +639,10 @@ footer.mdl-mini-footer {
 		line-height: 24px;
 	}
 	.mdl-layout p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.case-study li {
 		font-size: 16px;
 		line-height: 24px;
 	}
