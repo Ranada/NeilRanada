@@ -424,7 +424,7 @@ footer.mdl-mini-footer {
 /* About page styling starts here */
 
 .about-me-photo {
-	background-image: url(images/about-me-photo@2x.png);
+	background-image: url(images/neil-ranada-about@2x.png);
 }
 .about-content h1 {
 	margin-bottom: 0;
@@ -446,7 +446,7 @@ footer.mdl-mini-footer {
 	background-color: #FFFFFF;
 }
 
-.mdl-layout img {
+.case-study img {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
@@ -478,6 +478,12 @@ footer.mdl-mini-footer {
 .header-photo-scalable {
 	height: 522px; /* 16:9 aspect ratio for photos in large screens is 928px width : 522px height */
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.background-photo-tall {
+	height: 775px;
+	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -614,6 +620,10 @@ footer.mdl-mini-footer {
 		font-size: 16px;
 		line-height: 24px;
 	}
+	.mdl-layout h6 {
+		font-size: 14px;
+		line-height: 24px;
+	}
 	.mdl-layout p {
 		font-size: 16px;
 		line-height: 24px;
@@ -728,6 +738,9 @@ footer.mdl-mini-footer {
 	}
 	.about-me-photo {
 		background-position: 35% center;
+	}
+	.background-photo-tall {
+		height: 535px;
 	}
 	.footer.mdl-mini-footer {
 		height: 92px;
