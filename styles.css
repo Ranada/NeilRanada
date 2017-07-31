@@ -484,7 +484,7 @@ footer.mdl-mini-footer {
 .background-photo-tall {
 	height: 775px;
 	background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
 }
 
