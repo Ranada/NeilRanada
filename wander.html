@@ -54,9 +54,8 @@
       <main class="mdl-layout__content">
 
           <!-- Table of contents vertical navigation menu -->
-          <div class="mdl-grid about-page max-width">
+          <div class="mdl-grid max-width">
               <div class="table-of-contents">
-                  <span class="mdl-layout-title">I want to view...</span>
                   <nav class="mdl-navigation">
                       <a class="mdl-navigation__link active-drawer-link" href="">Summary</a>
                       <a class="mdl-navigation__link" href="">Research</a>
@@ -117,7 +116,7 @@
 
                       <p>It turns out Kyoto is a walkable city. A Japanese travel guide gave me paper maps breaking down the city into sections. Each map section showed suggested walking routes. But it was raining, and it became a pain to use my rain-soaked maps without tearing them apart.</p>
 
-                      <img src="images/wander/kyoto-map@2x.png">
+                      <img src="images/wander/kyoto-map@2x.png" alt="kyoto map">
                       <h6>Koyoto Walks paper map. Source: http://www.jnto.go.jp</h6>
 
                       <p>I tried using Kyoto’s travel website instead. It has digital maps with similar walking routes. But it wasn’t mobile-friendly and I couldn’t expand the maps to fill the full size of my phone’s screen.</p>
@@ -131,7 +130,9 @@
                       <h1 class="section-title">Research</h1>
                       <hr>
 
-                      <p>I made an assumption: people need a travel app that makes it easier for them to plan walking paths. To validate this assumption, I needed to answer three questions.</p>
+                      <p>First, I needed to figure out if there was an opportunity to solve a problem. I can’t design solutions for a problem that doesn’t exist.</p>
+
+                      <p>I started my research by making an assumption: people need a travel app that makes it easier for them to plan walking paths. To validate this, I needed to answer three questions:</p>
 
                       <ol>
                         <li>Is there a need for a tool to make it easier to plan walking paths?</li>
@@ -139,13 +140,209 @@
                         <li>What features do they need?</li>
                       </ol>
 
+                      <p>I conducted two surveys and two rounds of interviews to find answers. I asked questions focused on past experiences and behaviors. I also wanted to know any frustrations people had with travel planning tools.</p>
 
+                      <h2>First Survey</h2>
+
+                      <p>I posted a <a href="https://neilranada.typeform.com/report/jD0CrJ/bcnj" target="_blank">survey online</a> to various social media platforms and public forums. I asked general questions about people's last sightseeing experience. I didn't mention anything about walking paths at this point. I wanted to see what problems or successes people would share that I may not have considered.</p>
+
+                      <p>Here are my key findings from the 19 responses:</p>
+
+                      <ul>
+                          <li>100% said they used smartphones to browse websites to plan sightseeing.</li> 
+                          <li>A majority used Google Search (89%) and TripAdvisor (84%) for research.</li>
+                          <li>Fewer people used social media in their travel research: Facebook (21%) and Instagram (21%).</li>
+                          <li>People used Facebook (79%) and Instagram (47%) to post travel photos.</li> 
+                          <li>When asked to select one experience that needed improvement: "planning route and schedule" was the top issue.</li>
+                      </ul>
+
+                      <h2>Mobile-first and the need for more research</h2>
+
+                      <p>Based on the results, it wasn't clear if there was a need for a tool to make walking paths easier to plan. However, if there was a need, it was clear that I needed to use a "mobile first" design approach. It was also clear that I needed to learn how people used Google Search and TripAdvisor for travel research.</p>
+
+                      <p>Social media played less of a role in travel research than I expected. But, I still think there may be an opportunity to discover a greater connection between maps and social media, especially since Instagram is full of photo feeds for travel inspiration. I decided it was beyond the scope of this project but may be worth researching another time.</p>
+
+                      <h2>Interviews</h2>
+
+                      <p>During this project, I took a two-week trip to the Philippines to attend a wedding on Boracay Island. Many of my friends also attended. Different groups had separate plans for sightseeing before and after the wedding. It was the perfect opportunity to make observations and conduct interviews.</p>
+
+                      <p>Here are key findings from interviewing 12 people:</p>
+
+                      <ul>
+                          <li>People used Google Search or TripAdvisor to find and compare lists of top things to see and do.</li>
+                          <li>Planning tended to stop at the city level in their search. Once in Manila, people weren't sure of what places they wanted to see. If they did have an idea, they weren't sure of the best order to see everything in a short period.</li>
+                          <li>Everyone's definition of sightseeing varied. Some people wanted to walk around historical places like the Intramuros, an old walled city. Others wanted to see street markets or the giant Mall of Asia.</li>
+                          <li>People on this trip relied on Google Maps to walk from point to point. They didn't have a walking path in mind.</li> 
+                      </ul>
+
+                      <h2>“Point-to-point” navigators vs. “Planners”</h2>
+
+                      <p>There’s a spectrum of how people navigate. On one end, there are what I call “point-to-point” navigators and on the other end “planners.” People on this trip leaned towards being “point-to-point” navigators. Navigating to one place at a time using Google Maps. They didn’t necessarily need a walking path with all their stops planned out.</p>
+
+                      <p>There wasn’t evidence at this point to design a walking path tool. To move forward, I needed to find and interview “planners.” People who like having itineraries.</p>
+
+                      <h2>Second survey</h2>
+
+                      <p>Before conducting another set of interviews, I posted another <a href="https://neilranada.typeform.com/report/BbEEgk/CCph" target="_blank">survey</a>. This time, I asked specific questions about what tools people used to plan walking paths. I provided both digital and paper options. I also needed to know what they liked most about these tools, and what they liked least.</p>
+
+                      <p>Here are key findings from the 32 responses:</p>
+
+                      <ul>
+                          <li>Travel apps like Google Trips (6%), Cool Cousin (3%), and FieldTrip (1%) are not popular tools for planning walking paths.</li>
+                      </ul>
+
+                      <p>Here is a selection of comments:</p>
+
+                      <ul class="quotes">
+                          <li>“I don't think there is an obvious way to customize my route. I think I can create a route but it seems complicated.”</li>
+                          <li>“It can take me to shady places...”</li> 
+                          <li>“Lack of suggested routes/plans to cover various sight-seeing points.”</li>
+                          <li>“When I'm abroad and don't have mobile internet access, or I'm in a heavily pedestrian urban area (like Marrakech) where the maps may not be detailed enough, then Google Maps fails me. That's when I turn to paper maps of some sort, or maybe an offline map intended for travelers if I don't need to worry about having my phone out.”</li> 
+                      </ul>
+
+                      <h2>Realizing an opportunity to solve a problem</h2>
+
+                      <p>After the second round of surveys, I realized that some apps fall short in planning walking paths. There were two main pain points:</p>
+
+                      <ol>
+                          <li>Feeling unsafe</li> 
+                          <li>Inability to easily create and edit a path</li> 
+                      </ol>
+
+                      <p>At this point, I realized an opportunity to design a tool for people who are most likely to use route suggestions to cover various sight-seeing points. </p>
+
+                      <h2>Personas</h2>
+
+                      <p class="bottom-spacer">I identified three people to interview who plan their travels in advance. These are people who I assessed would benefit most from a tool for planning walking paths.</p>
+
+                      <img src="images/wander/traveling-mom@2x.png" alt="traveling mom" class="bottom-spacer">
+                      <img src="images/wander/traveling-couple@2x.png" alt="traveling couple" class="bottom-spacer">
+                      <img src="images/wander/traveling-solo@2x.png" alt="traveling solo" class="bottom-spacer">
+
+                      <h2>Top 3 goals of the user personas</h2>
+
+                      <ol>
+                          <li>Discover itineraries that match their interests and schedule</li>
+                          <li>Easily edit their path and points of interest</li> 
+                          <li>Follow a route but also have the freedom to explore</li>
+                      </ol>
+
+                      <p>I based my decisions around these three goals throughout my design process. Next, I needed to learn from the competition.</p>
+
+                      <h2>Competitive Analysis</h2>
+
+                      <p>I analyzed the strengths and weaknesses of travel app competitors. I identified six travel apps: TripAdvisor, Google Trips, Walc, FieldTrip, Cool Cousin, and Triposo.</p>
+
+                      <p class="bottom-spacer">I conducted SWOT analysis, creating matrixes such as the one below, to assess the strengths, weaknesses, opportunities, and threats of each app.</p>
+
+                      <img src="images/wander/swot-analysis.png" alt="swot analysis" class="bottom-spacer">
+
+                      <p>I also downloaded Triposo. Out of the list of travel apps I analyzed, Triposo had the most advanced tool for planning a walking route to multiple sightseeing points.</p>
+
+                      <div class="background-photo-tall" style="background-image:url(images/wander/triposo-city-walks@2x.png);"></div>
+                      <h6>Screenshot from Triposo iPhone app.</h6>
+
+                      <h2>Top three strengths to include in the design:</h2>
+
+                      <ol>
+                          <li>Crowd-sourcing to provide self-sustaining content production</li>
+                          <li>Voting system to let people decide what is most helpful</li>
+                          <li>Integration with Google Maps because its database is extensive and trustworthy</li>
+                      </ol>
+
+                      <h2>Top three weaknesses to avoid in the design:</h2>
+
+                      <ol>
+                          <li>Overwhelming number of features and information</li>
+                          <li>Computer generated routes that are unsafe or do not make sense</li>
+                          <li>Making it difficult for people to edit a path and change points of interest</li>
+                      </ol>
+
+                      <h2>Field research at Balboa Park, San Diego</h2>
+
+                      <p>I also took advantage of the fact that I live in San Diego, a major tourist destination. I spent several mornings and afternoons at Balboa Park. I hung out next to maps posted throughout the park. I casually interviewed people to find out what they were searching. I also wanted to see what they thought was helpful, and what was frustrating.</p>
+
+                      <h2>Time tested way of finding directions</h2>
+
+                      <p>People still rely on friends, or even strangers, to find directions. This reinforced the crowd-sourcing and social approach in the design.</p>
+
+                      <p>Sometimes the best way to find where you’re going is to ask someone who can draw directions for you on a paper map. With this in mind, I needed to design a digital version of this time-tested method of getting directions.</p>
+
+                      <p>It also occurred to me that not everyone walks on paths. Sometimes people move around on wheels: wheelchairs, scooters, bikes, skates. Which reminded me that I needed to push for an inclusive design.</p>
+
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/balboa-park@2x.png"></div>
+                      <h6>Central fountain, Balboa Park, San Diego. Photos by Neil Ranada.</h6>
+
+                      <h2>Meeting research goals</h2>
+
+                      <ol>
+                          <li>Is there a need for a tool to make it easier to plan walking paths?
+                          <br><span class="highlight">Yes</span>
+                          </li>
+
+                          <li>Who needs it?
+                          <br><span class="highlight">People who plan travel itineraries like the three user personas.</span>
+                          </li>
+
+                          <li>What features do they need?
+                          <br><span class="highlight">A platform that allows people to create, select, edit, vote, and share walking paths.</span>
+                          </li>
+                      </ol>
+
+                      <!-- Design -->
+                      <h1>Design</h1>
+                      <hr>
+                      <p>After conducting user research and defining the problem, I was ready to move forward and create design solutions.</p>
+
+                      <h2>User Stories</h2>
+                      <p>I created a spreadsheet with a list of tasks to meet the goals of the user personas.</p> 
+                      <h4>"As a __________, I want to __________ so that I can __________."</h4> 
+
+                      <img src="images/wander/user-stories.png" alt="kyoto map" class="bottom-spacer">
+
+                      <h2>User flows</h2>
+
+                      <p>I created User Flows to visually depict how people complete each task listed in the User Stories.</p>
+
+                      <h4>Search flow</h4>
+                      <img src="images/wander/user-flow-search.jpg" alt="user search flow" class="bottom-spacer">
+
+                      <h4>Map view flow</h4>
+                      <img src="images/wander/user-flow-onboarding.jpg" alt="user onboarding flow" class="bottom-spacer">
+
+                      <h4>Onboarding flow</h4>
+                      <img src="images/wander/user-flow-map-view.jpg" alt="user map view flow" class="bottom-spacer">
+
+                      <h2>Wireframes</h2>
+
+                      <p>I spent the majority of my time creating wireframes to focus on the functionality of the travel app. I sketched using pen and paper which let me put my design ideas down quickly. For inspiration, I looked to patterns found in popular apps such as TripAdvisor and Airbnb.</p>
+
+                      <p>I went through each user story and wrote the task in the top left corner of each page to focus on the specific problem I needed to solve.</p>
+
+                      <p>Here are a couple of early wireframe sketches attempting to solve for the user story:<p> 
+                      <p class="highlight">"As a user...I want to search recommended paths...so that I can find the best way to see popular sights"</p>
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/wireframe-search-cards@2x.png);"></div>
+                      <h6>Cards view flowing to a map view.</h6>
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/wireframe-search-list@2x.png);"></div>
+                      <h6>List view flowing to information and photo for a point of interest.</h6>
+
+                      <p>User testing later revealed that I needed to use a blend of the two ideas above. A list for easier skimming instead of cards. And a map view instead of an info page with photos, because that’s what testers expected after selecting a path.</p>
+
+                      <p>The most challenging problem I focused on was how people could seamlessly make changes to customize their walking path. Here is a progression of wireframe sketches designing for the user story:</p>
+
+                      <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
+
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/wireframe-change-path-early@2x.png);"></div>
+                      <h6>Early version.</h6>
+
+                      <div class="background-photo-scalable" style="background-image:url(images/wander/wireframe-change-path-later@2x.png);"></div>
+                      <h6>Later version.</h6>
+
+                      <p>Testing revealed that most people could not associate the unlabeled Floating Action Button with making changes to a path. I discuss this issue later under the "Testing" section.</p>
 
                       <!-- add content above this line for now -->
 
                       <p><a href="https://xd.adobe.com/view/41545c7a-8638-473b-92bd-716e5b0270c8/" target="_blank"> View Adobe XD prototype.</a></p>
-
-                      <div class="background-photo-portfolio-view-maintain-height" style="background-image:url(images/wander/triposo-city-walks@2x.png);"></div>
 
                       <!-- Accent-colored raised button with ripple -->
                       <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" href="https://neilranada.typeform.com/to/rkqu5I" data-hide-footer=true target="_blank">GET IN TOUCH</a>
