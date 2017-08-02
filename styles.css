@@ -563,7 +563,7 @@ footer.mdl-mini-footer {
 }
 
 .table-of-contents .active-drawer-link {
-		color: purple;
+		color: #006784;
 	}
 
 .table-of-contents .mdl-navigation a:hover {
@@ -606,7 +606,7 @@ ul.quotes {
 .case-study .remove-padding { /*poster has white border. remove padding to make poster appear to align with text */
 	padding: 0;
 }
-.case-study a:hover {
+.case-study .tabel-of-contents a:hover {
 	color: #7BBED1;
 }
 .case-study-contact {
