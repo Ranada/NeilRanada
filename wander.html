@@ -57,10 +57,10 @@
           <div class="mdl-grid max-width">
               <div class="table-of-contents">
                   <nav class="mdl-navigation">
-                      <a class="mdl-navigation__link active-drawer-link" href="">Summary</a>
-                      <a class="mdl-navigation__link" href="">Research</a>
+                      <a class="mdl-navigation__link active-drawer-link" href="#summary">Summary</a>
+                      <a class="mdl-navigation__link" href="#research">Research</a>
                           <ul>
-                              <li><a class="mdl-navigation__link sub-link" href="">User personas</a></li>
+                              <li><a class="mdl-navigation__link sub-link" href="#user-personas">User personas</a></li>
                               <li><a class="mdl-navigation__link sub-link" href="">Competitive analysis</a></li>
                           </ul>
                       <a class="mdl-navigation__link" href="">Design</a>
@@ -88,10 +88,10 @@
                   <div class="case-study content-items-max-width">    
                       <h1 class="main-title">Wander</h1>
                       <h2 class="highlight">UX Research & Design: giving people more control over their map experience</h2>
-                      <h4 class="snapshot">UX Researcher and Designer: Neil Ranada <br>Project time: 4 months<br>Project location: San Diego, CA</h4>
+                      <p class="snapshot">UX Research and Design - Neil Ranada <br>Project time - 4 months<br>Project location - San Diego, CA</p>
 
                       <!-- Summary -->
-                      <h1 class="section-title">Summary</h1>
+                      <h1 class="section-title" id="summary">Summary</h1>
                       <hr>
                       <p>Do you love to travel? A well-planned walking path is one of the best ways see things, especially if you’re tight on time. I designed an Android travel app called Wander to make it easier to plan walking paths.</p>
 
@@ -128,7 +128,7 @@
                       <p class="bottom-spacer">Why couldn’t I have a mobile-friendly map with walking paths? Did other people have the same problem?</p>
 
                       <!-- Research -->
-                      <h1 class="section-title">Research</h1>
+                      <h1 class="section-title" id="research">Research</h1>
                       <hr>
 
                       <p>First, I needed to figure out if there was an opportunity to solve a problem. I can’t design solutions for a problem that doesn’t exist.</p>
@@ -212,7 +212,7 @@
 
                       <p>At this point, I realized an opportunity to design a tool for people who are most likely to use route suggestions to cover various sight-seeing points. </p>
 
-                      <h2>Personas</h2>
+                      <h2 id="user-personas">Personas</h2>
 
                       <p>I identified three people to interview who plan their travels in advance. These are people who I assessed would benefit most from a tool for planning walking paths.</p>
 
@@ -345,11 +345,13 @@
 
                       <p>I moved on to visual design to see if visual hierarchy, color contrast, and the realism of mockups of the app would help users select and edit a path. I started by sketching and brainstorming to come up with a brand name.</p>
 
-                      <div class="background-photo-scalable" style="background-image:url(images/wander/brain-storm@2x.png);"></div>
+                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/brain-storm@2x.png);"></div>
 
                       <h2>Logo</h2>
 
                       <p>Next, I brainstormed logo ideas for Wander. I analyzed logos from well-known companies like Facebook, Instagram, and Airbnb for inspiration. The logos tended to be flat, simple, and scalable to small sizes.</p>
+
+                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/logo-sketches@2x.png);"></div>
 
                       <h2>Color</h2>
 
@@ -556,7 +558,48 @@
   <!-- footer section ends here -->
       </main>
   </div>
-    <script src="./material.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+  <script>
+     $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+
+        $('a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          $(document).off("scroll");
+
+          $('a').each(function () {
+            $(this).removeClass('active-drawer-link');
+          })
+          $(this).addClass('active-drawer-link');
+
+          var target = this.hash;
+          $target = $(target);
+          $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+          }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+          });
+        });
+      });
+
+      function onScroll(event){
+        var scrollPosition = $(document).scrollTop();
+        $('nav a').each(function () {
+          var currentLink = $(this);
+          var refElement = $(currentLink.attr("href"));
+          if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+            $('nav ul li a').removeClass("active-drawer-link");
+            currentLink.addClass("active-drawer-link");
+          }
+          else{
+            currentLink.removeClass("active-drawer-link");
+          }
+        });
+      }
+  </script>
 </body>
 
 </html>

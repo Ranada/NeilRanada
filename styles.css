@@ -563,7 +563,7 @@ footer.mdl-mini-footer {
 }
 
 .table-of-contents .active-drawer-link {
-		color: #006784;
+		color: purple;
 	}
 
 .table-of-contents .mdl-navigation a:hover {
@@ -579,7 +579,7 @@ footer.mdl-mini-footer {
 	line-height: 32px;
 }
 .case-study .snapshot {
-	margin: 40px 16px;
+	margin: 24px 16px 40px;
 }
 .case-study .section-title {
 	margin-bottom: 0; /* to bring hr closer to section title */
@@ -613,7 +613,7 @@ ul.quotes {
 	text-align: center;
 	margin: 0 16px;
 	padding: 24px;
-	border: 2px solid rgba(0, 0, 0, 0.54);
+	border: 2px solid #7bbed1;
 }
 
 /* Media queries to adjust to different screen sizes */
