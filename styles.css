@@ -91,7 +91,7 @@
 }
 
 .case-study ol, .case-study ul {
-	margin: 40px 16px;
+	margin: 24px 16px 40px;
 	padding-left: 24px;
 }
 
@@ -512,7 +512,6 @@ footer.mdl-mini-footer {
     background-size: auto 100%;
     background-position: center;
 }
-
 .mdl-layout .bottom-spacer {
 	margin-bottom: 40px;
 }
@@ -546,7 +545,9 @@ footer.mdl-mini-footer {
 	padding-bottom: 24px;
 }
 
-
+.table-of-contents .mdl-navigation__link:nth-child(6) {
+	padding-bottom: 24px;
+}
 .table-of-contents ul {
 	margin: 0 0 24px;
 	list-style: none;
@@ -602,6 +603,18 @@ ul.quotes {
 .case-study .quotes li {
 	margin-bottom: 40px;
 }
+.case-study .remove-padding { /*poster has white border. remove padding to make poster appear to align with text */
+	padding: 0;
+}
+.case-study a:hover {
+	color: #7BBED1;
+}
+.case-study-contact {
+	text-align: center;
+	margin: 0 16px;
+	padding: 24px;
+	border: 2px solid rgba(0, 0, 0, 0.54);
+}
 
 /* Media queries to adjust to different screen sizes */
 
@@ -612,6 +625,9 @@ ul.quotes {
 	}
 	.mdl-layout .mdl-layout__header-row {
 		max-width: 888px;
+	}
+	.footer-content {
+		max-width: 806px;
 	}
 }
 
@@ -681,9 +697,6 @@ ul.quotes {
 	.case-study li {
 		font-size: 16px;
 		line-height: 24px;
-	}
-	.case-study ol, .case-study ul {
-	margin: 24px 16px;
 	}
 	.case-study .quotes li {
 	margin-bottom: 24px;
@@ -844,8 +857,11 @@ ul.quotes {
 	.header-photo-scalable {
 		height: 288px;
 	}
-	.background-photo-style {
+	.background-photo-scalable {
 		height: 192px; /* 4:3 aspect ratio gives 256px height and 192px width */
+	}
+	.background-photo-tall {
+		height: 452px;
 	}
 	.mdl-layout .mdl-mini-footer__link-list li {
 		margin-right: 16px;
