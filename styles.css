@@ -603,8 +603,12 @@ ul.quotes {
 .case-study .quotes li {
 	margin-bottom: 40px;
 }
-.case-study .remove-padding { /*poster has white border. remove padding to make poster appear to align with text */
+.case-study .remove-padding-margin { /*poster has white border. remove padding to make poster appear to align with text */
 	padding: 0;
+	margin-bottom: 0;
+}
+h6.remove-margin-top { /*poster above caption has white board. remove margin to close white space. */
+	margin-top: 0;
 }
 .case-study .tabel-of-contents a:hover {
 	color: #7BBED1;
