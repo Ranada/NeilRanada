@@ -416,6 +416,9 @@ footer.mdl-mini-footer {
 .mdl-mini-footer__right-section li:last-child { /*removes right margin to make nav links flush with max width */
 	margin-right: 0;
 }
+.mdl-layout .mdl-mini-footer__link-list li a:hover {
+	color: #7bbed1;
+}
 
 /* Resume styling */
 
