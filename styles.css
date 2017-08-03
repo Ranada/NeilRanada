@@ -656,6 +656,11 @@ ul.quotes {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.mdl-layout .mdl-layout__header-row {
+		max-width: initial; /* returns gap to original position from alignment with card edge in large screens */
+	}
+}
 
 
 @media screen and (max-width: 960px) {
