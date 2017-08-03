@@ -219,6 +219,10 @@ header.mdl-layout__header {
 	opacity: 1;
 }
 
+.mdl-layout--no-desktop-drawer-button .mdl-layout__header-row {
+	padding-right: 16px;
+}
+
 /* Displays acitve link in menu for large screens */
 
 .active-link {
@@ -464,10 +468,6 @@ footer.mdl-mini-footer {
 	max-width: 1010px;
 	width: 100%;
 	margin: 0 auto;
-}
-
-.mdl-layout__header-row .mdl-navigation__link:last-child {
-	padding-right: 0;
 }
 
 .content-background-color {
