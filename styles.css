@@ -548,9 +548,6 @@ footer.mdl-mini-footer {
 	padding-bottom: 24px;
 }
 
-.table-of-contents .mdl-navigation__link:nth-child(6) {
-	padding-bottom: 24px;
-}
 .table-of-contents ul {
 	margin: 0 0 24px;
 	list-style: none;

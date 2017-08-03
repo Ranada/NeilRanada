@@ -57,12 +57,15 @@
           <div class="mdl-grid max-width">
               <div class="table-of-contents">
                   <nav class="mdl-navigation">
+                      <!-- Summary -->
                       <a class="mdl-navigation__link active-drawer-link" href="#summary">Summary</a>
+                      <!-- Research -->
                       <a class="mdl-navigation__link" href="#research">Research</a>
                           <ul>
                               <li><a class="mdl-navigation__link sub-link" href="#user-personas">User Personas</a></li>
                               <li><a class="mdl-navigation__link sub-link" href="#competitive-analysis">Competitive Analysis</a></li>
                           </ul>
+                      <!-- Design -->
                       <a class="mdl-navigation__link" href="#design">Design</a>
                           <ul>
                               <li><a class="mdl-navigation__link sub-link" href="#user-stories">User Stories</a></li>
@@ -71,12 +74,17 @@
                               <li><a class="mdl-navigation__link sub-link" href="#visual-design">Visual Design</a></li>
                               <li><a class="mdl-navigation__link sub-link" href="#mockups">Mockups</a></li>
                           </ul>
-                              <a class="mdl-navigation__link" href="#prototype">Prototype</a>
-                              <a class="mdl-navigation__link" href="#testing">Testing</a>
+                      <!-- Testing -->    
+                      <a class="mdl-navigation__link" href="#testing">Testing</a>
                           <ul>
                               <li><a class="mdl-navigation__link sub-link" href="#heatmaps">Heatmaps</a></li>
-                              <li><a class="mdl-navigation__link sub-link" href="#usability-testing">Usability testing</a></li>
                           </ul>
+                      <!-- Prototype -->
+                      <a class="mdl-navigation__link" href="#prototype">Prototype</a>
+                          <ul>
+                              <li><a class="mdl-navigation__link sub-link" href="#usability-testing">Usability Testing</a></li>
+                          </ul>
+                      <!-- Conclusion -->
                       <a class="mdl-navigation__link" href="#conclusion">Conclusion</a>
                   </nav>
               </div>
@@ -188,7 +196,7 @@
                       <img src="images/wander/manila-jeepney@2x.png" alt="Jeepney Manila, Philippines">
                       <h6>Christiaan Alamazan catching a Jeepney in Manila. Photos by @chrisdavid.photos.</h6>
 
-                      <h2>Second survey</h2>
+                      <h2>Second Survey</h2>
 
                       <p>Before conducting another set of interviews, I posted another <a href="https://neilranada.typeform.com/report/BbEEgk/CCph" target="_blank">survey</a>. This time, I asked specific questions about what tools people used to plan walking paths. I provided both digital and paper options. I also needed to know what they liked most about these tools, and what they liked least.</p>
 
@@ -218,7 +226,7 @@
 
                       <p>At this point, I realized an opportunity to design a tool for people who are most likely to use route suggestions to cover various sight-seeing points. </p>
 
-                      <h2 id="user-personas">Personas</h2>
+                      <h2 id="user-personas">User Personas</h2>
 
                       <p>I identified three people to interview who plan their travels in advance. These are people who I assessed would benefit most from a tool for planning walking paths.</p>
 
@@ -228,7 +236,7 @@
 
                       <p class="bottom-spacer"><a href="https://www.dropbox.com/s/ptdj2y2y3mh161b/Wander-User-Personas.pdf?dl=0">Open pdf file for User Personas<i class="material-icons">open_in_new</i></a></p>
 
-                      <h2>Top 3 goals of the user personas</h2>
+                      <h2>Top 3 goals of the User Personas</h2>
 
                       <ol>
                           <li>Discover itineraries that match their interests and schedule</li>
@@ -397,14 +405,6 @@
 
                       <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/mockup-map-flow@2x.png);"></div>
 
-                      <!-- Prototype -->
-                      <h1 id="prototype">Prototype</h1>
-                      <hr>
-                      <p><a href="https://xd.adobe.com/view/41545c7a-8638-473b-92bd-716e5b0270c8/" target="_blank">View Prototype</a></p> 
-                      <p>I used Adobe XD for rapid prototyping. Adobe XD was especially useful for creating flows for the many combinations of actions a person can take in the map view.</p>
-
-                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/prototype-map-flow@2x.png);"></div>
-
                       <!-- Testing -->
                       <h1 id="testing">Testing</h1>
 
@@ -414,7 +414,7 @@
 
                       <p>Initially, I used Material Design’s Floating Action Button (FAB) to allow people to edit their path. However, test results showed that the FAB was not clear in its function.</p>
 
-                      <h2 id="heatmaps">Wireframe Testing Heatmaps</h2>
+                      <h2 id="heatmaps">Wireframe Heatmap Tests</h2>
                       
                       <p>I tested the Floating Action Button wireframe sketches using click tests and navigation tests on UsabilityHub. Here is a test result showing a low success rate of people clicking on the Floating Action Button for the corresponding user story:</p>
 
@@ -423,7 +423,7 @@
                       <div class="background-photo-tall" style="background-image:url(images/wander/edit-path-wireframe-2.jpg);"></div>
                       <h6>Early wireframe click test results for Edit Path Floating Action Button</h6> 
 
-                      <h2>Mockup Testing Heatmaps</h2> 
+                      <h2>Mockup Heatmap Tests</h2> 
 
                       <p>I then tested mockups to see if color and context would people identify the Floating Action Buttons purpose. The results showed little improvement. Again attempting to solve for:</p>
 
@@ -441,9 +441,17 @@
 
                       <h2>Other lessons learned: touch target size matters</h2> 
 
-                      <p>A lesson learned during the early stages of the prototype was not to forget that touch target size matters for mobile devices. One person I randomly tested struggled to see anything happen when they tried to click on icons. In this case, the 24 x 24 dp icons were too small to register a response. </p>
+                      <p>A lesson learned during the early stages of the prototype was to remember that touch target size matters for mobile devices. One person I randomly tested struggled to see anything happen when they tried to click on icons. In this case, the 24 x 24 dp icons were too small to register a response. </p>
 
                       <p>Material Design says touch targets should be at least 48 x 48 dp to ensure a physical size of about 9mm regardless of screen size. There should also be at least 8 dp separation between them. I made changes to include the minimum suggested touch zone size and spacing. I immediately saw testers move more fluidly through the app.</p>
+
+                      <!-- Prototype -->
+                      <h1 id="prototype">Prototype</h1>
+                      <hr>
+                      <p><a href="https://xd.adobe.com/view/41545c7a-8638-473b-92bd-716e5b0270c8/" target="_blank">View Prototype</a></p> 
+                      <p>I used Adobe XD for rapid prototyping. Adobe XD was especially useful for creating flows for the many combinations of actions a person can take in the map view.</p>
+
+                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/prototype-map-flow@2x.png);"></div>
 
                       <h2 class="usability-testing" id="usability-testing">Usability Testing with Prototype</h2> 
 
