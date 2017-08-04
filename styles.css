@@ -514,6 +514,7 @@ footer.mdl-mini-footer {
 	background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
+    margin-bottom: 24px;
 }
 .mdl-layout .bottom-spacer {
 	margin-bottom: 40px;
@@ -629,6 +630,20 @@ i.material-icons {
 }
 .mdl-layout .case-study-contact .mdl-button {
 	margin: initial; /* removes left padding used to align with paragraphs */ 
+}
+.mdl-layout video {
+	display: block;
+	vertical-align: middle;
+	width: calc(100% - 32px);
+	vertical-align: middle;
+	margin: 0 auto 24px;
+	max-width: 400px;
+}
+video.wide-video {
+	max-width: initial;
+}
+.text-align-center {
+	text-align: center;
 }
 
 /* Media queries to adjust to different screen sizes */
