@@ -51,10 +51,6 @@
 	opacity: 1;
 }
 
-.table-of-contents .mdl-layout-title {
-	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-}
-
 .mdl-layout h5 { /* Subheader used for cards */
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -77,6 +73,7 @@
 	color: #000000;
 	opacity: 0.87;
 	margin: 0 16px 24px;
+	-webkit-font-smoothing: antialiased;
 }
 
 .mdl-layout h6 { /* caption */
@@ -93,6 +90,7 @@
 .case-study ol, .case-study ul {
 	margin: 24px 16px 40px;
 	padding-left: 24px;
+	-webkit-font-smoothing: antialiased;
 }
 
 .mdl-layout li {
@@ -122,6 +120,11 @@ a.mdl-navigation__link {
 .mdl-layout .content-header {
 	margin: 16px 8px 0;
 	width: 100%;
+}
+
+.scroll-nav-adjustment .content-header {
+	margin: 64px auto 16px;
+	max-width: 808px;
 }
 
 .content-items-max-width {
@@ -520,59 +523,88 @@ footer.mdl-mini-footer {
 	margin-bottom: 40px;
 }
 
-/* Table of contents styling */
+/* Scroll Nav Styling */
 
-.table-of-contents {
+.scroll-nav-adjustment .mdl-layout { /* Overide Material Design Lite flex display layout to make Scroll Nav Jquery plugin work */
+	display: block;
+	overflow: visible;
+}
+.scroll-nav-adjustment .mdl-layout__content {
+	background-color: #F8F8F9;
+	width: 100%
+}
+.scroll-nav-adjustment .mdl-layout__header {
 	position: fixed;
-	left: 0;
+}
+.scroll-nav {
+	position: fixed;
 	top: 64px;
-	width: 236px;
-	height: 100%;
-	padding: 24px 40px;
+	left: 16px;
 }
 
-.table-of-contents .mdl-layout-title {
-	padding-bottom: 24px;
-	font-weight: 500;
+.scroll-nav ol {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 16px;
 }
 
-.table-of-contents .mdl-navigation {
-	flex-direction: column;
+.case-study .scroll-nav li {
+	line-height: 20px;
 }
 
-.table-of-contents .mdl-navigation__link {
+.case-study li.scroll-nav__item {
+	margin-bottom: 24px;
+}
+
+.case-study .scroll-nav a {
 	color: rgba(0, 0, 0, 0.54);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 0;
+}
+
+.scroll-nav .scroll-nav__sub-list {
+	margin-top: 8px;
+}
+
+.case-study .scroll-nav .scroll-nav__link {
 	font-weight: 700;
 }
 
-.table-of-contents .mdl-navigation__link:first-child {
-	padding-bottom: 24px;
-}
-
-.table-of-contents ul {
-	margin: 0 0 24px;
-	list-style: none;
-	padding-left: 0;
-}
-
-.table-of-contents .sub-link {
-	font-weight: initial;
-}
-
-.table-of-contents li.mdl-navigation__link {
-	font-weight: initial;
-}
-
-.table-of-contents .active-drawer-link {
+.scroll-nav .active .scroll-nav__link {
 		color: #006784;
+		font-size: 20px;
+		font-weight: 500;
 	}
 
-.table-of-contents .mdl-navigation a:hover {
+li.scroll-nav__item.active {
+		color: #006784;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+li.scroll-nav__item.active li.scroll-nav__sub-item.active > a {
+		color: #006784;
+		font-weight: 500;
+	}
+
+.scroll-nav a:hover {
 	color: #7BBED1;
 }
 
 /* General case study styling */
 
+.case-study {
+	width: 100%;
+	margin: 80px 8px 16px;
+	background-color: #F8F8F9;
+}
+.case-study-card {
+	max-width: 928px;
+	margin:0 auto;
+	background-color: #FFFFFF;
+}
 .case-study .main-title {
 	margin-bottom: 0;
 }
@@ -591,9 +623,6 @@ footer.mdl-mini-footer {
     height: 1px;
     background-color: #002443;
     margin: 0 16px 24px;
-}
-.case-study li {
-	margin-bottom: 16px;
 }
 
 ul.quotes {
@@ -650,8 +679,8 @@ video.wide-video {
 
 @media screen and (max-width: 1439px) {
 
-	.max-width {
-		max-width: 840px;
+	.case-study-card {
+		max-width: 808px;
 	}
 	.mdl-layout .mdl-layout__header-row {
 		max-width: 888px;
@@ -678,8 +707,11 @@ video.wide-video {
 }
 
 @media screen and (max-width: 1279px) {
-	.table-of-contents {
+	.scroll-nav {
 		display: none;
+	}
+	.case-study {
+		margin-top: 0;
 	}
 }
 
@@ -745,20 +777,23 @@ video.wide-video {
 	
 @media screen and (min-width: 840px) {
 
-		.mdl-layout .mdl-cell {
-			margin-top: 16px;
-		}
-		.mdl-cell.mdl-cell--12-col.hero-cell {
-			margin-top: 0;
-		}
-		.card-background-style {
+	.mdl-layout .mdl-cell {
+		margin-top: 16px;
+	}
+	.mdl-cell.mdl-cell--12-col.hero-cell {
+		margin-top: 0;
+	}
+	.card-background-style {
 		height: 298px;
 	}
 }
 
 @media screen and (max-width: 840px) {
-		.header-photo-scalable {
+	.header-photo-scalable {
 		height: 454px;
+	}
+	.scroll-nav-adjustment .content-header {
+		margin: 64px 8px 16px;
 	}
 }
 

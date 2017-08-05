@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	
+<div class="scroll-nav-adjustment">	
 	<!-- Header section starts here. Div shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
       <header class="mdl-layout__header">
@@ -54,553 +54,531 @@
       <main class="mdl-layout__content">
 
           <!-- Table of contents vertical navigation menu -->
-          <div class="mdl-grid max-width">
-              <div class="table-of-contents">
-                  <nav class="mdl-navigation">
-                      <!-- Summary -->
-                      <a class="mdl-navigation__link active-drawer-link" href="#summary">Summary</a>
-                      <!-- Research -->
-                      <a class="mdl-navigation__link" href="#research">Research</a>
-                          <ul>
-                              <li><a class="mdl-navigation__link sub-link" href="#user-personas">User Personas</a></li>
-                              <li><a class="mdl-navigation__link sub-link" href="#competitive-analysis">Competitive Analysis</a></li>
-                          </ul>
-                      <!-- Design -->
-                      <a class="mdl-navigation__link" href="#design">Design</a>
-                          <ul>
-                              <li><a class="mdl-navigation__link sub-link" href="#user-stories">User Stories</a></li>
-                              <li><a class="mdl-navigation__link sub-link" href="#user-flows">User Flows</a></li>
-                              <li><a class="mdl-navigation__link sub-link" href="#paper-wireframes">Paper Wireframes</a></li>
-                              <li><a class="mdl-navigation__link sub-link" href="#visual-design">Visual Design</a></li>
-                              <li><a class="mdl-navigation__link sub-link" href="#mockups">Mockups</a></li>
-                          </ul>
-                      <!-- Testing -->    
-                      <a class="mdl-navigation__link" href="#testing">Testing</a>
-                          <ul>
-                              <li><a class="mdl-navigation__link sub-link" href="#heatmaps">Heatmaps</a></li>
-                          </ul>
-                      <!-- Prototype -->
-                      <a class="mdl-navigation__link" href="#prototype">Prototype</a>
-                          <ul>
-                              <li><a class="mdl-navigation__link sub-link" href="#usability-testing">Usability Testing</a></li>
-                          </ul>
-                      <!-- Conclusion -->
-                      <a class="mdl-navigation__link" href="#conclusion">Conclusion</a>
-                  </nav>
-              </div>
+          <div class="mdl-grid">
 
               <!-- Content starts here -->
               <h4 class="content-header">Wander</h4>
-              <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp content-background-color">
-                  <div class="wander-header-photo header-photo-scalable"></div>
-                  <div class="case-study content-items-max-width">    
-                      <h1 class="main-title">Wander</h1>
-                      <h2 class="highlight">UX Research & Design: giving people more control over their map experience</h2>
-                      <p class="snapshot">UX Research and Design - Neil Ranada <br>Project time - 4 months<br>Project location - San Diego, CA</p>
+      
+                  
+                <div class="case-study content-background-color">
+  
+                        <div class=" mdl-shadow--4dp case-study-card"> 
+                          <div class="wander-header-photo header-photo-scalable"></div>
 
-                      <!-- Summary -->
-                      <h1 class="section-title" id="summary">Summary</h1>
-                      <hr>
-                      <p>Do you love to travel? A well-planned walking path is one of the best ways see things, especially if you’re tight on time. I designed an Android travel app called Wander to make it easier to plan walking paths.</p>
+                          <div class="content-items-max-width"> <!-- start of content items max width -->
 
-                      <h2>Problem</h2>
-                      <p>Most travel apps rely on computer-generated walking paths. Sometimes these paths don’t make sense, are unsafe, or not exactly what you want to do. Most frustratingly, travel apps give you little control to make changes.</p>
+                          <h1 class="main-title">Wander</h1>
+                          <h2 class="highlight">UX Research & Design: giving people more control over their map experience</h2>
+                          <p class="snapshot">UX Research and Design - Neil Ranada <br>Project time - 4 months<br>Project location - San Diego, CA</p>
 
-                      <h2>Solution</h2>
-                      <p>Dial back technology and use a time-tested way of getting directions: drawing on a map. Digital maps with routes drawn by people, not computers.</p>
-                      <p>Wander is an Android platform that allows people to create, select, edit, vote, and share walking paths. The goal is to give users more control.</p>
+                          <!-- Summary -->
+                          <h1 class="section-title nav-menu-item">Summary</h1>
+                          <hr>
+                          <p>Do you love to travel? A well-planned walking path is one of the best ways see things, especially if you’re tight on time. I designed an Android travel app called Wander to make it easier to plan walking paths.</p>
 
-                      <!-- Discovery -->
-                      <h2>Discovery</h2>
-                      <p>I once went on a solo adventure to Kyoto, Japan. The old capital is full of incredible history and sights. I underestimated its vastness and only had two and a half days to see it.</p>
+                          <h2>Problem</h2>
+                          <p>Most travel apps rely on computer-generated walking paths. Sometimes these paths don’t make sense, are unsafe, or not exactly what you want to do. Most frustratingly, travel apps give you little control to make changes.</p>
 
-                      <div class="background-photo-scalable" style="background-image:url(images/wander/fushima-inari-shrine.jpg);"></div>
-                      <h6>Fushimi Inari Shrine, Kyoto, Japan. Photo by Neil Ranada.</h6>
+                          <h2>Solution</h2>
+                          <p>Dial back technology and use a time-tested way of getting directions: drawing on a map. Digital maps with routes drawn by people, not computers.</p>
+                          <p>Wander is an Android platform that allows people to create, select, edit, vote, and share walking paths. The goal is to give users more control.</p>
 
-                      <div class="background-photo-scalable" style="background-image:url(images/wander/golden-pavilion.jpg);"></div>
-                      <h6>Golden Pavilion, Kyoto, Japan. Photo by Neil Ranada.</h6>
+                          <!-- Discovery -->
+                          <h2>Discovery</h2>
+                          <p>I once went on a solo adventure to Kyoto, Japan. The old capital is full of incredible history and sights. I underestimated its vastness and only had two and a half days to see it.</p>
 
-                      <div class="background-photo-scalable" style="background-image:url(images/wander/higashiyama-district.jpg);"></div>
-                      <h6>Higashiyama Historic District, Kyoto, Japan. Photo by Neil Ranada.</h6>
+                          <div class="background-photo-scalable" style="background-image:url(images/wander/fushima-inari-shrine.jpg);"></div>
+                          <h6>Fushimi Inari Shrine, Kyoto, Japan. Photo by Neil Ranada.</h6>
 
-                      <p>It turns out Kyoto is a walkable city. A Japanese travel guide gave me paper maps breaking down the city into sections. Each map section showed suggested walking routes. But it was raining, and it became a pain to use my rain-soaked maps without tearing them apart.</p>
+                          <div class="background-photo-scalable" style="background-image:url(images/wander/golden-pavilion.jpg);"></div>
+                          <h6>Golden Pavilion, Kyoto, Japan. Photo by Neil Ranada.</h6>
 
-                      <img src="images/wander/kyoto-map@2x.png" alt="kyoto map">
-                      <h6>Koyoto Walks paper map. Source: http://www.jnto.go.jp</h6>
+                          <div class="background-photo-scalable" style="background-image:url(images/wander/higashiyama-district.jpg);"></div>
+                          <h6>Higashiyama Historic District, Kyoto, Japan. Photo by Neil Ranada.</h6>
 
-                      <p>I tried using Kyoto’s travel website instead. It has digital maps with similar walking routes. But it wasn’t mobile-friendly, and I couldn’t expand the maps to fill the full size of my phone’s screen.</p>
+                          <p>It turns out Kyoto is a walkable city. A Japanese travel guide gave me paper maps breaking down the city into sections. Each map section showed suggested walking routes. But it was raining, and it became a pain to use my rain-soaked maps without tearing them apart.</p>
 
-                      <div class="background-photo-tall" style="background-image:url(images/wander/kyoto-digital-map@2x.png);"></div>
-                      <h6 class="text-align-center">Kyoto digital walking map. Source: http://www.japan-guide.com</h6>
+                          <img src="images/wander/kyoto-map@2x.png" alt="kyoto map">
+                          <h6>Koyoto Walks paper map. Source: http://www.jnto.go.jp</h6>
 
-                      <p class="bottom-spacer">Why couldn’t I have a mobile-friendly map with walking paths? Did other people have the same problem?</p>
+                          <p>I tried using Kyoto’s travel website instead. It has digital maps with similar walking routes. But it wasn’t mobile-friendly, and I couldn’t expand the maps to fill the full size of my phone’s screen.</p>
 
-                      <!-- Research -->
-                      <h1 class="section-title" id="research">Research</h1>
-                      <hr>
+                          <div class="background-photo-tall" style="background-image:url(images/wander/kyoto-digital-map@2x.png);"></div>
+                          <h6 class="text-align-center">Kyoto digital walking map. Source: http://www.japan-guide.com</h6>
 
-                      <p>First, I needed to figure out if there was an opportunity to solve a problem. I can’t design solutions for a problem that doesn’t exist.</p>
+                          <p class="bottom-spacer">Why couldn’t I have a mobile-friendly map with walking paths? Did other people have the same problem?</p>
 
-                      <p>I started my research by making an assumption: people need a travel app that makes it easier for them to plan walking paths. To validate this, I needed to answer three questions:</p>
+                          <!-- Research -->
+                          <h1 class="section-title nav-menu-item">Research</h1>
+                          <hr>
 
-                      <ol>
-                        <li>Is there a need for a tool to make it easier to plan walking paths?</li>
-                        <li>If so, who needs it?</li>
-                        <li>What features do they need?</li>
-                      </ol>
+                          <p>First, I needed to figure out if there was an opportunity to solve a problem. I can’t design solutions for a problem that doesn’t exist.</p>
 
-                      <p>I conducted two surveys and two rounds of interviews to find answers. I asked questions focused on past experiences and behaviors. I also wanted to know any frustrations people had with travel planning tools.</p>
+                          <p>I started my research by making an assumption: people need a travel app that makes it easier for them to plan walking paths. To validate this, I needed to answer three questions:</p>
 
-                      <h2>First Survey</h2>
+                          <ol>
+                            <li>Is there a need for a tool to make it easier to plan walking paths?</li>
+                            <li>If so, who needs it?</li>
+                            <li>What features do they need?</li>
+                          </ol>
 
-                      <p>I posted a <a href="https://neilranada.typeform.com/report/jD0CrJ/bcnj" target="_blank">survey online</a> to various social media platforms and public forums. I asked general questions about people's last sightseeing experience. I didn't mention anything about walking paths at this point. I wanted to see what problems or successes people would share that I may not have considered.</p>
+                          <p>I conducted two surveys and two rounds of interviews to find answers. I asked questions focused on past experiences and behaviors. I also wanted to know any frustrations people had with travel planning tools.</p>
 
-                      <p>Here are my key findings from the 19 responses:</p>
+                          <h2>First Survey</h2>
 
-                      <ul>
-                          <li>100% said they used smartphones to browse websites to plan sightseeing.</li> 
-                          <li>A majority used Google Search (89%) and TripAdvisor (84%) for research.</li>
-                          <li>Fewer people used social media in their travel research: Facebook (21%) and Instagram (21%).</li>
-                          <li>People used Facebook (79%) and Instagram (47%) to post travel photos.</li> 
-                          <li>When asked to select one experience that needed improvement: "planning route and schedule" was the top issue.</li>
-                      </ul>
+                          <p>I posted a <a href="https://neilranada.typeform.com/report/jD0CrJ/bcnj" target="_blank">survey online</a> to various social media platforms and public forums. I asked general questions about people's last sightseeing experience. I didn't mention anything about walking paths at this point. I wanted to see what problems or successes people would share that I may not have considered.</p>
 
-                      <h2>Mobile-first and the need for more research</h2>
+                          <p>Here are my key findings from the 19 responses:</p>
 
-                      <p>Based on the results, it wasn't clear if there was a need for a tool to make walking paths easier to plan. However, if there was a need, it was clear that I needed to use a "mobile first" design approach. It was also clear that I needed to learn how people used Google Search and TripAdvisor for travel research.</p>
+                          <ul>
+                              <li>100% said they used smartphones to browse websites to plan sightseeing.</li> 
+                              <li>A majority used Google Search (89%) and TripAdvisor (84%) for research.</li>
+                              <li>Fewer people used social media in their travel research: Facebook (21%) and Instagram (21%).</li>
+                              <li>People used Facebook (79%) and Instagram (47%) to post travel photos.</li> 
+                              <li>When asked to select one experience that needed improvement: "planning route and schedule" was the top issue.</li>
+                          </ul>
 
-                      <p>Social media played less of a role in travel research than I expected. But, I still think there may be an opportunity to discover a greater connection between maps and social media, especially since Instagram is full of photo feeds for travel inspiration. I decided it was beyond the scope of this project but may be worth researching another time.</p>
+                          <h2>Mobile-first and the need for more research</h2>
 
-                      <h2>Interviews</h2>
+                          <p>Based on the results, it wasn't clear if there was a need for a tool to make walking paths easier to plan. However, if there was a need, it was clear that I needed to use a "mobile first" design approach. It was also clear that I needed to learn how people used Google Search and TripAdvisor for travel research.</p>
 
-                      <p>During this project, I took a two-week trip to the Philippines to attend a wedding on Boracay Island. Many of my friends also attended. Different groups had separate plans for sightseeing before and after the wedding. It was the perfect opportunity to make observations and conduct interviews.</p>
+                          <p>Social media played less of a role in travel research than I expected. But, I still think there may be an opportunity to discover a greater connection between maps and social media, especially since Instagram is full of photo feeds for travel inspiration. I decided it was beyond the scope of this project but may be worth researching another time.</p>
 
-                      <p>Here are key findings from interviewing 12 people:</p>
+                          <h2>Interviews</h2>
 
-                      <ul>
-                          <li>People used Google Search or TripAdvisor to find and compare lists of top things to see and do.</li>
-                          <li>Planning tended to stop at the city level in their search. Once in Manila, people weren't sure of what places they wanted to see. If they did have an idea, they weren't sure of the best order to see everything in a short period.</li>
-                          <li>Everyone's definition of sightseeing varied. Some people wanted to walk around historical places like the Intramuros, an old walled city. Others wanted to see street markets or the giant Mall of Asia.</li>
-                          <li>People on this trip relied on Google Maps to walk from point to point. They didn't have a walking path in mind.</li> 
-                      </ul>
+                          <p>During this project, I took a two-week trip to the Philippines to attend a wedding on Boracay Island. Many of my friends also attended. Different groups had separate plans for sightseeing before and after the wedding. It was the perfect opportunity to make observations and conduct interviews.</p>
 
-                      <img src="images/wander/casa-di-manila@2x.png" alt="Casa di Manila, Intramuros, Philippines">
-                      <h6>Casa Manila Patio, Itramuros, Manila, Philippines. Photos by Neil Ranada.</h6>
+                          <p>Here are key findings from interviewing 12 people:</p>
 
-                      <h2>Point-to-Point Navigators vs. Planners</h2>
+                          <ul>
+                              <li>People used Google Search or TripAdvisor to find and compare lists of top things to see and do.</li>
+                              <li>Planning tended to stop at the city level in their search. Once in Manila, people weren't sure of what places they wanted to see. If they did have an idea, they weren't sure of the best order to see everything in a short period.</li>
+                              <li>Everyone's definition of sightseeing varied. Some people wanted to walk around historical places like the Intramuros, an old walled city. Others wanted to see street markets or the giant Mall of Asia.</li>
+                              <li>People on this trip relied on Google Maps to walk from point to point. They didn't have a walking path in mind.</li> 
+                          </ul>
 
-                      <p>There’s a spectrum of how people navigate. On one end, there are what I call “point-to-point” navigators and on the other end “planners.” People on this trip leaned towards being “point-to-point” navigators. Navigating to one place at a time using Google Maps. They didn’t necessarily need a walking path with all their stops planned out.</p>
+                          <img src="images/wander/casa-di-manila@2x.png" alt="Casa di Manila, Intramuros, Philippines">
+                          <h6>Casa Manila Patio, Itramuros, Manila, Philippines. Photos by Neil Ranada.</h6>
 
-                      <p>There wasn’t evidence at this point to design a walking path tool. To move forward, I needed to find and interview “planners.” People who like having itineraries.</p>
+                          <h2>Point-to-Point Navigators vs. Planners</h2>
 
-                      <img src="images/wander/manila-jeepney@2x.png" alt="Jeepney Manila, Philippines">
-                      <h6>Christiaan Alamazan catching a Jeepney in Manila. Photos by @chrisdavid.photos.</h6>
+                          <p>There’s a spectrum of how people navigate. On one end, there are what I call “point-to-point” navigators and on the other end “planners.” People on this trip leaned towards being “point-to-point” navigators. Navigating to one place at a time using Google Maps. They didn’t necessarily need a walking path with all their stops planned out.</p>
 
-                      <h2>Second Survey</h2>
+                          <p>There wasn’t evidence at this point to design a walking path tool. To move forward, I needed to find and interview “planners.” People who like having itineraries.</p>
 
-                      <p>Before conducting another set of interviews, I posted another <a href="https://neilranada.typeform.com/report/BbEEgk/CCph" target="_blank">survey</a>. This time, I asked specific questions about what tools people used to plan walking paths. I provided both digital and paper options. I also needed to know what they liked most about these tools, and what they liked least.</p>
+                          <img src="images/wander/manila-jeepney@2x.png" alt="Jeepney Manila, Philippines">
+                          <h6>Christiaan Alamazan catching a Jeepney in Manila. Photos by @chrisdavid.photos.</h6>
 
-                      <p>Here are key findings from the 32 responses:</p>
+                          <h2>Second Survey</h2>
 
-                      <ul>
-                          <li>Travel apps like Google Trips (6%), Cool Cousin (3%), and FieldTrip (1%) are not popular tools for planning walking paths.</li>
-                      </ul>
+                          <p>Before conducting another set of interviews, I posted another <a href="https://neilranada.typeform.com/report/BbEEgk/CCph" target="_blank">survey</a>. This time, I asked specific questions about what tools people used to plan walking paths. I provided both digital and paper options. I also needed to know what they liked most about these tools, and what they liked least.</p>
 
-                      <p>Here is a selection of comments:</p>
+                          <p>Here are key findings from the 32 responses:</p>
 
-                      <ul class="quotes">
-                          <li>“I don't think there is an obvious way to customize my route. I think I can create a route but it seems complicated.”</li>
-                          <li>“It can take me to shady places...”</li> 
-                          <li>“Lack of suggested routes/plans to cover various sight-seeing points.”</li>
-                          <li>“When I'm abroad and don't have mobile internet access, or I'm in a heavily pedestrian urban area (like Marrakech) where the maps may not be detailed enough, then Google Maps fails me. That's when I turn to paper maps of some sort, or maybe an offline map intended for travelers if I don't need to worry about having my phone out.”</li> 
-                      </ul>
+                          <ul>
+                              <li>Travel apps like Google Trips (6%), Cool Cousin (3%), and FieldTrip (1%) are not popular tools for planning walking paths.</li>
+                          </ul>
 
-                      <h2>Realizing an opportunity to solve a problem</h2>
+                          <p>Here is a selection of comments:</p>
 
-                      <p>After the second round of surveys, I realized that some apps fall short in planning walking paths. There were two main pain points:</p>
+                          <ul class="quotes">
+                              <li>“I don't think there is an obvious way to customize my route. I think I can create a route but it seems complicated.”</li>
+                              <li>“It can take me to shady places...”</li> 
+                              <li>“Lack of suggested routes/plans to cover various sight-seeing points.”</li>
+                              <li>“When I'm abroad and don't have mobile internet access, or I'm in a heavily pedestrian urban area (like Marrakech) where the maps may not be detailed enough, then Google Maps fails me. That's when I turn to paper maps of some sort, or maybe an offline map intended for travelers if I don't need to worry about having my phone out.”</li> 
+                          </ul>
 
-                      <ol>
-                          <li>Feeling unsafe</li> 
-                          <li>Inability to easily create and edit a path</li> 
-                      </ol>
+                          <h2>Realizing an opportunity to solve a problem</h2>
 
-                      <p>At this point, I realized an opportunity to design a tool for people who are most likely to use route suggestions to cover various sight-seeing points. </p>
+                          <p>After the second round of surveys, I realized that some apps fall short in planning walking paths. There were two main pain points:</p>
 
-                      <h2 id="user-personas">User Personas</h2>
+                          <ol>
+                              <li>Feeling unsafe</li> 
+                              <li>Inability to easily create and edit a path</li> 
+                          </ol>
 
-                      <p>I identified three people to interview who plan their travels in advance. These are people who I assessed would benefit most from a tool for planning walking paths.</p>
+                          <p>At this point, I realized an opportunity to design a tool for people who are most likely to use route suggestions to cover various sight-seeing points. </p>
 
-                      <img src="images/wander/traveling-mom@2x.png" alt="traveling mom" class="bottom-spacer">
-                      <img src="images/wander/traveling-couple@2x.png" alt="traveling couple" class="bottom-spacer">
-                      <img src="images/wander/traveling-solo@2x.png" alt="traveling solo">
+                          <h2 class="nav-sub-menu-item">User Personas</h2>
 
-                      <p class="bottom-spacer tex"><a href="https://www.dropbox.com/s/ptdj2y2y3mh161b/Wander-User-Personas.pdf?dl=0">Open file for User Personas<i class="material-icons">open_in_new</i></a></p>
+                          <p>I identified three people to interview who plan their travels in advance. These are people who I assessed would benefit most from a tool for planning walking paths.</p>
 
-                      <h2>Top 3 goals of the User Personas</h2>
+                          <img src="images/wander/traveling-mom@2x.png" alt="traveling mom" class="bottom-spacer">
+                          <img src="images/wander/traveling-couple@2x.png" alt="traveling couple" class="bottom-spacer">
+                          <img src="images/wander/traveling-solo@2x.png" alt="traveling solo">
 
-                      <ol>
-                          <li>Discover itineraries that match their interests and schedule</li>
-                          <li>Easily edit their path and points of interest</li> 
-                          <li>Follow a route but also have the freedom to explore</li>
-                      </ol>
+                          <p class="bottom-spacer tex"><a href="https://www.dropbox.com/s/ptdj2y2y3mh161b/Wander-User-Personas.pdf?dl=0">Open file for User Personas<i class="material-icons">open_in_new</i></a></p>
 
-                      <p>I based my decisions around these three goals throughout my design process. Next, I needed to learn from the competition.</p>
+                          <h2>Top 3 goals of the User Personas</h2>
 
-                      <h2 id="competitive-analysis">Competitive Analysis</h2>
+                          <ol>
+                              <li>Discover itineraries that match their interests and schedule</li>
+                              <li>Easily edit their path and points of interest</li> 
+                              <li>Follow a route but also have the freedom to explore</li>
+                          </ol>
 
-                      <p>I analyzed the strengths and weaknesses of travel app competitors. I identified six travel apps: TripAdvisor, Google Trips, Walc, FieldTrip, Cool Cousin, and Triposo.</p>
+                          <p>I based my decisions around these three goals throughout my design process. Next, I needed to learn from the competition.</p>
 
-                      <p class="bottom-spacer">I conducted SWOT analysis, creating matrixes such as the one below, to assess the strengths, weaknesses, opportunities, and threats of each app.</p>
+                          <h2 class="nav-sub-menu-item">Competitive Analysis</h2>
 
-                      <img src="images/wander/swot-analysis.png" alt="swot analysis">
+                          <p>I analyzed the strengths and weaknesses of travel app competitors. I identified six travel apps: TripAdvisor, Google Trips, Walc, FieldTrip, Cool Cousin, and Triposo.</p>
 
-                      <p class="bottom-spacer"><a href="https://www.dropbox.com/s/ptdj2y2y3mh161b/Wander-User-Personas.pdf?dl=0">View analysis matrixes for other apps<i class="material-icons">open_in_new</i></a></p>
+                          <p class="bottom-spacer">I conducted SWOT analysis, creating matrixes such as the one below, to assess the strengths, weaknesses, opportunities, and threats of each app.</p>
 
-                      <p>I also downloaded Triposo. Out of the list of travel apps I analyzed, Triposo had the most advanced tool for planning a walking route to multiple sightseeing points.</p>
+                          <img src="images/wander/swot-analysis.png" alt="swot analysis">
 
-                      <div class="background-photo-tall" style="background-image:url(images/wander/triposo-city-walks@2x.png);"></div>
-                      <h6 class="text-align-center">Screenshot from Triposo iPhone app.</h6>
+                          <p class="bottom-spacer"><a href="https://www.dropbox.com/s/ptdj2y2y3mh161b/Wander-User-Personas.pdf?dl=0">View analysis matrixes for other apps<i class="material-icons">open_in_new</i></a></p>
 
-                      <h2>Top three strengths to include in the design:</h2>
+                          <p>I also downloaded Triposo. Out of the list of travel apps I analyzed, Triposo had the most advanced tool for planning a walking route to multiple sightseeing points.</p>
 
-                      <ol>
-                          <li>Crowd-sourcing to provide self-sustaining content production</li>
-                          <li>Voting system to let people decide what is most helpful</li>
-                          <li>Integration with Google Maps because its database is extensive and trustworthy</li>
-                      </ol>
+                          <div class="background-photo-tall" style="background-image:url(images/wander/triposo-city-walks@2x.png);"></div>
+                          <h6 class="text-align-center">Screenshot from Triposo iPhone app.</h6>
 
-                      <h2>Top three weaknesses to avoid in the design:</h2>
+                          <h2>Top three strengths to include in the design:</h2>
 
-                      <ol>
-                          <li>Overwhelming number of features and information</li>
-                          <li>Computer generated routes that are unsafe or do not make sense</li>
-                          <li>Making it difficult for people to edit a path and change points of interest</li>
-                      </ol>
+                          <ol>
+                              <li>Crowd-sourcing to provide self-sustaining content production</li>
+                              <li>Voting system to let people decide what is most helpful</li>
+                              <li>Integration with Google Maps because its database is extensive and trustworthy</li>
+                          </ol>
 
-                      <h2>Field research at Balboa Park, San Diego</h2>
+                          <h2>Top three weaknesses to avoid in the design:</h2>
 
-                      <p>I also took advantage of the fact that I live in San Diego, a major tourist destination. I spent several mornings and afternoons at Balboa Park. I hung out next to maps posted throughout the park. I casually interviewed people to find out what they were searching. I also wanted to see what they thought was helpful, and what was frustrating.</p>
+                          <ol>
+                              <li>Overwhelming number of features and information</li>
+                              <li>Computer generated routes that are unsafe or do not make sense</li>
+                              <li>Making it difficult for people to edit a path and change points of interest</li>
+                          </ol>
 
-                      <h2>Time tested way of finding directions</h2>
+                          <h2>Field research at Balboa Park, San Diego</h2>
 
-                      <p>People still rely on friends, or even strangers, to find directions. This behavior reinforced the crowd-sourcing and social approach in the design.</p>
+                          <p>I also took advantage of the fact that I live in San Diego, a major tourist destination. I spent several mornings and afternoons at Balboa Park. I hung out next to maps posted throughout the park. I casually interviewed people to find out what they were searching. I also wanted to see what they thought was helpful, and what was frustrating.</p>
 
-                      <p>Sometimes the best way to find where you’re going is to ask someone who can draw directions for you on a paper map. With this in mind, I needed to design a digital version of this time-tested method of getting directions.</p>
+                          <h2>Time tested way of finding directions</h2>
 
-                      <p>It also occurred to me that not everyone walks on paths. Sometimes people move around on wheels: wheelchairs, scooters, bikes, skates, etc. It reminded me to push for inclusive design.</p>
+                          <p>People still rely on friends, or even strangers, to find directions. This behavior reinforced the crowd-sourcing and social approach in the design.</p>
 
-                      <div class="background-photo-scalable" style="background-image:url(images/wander/balboa-park@2x.png"></div>
-                      <h6>Central fountain, Balboa Park, San Diego. Photos by Neil Ranada.</h6>
+                          <p>Sometimes the best way to find where you’re going is to ask someone who can draw directions for you on a paper map. With this in mind, I needed to design a digital version of this time-tested method of getting directions.</p>
 
-                      <h2>Meeting research goals</h2>
+                          <p>It also occurred to me that not everyone walks on paths. Sometimes people move around on wheels: wheelchairs, scooters, bikes, skates, etc. It reminded me to push for inclusive design.</p>
 
-                      <ol>
-                          <li>Is there a need for a tool to make it easier to plan walking paths?
-                          <br><span class="highlight">Yes</span>
-                          </li>
+                          <div class="background-photo-scalable" style="background-image:url(images/wander/balboa-park@2x.png"></div>
+                          <h6>Central fountain, Balboa Park, San Diego. Photos by Neil Ranada.</h6>
 
-                          <li>Who needs it?
-                          <br><span class="highlight">People who plan travel itineraries like the three user personas.</span>
-                          </li>
+                          <h2>Meeting research goals</h2>
 
-                          <li>What features do they need?
-                          <br><span class="highlight">A platform that allows people to create, select, edit, vote, and share walking paths.</span>
-                          </li>
-                      </ol>
+                          <ol>
+                              <li>Is there a need for a tool to make it easier to plan walking paths?
+                              <br><span class="highlight">Yes</span>
+                              </li>
 
-                      <!-- Design -->
-                      <h1 id="design">Design</h1>
-                      <hr>
-                      <p>After conducting user research and defining the problem, I was ready to move forward and create design solutions.</p>
+                              <li>Who needs it?
+                              <br><span class="highlight">People who plan travel itineraries like the three user personas.</span>
+                              </li>
 
-                      <h2 id="user-stories">User Stories</h2>
-                      <p>I created a spreadsheet with a list of tasks to meet the goals of the user personas.</p> 
-                      <h4>"As a __________, I want to __________ so that I can __________."</h4>
+                              <li>What features do they need?
+                              <br><span class="highlight">A platform that allows people to create, select, edit, vote, and share walking paths.</span>
+                              </li>
+                          </ol>
 
-                      <img src="images/wander/user-stories.png" alt="user stories">
+                          <!-- Design -->
+                          <h1 class="section-title nav-menu-item">Design</h1>
+                          <hr>
+                          <p>After conducting user research and defining the problem, I was ready to move forward and create design solutions.</p>
 
-                      <p class="bottom-spacer"><a href="https://docs.google.com/spreadsheets/d/1JWyp_YQT-n9wX2OgGR10xUt9OwbBY5JPKilEnlvO9Oo/edit?usp=sharing">Open User Stories in Google Sheets<i class="material-icons">open_in_new</i></a></p> 
+                          <h2 class="nav-sub-menu-item">User Stories</h2>
+                          <p>I created a spreadsheet with a list of tasks to meet the goals of the user personas.</p> 
+                          <h4>"As a __________, I want to __________ so that I can __________."</h4>
 
-                      <h2 id="user-flows">User flows</h2>
+                          <img src="images/wander/user-stories.png" alt="user stories">
 
-                      <p>I created User Flows to visually depict how people completed each task set out in the User Stories.</p>
+                          <p class="bottom-spacer"><a href="https://docs.google.com/spreadsheets/d/1JWyp_YQT-n9wX2OgGR10xUt9OwbBY5JPKilEnlvO9Oo/edit?usp=sharing">Open User Stories in Google Sheets<i class="material-icons">open_in_new</i></a></p> 
 
-                      <h4>Search flow</h4>
-                      <img src="images/wander/user-flow-search.jpg" alt="user search flow" class="bottom-spacer">
+                          <h2 class="nav-sub-menu-item">User Flows</h2>
 
-                      <h4>Map view flow</h4>
-                      <img src="images/wander/user-flow-onboarding.jpg" alt="user onboarding flow" class="bottom-spacer">
+                          <p>I created User Flows to visually depict how people completed each task set out in the User Stories.</p>
 
-                      <h4>Onboarding flow</h4>
-                      <img src="images/wander/user-flow-map-view.jpg" alt="user map view flow" class="bottom-spacer">
+                          <h4>Search flow</h4>
+                          <img src="images/wander/user-flow-search.jpg" alt="user search flow" class="bottom-spacer">
 
-                      <p class="bottom-spacer"><a href="https://drive.google.com/file/d/0B9dkLvODiMG-ZmtRRjJXQkNaY1U/view?usp=sharing">Open User Flow in Draw.io<i class="material-icons">open_in_new</i></a></p>
+                          <h4>Map view flow</h4>
+                          <img src="images/wander/user-flow-onboarding.jpg" alt="user onboarding flow" class="bottom-spacer">
 
-                      <h2 id="paper-wireframes">Paper Wireframes</h2>
+                          <h4>Onboarding flow</h4>
+                          <img src="images/wander/user-flow-map-view.jpg" alt="user map view flow" class="bottom-spacer">
 
-                      <p>I spent the majority of my time creating wireframes to focus on the functionality of the travel app. I sketched using pen and paper which let me put my design ideas down quickly. For inspiration, I looked to patterns found in popular apps such as TripAdvisor and Airbnb.</p>
+                          <p class="bottom-spacer"><a href="https://drive.google.com/file/d/0B9dkLvODiMG-ZmtRRjJXQkNaY1U/view?usp=sharing">Open User Flow in Draw.io<i class="material-icons">open_in_new</i></a></p>
 
-                      <p>I went through each user story and wrote the task in the top left corner of each page to focus on the particular problem I needed to solve.</p>
+                          <h2 class="nav-sub-menu-item">Paper Wireframes</h2>
 
-                      <p>Here are a couple of early wireframe sketches attempting to solve for the following user story:<p> 
-                      <p class="highlight">"As a user...I want to search recommended paths...so that I can find the best way to see popular sights."</p>
+                          <p>I spent the majority of my time creating wireframes to focus on the functionality of the travel app. I sketched using pen and paper which let me put my design ideas down quickly. For inspiration, I looked to patterns found in popular apps such as TripAdvisor and Airbnb.</p>
 
-                      <img src="images/wander/wireframe-search-cards@2x.png">
-                      <h6>Flowing from a collection of cards to a map.</h6>
+                          <p>I went through each user story and wrote the task in the top left corner of each page to focus on the particular problem I needed to solve.</p>
 
-                      <img src="images/wander/wireframe-search-list@2x.png">
-                      <h6>Flowing from list view to a page with information and photos for a point of interest.</h6>
+                          <p>Here are a couple of early wireframe sketches attempting to solve for the following user story:<p> 
+                          <p class="highlight">"As a user...I want to search recommended paths...so that I can find the best way to see popular sights."</p>
 
-                      <p>User testing later revealed that I needed to use a blend of the two ideas above. A list for easier skimming instead of cards. And a map view instead of an info page with photos because that’s what testers expected after selecting a path.</p>
+                          <img src="images/wander/wireframe-search-cards@2x.png">
+                          <h6>Flowing from a collection of cards to a map.</h6>
 
-                      <p>The most challenging problem I focused on was how people could seamlessly make changes to customize their walking path. Here is a progression of wireframe sketches designing for the user story:</p>
+                          <img src="images/wander/wireframe-search-list@2x.png">
+                          <h6>Flowing from list view to a page with information and photos for a point of interest.</h6>
 
-                      <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
+                          <p>User testing later revealed that I needed to use a blend of the two ideas above. A list for easier skimming instead of cards. And a map view instead of an info page with photos because that’s what testers expected after selecting a path.</p>
 
-                      <img src="images/wander/wireframe-change-path-early@2x.png">
-                      <h6>Early version.</h6>
+                          <p>The most challenging problem I focused on was how people could seamlessly make changes to customize their walking path. Here is a progression of wireframe sketches designing for the user story:</p>
 
-                      <img src="images/wander/wireframe-change-path-later@2x.png">
-                      <h6>Later version.</h6>
+                          <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
 
-                      <p>Testing revealed that most people could not associate the unlabeled Floating Action Button with making changes to a path. I discuss this issue later under the "Testing" section.</p>
+                          <img src="images/wander/wireframe-change-path-early@2x.png">
+                          <h6>Early version.</h6>
 
-                      <h2 id="visual-design">Visual Design</h2>
+                          <img src="images/wander/wireframe-change-path-later@2x.png">
+                          <h6>Later version.</h6>
 
-                      <p>I moved on to visual design to see if visual hierarchy, color contrast, and the realism of mockups of the app would help users select and edit a path. I started by sketching and brainstorming to come up with a brand name.</p>
+                          <p>Testing revealed that most people could not associate the unlabeled Floating Action Button with making changes to a path. I discuss this issue later under the "Testing" section.</p>
 
-                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/brain-storm@2x.png);"></div>
+                          <h2 class="nav-sub-menu-item">Visual Design</h2>
 
-                      <h2>Logo</h2>
+                          <p>I moved on to visual design to see if visual hierarchy, color contrast, and the realism of mockups of the app would help users select and edit a path. I started by sketching and brainstorming to come up with a brand name.</p>
 
-                      <p>Next, I brainstormed logo ideas for Wander. I analyzed logos from well-known companies like Facebook, Instagram, and Airbnb for inspiration. The logos tended to be flat, simple, and scalable to small sizes.</p>
+                          <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/brain-storm@2x.png);"></div>
 
-                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/logo-sketches@2x.png);"></div>
+                          <h2>Logo</h2>
 
-                      <h2>Color</h2>
+                          <p>Next, I brainstormed logo ideas for Wander. I analyzed logos from well-known companies like Facebook, Instagram, and Airbnb for inspiration. The logos tended to be flat, simple, and scalable to small sizes.</p>
 
-                      <p>I used nostalgic travel posters for color inspiration and created a mood board using Pinterest. Then I looked to Dribbble's color picker to find a color palette to match the theme I wanted to achieve. I also used Adobe's Color Wheel to find a complimentary color.</p>
+                          <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/logo-sketches@2x.png);"></div>
 
-                      <img src="images/wander/nostalgic-travel-poster.jpg" alt="nostalgic travel poster" class="remove-padding-margin">
-                      <h6 class="remove-margin-top">Istanbul vintage travel poster from ideastorm.bigcartel.com</h6>
+                          <h2>Color</h2>
 
-                      <img src="images/wander/dribbble-color-picker@2x.png" alt="dribble color picker">
-                      <h6>Color finder on Dribbble.com.</h6>
+                          <p>I used nostalgic travel posters for color inspiration and created a mood board using Pinterest. Then I looked to Dribbble's color picker to find a color palette to match the theme I wanted to achieve. I also used Adobe's Color Wheel to find a complimentary color.</p>
 
-                      <img src="images/wander/dribbble-color-palette@2x.png" alt="dribble color palette">
-                      <h6>Desert color palette created by X-design on Dribble.com.</h6>
+                          <img src="images/wander/nostalgic-travel-poster.jpg" alt="nostalgic travel poster" class="remove-padding-margin">
+                          <h6 class="remove-margin-top">Istanbul vintage travel poster from ideastorm.bigcartel.com</h6>
 
-                      <img src="images/wander/adobe-color-wheel@2x.png" alt="adobe color wheel">
-                      <h6>Adobe Color Wheel used to pick a complementary color.</h6>
+                          <img src="images/wander/dribbble-color-picker@2x.png" alt="dribble color picker">
+                          <h6>Color finder on Dribbble.com.</h6>
 
-                      <h2>Typography</h2>
+                          <img src="images/wander/dribbble-color-palette@2x.png" alt="dribble color palette">
+                          <h6>Desert color palette created by X-design on Dribble.com.</h6>
 
-                      <p class="bottom-spacer">I chose Courgette for the brand name and titles throughout the app. The typeface designer, Karolina Lach, describes Courgette as a medium-contrast, brushy, italic-script typeface to give a loose, wispy feel to the Wander brand name.</p>
+                          <img src="images/wander/adobe-color-wheel@2x.png" alt="adobe color wheel">
+                          <h6>Adobe Color Wheel used to pick a complementary color.</h6>
 
-                      <h2>Style Guide</h2>
+                          <h2>Typography</h2>
 
-                      <p>Lastly, I used Google's Material Design guidelines for typography details to complete the style guide.</p>
+                          <p class="bottom-spacer">I chose Courgette for the brand name and titles throughout the app. The typeface designer, Karolina Lach, describes Courgette as a medium-contrast, brushy, italic-script typeface to give a loose, wispy feel to the Wander brand name.</p>
 
-                      <img src="images/wander/style-guide-wander@2x.png" alt="style guide">
+                          <h2>Style Guide</h2>
 
-                      <p class="bottom-spacer"><a href="https://www.dropbox.com/s/siqsvbdcciwn76y/Style-Guide-Wander.png?dl=0">Open Style Guide<i class="material-icons">open_in_new</i></a></p>
+                          <p>Lastly, I used Google's Material Design guidelines for typography details to complete the style guide.</p>
 
-                      <h2 id="mockups">Mockups</h2>
+                          <img src="images/wander/style-guide-wander@2x.png" alt="style guide">
 
-                      <p>I created 71 pages of high-fidelity mockups using Adobe XD and Google’s Material Design guidelines.</p>
+                          <p class="bottom-spacer"><a href="https://www.dropbox.com/s/siqsvbdcciwn76y/Style-Guide-Wander.png?dl=0">Open Style Guide<i class="material-icons">open_in_new</i></a></p>
 
-                      <p>I designed Wander to be highly interactive especially in the path editing mode. I needed users to be able to distinguish what was clickable and to create icons that looked like physical buttons. Material Design’s 3D approach was better suited for those goals than a flat design approach.</p>
+                          <h2 class="nav-sub-menu-item">Mockups</h2>
 
-                      <p>Flow for drawing a new path and having the option to undo or save changes:</p>
+                          <p>I created 71 pages of high-fidelity mockups using Adobe XD and Google’s Material Design guidelines.</p>
 
-                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/mockup-map-flow@2x.png);"></div>
+                          <p>I designed Wander to be highly interactive especially in the path editing mode. I needed users to be able to distinguish what was clickable and to create icons that looked like physical buttons. Material Design’s 3D approach was better suited for those goals than a flat design approach.</p>
 
-                      <!-- Testing -->
-                      <h1 id="testing">Testing</h1>
+                          <p>Flow for drawing a new path and having the option to undo or save changes:</p>
 
-                      <p>I tested early and often during every phase of the design process: wireframes, mockups, and prototype. I took every opportunity to test in person or remotely online to refine my design solutions.</p>
+                          <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/mockup-map-flow@2x.png);"></div>
 
-                      <p>The most challenging problem I tried to resolve was the task: "As a registered user, I want to change the path on my map."</p>
+                          <!-- Testing -->
+                          <h1 class="section-title nav-menu-item">Testing</h1>
+                          <hr>
 
-                      <p>Initially, I used Material Design’s Floating Action Button (FAB) to allow people to edit their path. However, test results showed that the FAB was not clear in its function.</p>
+                          <p>I tested early and often during every phase of the design process: wireframes, mockups, and prototype. I took every opportunity to test in person or remotely online to refine my design solutions.</p>
 
-                      <h2 id="heatmaps">Wireframe Heatmap Tests</h2>
-                      
-                      <p>I tested the Floating Action Button wireframe sketches using click tests and navigation tests on UsabilityHub. Here is a test result showing a low success rate of people clicking on the Floating Action Button for the corresponding user story:</p>
+                          <p>The most challenging problem I tried to resolve was the task: "As a registered user, I want to change the path on my map."</p>
 
-                      <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
+                          <p>Initially, I used Material Design’s Floating Action Button (FAB) to allow people to edit their path. However, test results showed that the FAB was not clear in its function.</p>
 
-                      <div class="background-photo-tall" style="background-image:url(images/wander/edit-path-wireframe-2.jpg);"></div>
-                      <h6 class="text-align-center">Early wireframe click test results for Edit Path Floating Action Button</h6>
+                          <h2 class="nav-sub-menu-item">Low-Fidelity Tests</h2>
+                          
+                          <p>I tested the Floating Action Button wireframe sketches using click tests and navigation tests on UsabilityHub. Here is a test result showing a low success rate of people clicking on the Floating Action Button for the corresponding user story:</p>
 
-                      <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/35e7397b20f7/results/be0922d149bf">Open test results in Usability Hub<i class="material-icons">open_in_new</i></a></p> 
+                          <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
 
-                      <h2>Mockup Heatmap Tests</h2> 
+                          <div class="background-photo-tall" style="background-image:url(images/wander/edit-path-wireframe-2.jpg);"></div>
+                          <h6 class="text-align-center">Early wireframe click test results for Edit Path Floating Action Button</h6>
 
-                      <p>I then tested mockups to see if color and context would people identify the Floating Action Buttons purpose. The results showed little improvement. Again attempting to solve for:</p>
+                          <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/35e7397b20f7/results/be0922d149bf">Open test results in Usability Hub<i class="material-icons">open_in_new</i></a></p> 
 
-                      <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
+                          <h2 class="nav-sub-menu-item">High-Fidelity Tests</h2> 
 
-                      <div class="background-photo-tall" style="background-image:url(images/wander/edit-path-mockup-1.png);"></div>
-                      <h6 class="text-align-center">People's clicks attempting to change path were spread out.</h6>
+                          <p>I then tested mockups to see if color and context would people identify the Floating Action Buttons purpose. The results showed little improvement. Again attempting to solve for:</p>
 
-                      <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/77ce7ef2d148/results/77a0b48ea97e">Open test results in Usability Hub<i class="material-icons">open_in_new</i></a></p>
+                          <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
 
-                      <p>I then redesigned the Floating Action Button and labeled it “Edit Path,” which yielded undoubtedly better results.</p>
+                          <div class="background-photo-tall" style="background-image:url(images/wander/edit-path-mockup-1.png);"></div>
+                          <h6 class="text-align-center">People's clicks attempting to change path were spread out.</h6>
 
-                      <div class="background-photo-tall" style="background-image:url(images/wander/edit-path-mockup-2.png);"></div>
-                      <h6 class="text-align-center">Button re-design showing high concentration of successful clicks to change path.</h6>
+                          <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/77ce7ef2d148/results/77a0b48ea97e">Open test results in Usability Hub<i class="material-icons">open_in_new</i></a></p>
 
-                      <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/176ea92d8240/results/8c4e18d774a9">Open test results in Usability Hub<i class="material-icons">open_in_new</i></a></p>
+                          <p>I then redesigned the Floating Action Button and labeled it “Edit Path,” which yielded undoubtedly better results.</p>
 
-                      <p>The test results proved the need to break away from Material Design’s guidelines. The pencil icon is widely understood to mean edit. But it wasn’t clear what the Floating Action Button could change since Material Design doesn’t use labels.</p>
+                          <div class="background-photo-tall" style="background-image:url(images/wander/edit-path-mockup-2.png);"></div>
+                          <h6 class="text-align-center">Button re-design showing high concentration of successful clicks to change path.</h6>
 
-                      <h2>Other lessons learned: touch target size matters</h2> 
+                          <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/176ea92d8240/results/8c4e18d774a9">Open test results in Usability Hub<i class="material-icons">open_in_new</i></a></p>
 
-                      <p>A lesson learned during the early stages of the prototype was to remember that touch target size matters for mobile devices. One person I randomly tested struggled to see anything happen when they tried to click on icons. In this case, the 24 x 24 dp icons were too small to register a response. </p>
+                          <p>The test results proved the need to break away from Material Design’s guidelines. The pencil icon is widely understood to mean edit. But it wasn’t clear what the Floating Action Button could change since Material Design doesn’t use labels.</p>
 
-                      <p>Material Design says touch targets should be at least 48 x 48 dp to ensure a physical size of about 9mm regardless of screen size. There should also be at least 8 dp separation between them. I made changes to include the minimum suggested touch zone size and spacing. I immediately saw testers move more fluidly through the app.</p>
+                          <h2 class="usability-testing nav-sub-menu-item">Usability Testing</h2> 
 
-                      <!-- Prototype -->
-                      <h1 id="prototype">Prototype</h1>
-                      <hr>
-                      <p><a href="https://xd.adobe.com/view/41545c7a-8638-473b-92bd-716e5b0270c8/" target="_blank">Open Prototype and follow along with the tasks below<i class="material-icons">open_in_new</i></a></p> 
-                      <p>I used Adobe XD for rapid prototyping. Adobe XD was especially useful for creating flows for the many combinations of actions a person can take in the map view.</p>
+                          <p>I conducted four usability tests. Two in-person and two remotely. Using Lookback.io, Quicktime, or a digital camera, I recorded people’s body language, thoughts, reactions, and where they clicked on the prototype screens. Each session was approximately 10 minutes long.</p>
 
-                      <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/prototype-map-flow@2x.png);"></div>
+                          <p>I gave testers the following tasks:</p>
 
-                      <h2 class="usability-testing" id="usability-testing">Usability Testing with Prototype</h2> 
+                          <ol>
+                              <li>Find a path using your current GPS location on your phone.</li>
 
-                      <p>I conducted four usability tests. Two in-person and two remotely. Using Lookback.io, Quicktime, or a digital camera, I recorded people’s body language, thoughts, reactions, and where they clicked on the prototype screens. Each session was approximately 10 minutes long.</p>
+                              <li>Filter the list for half-day plans made for photographers.</li>
 
-                      <p>I gave testers the following tasks:</p>
+                              <li>Select a path that will show the best photo spots at Balboa Park.</li>
 
-                      <ol>
-                          <li>Find a path using your current GPS location on your phone.</li>
+                              <li>Sign-up using your email.</li>
 
-                          <li>Filter the list for half-day plans made for photographers.</li>
+                              <li>Create your profile. Upload a profile photo. Then add your profile 
+                              name and story.</li>
 
-                          <li>Select a path that will show the best photo spots at Balboa Park.</li>
+                              <li>“Like” the current path to save it for later.</li>
 
-                          <li>Sign-up using your email.</li>
+                              <li>You decide to make some changes to the path. You’re no longer 
+                              interested in the Sculpture Garden. Remove its location marker.</li>
 
-                          <li>Create your profile. Upload a profile photo. Then add your profile 
-                          name and story.</li>
+                              <li>You think the Spreckels Organ Pavilion on the left side of the map 
+                              is more interesting than the Sculpture Garden. Add its gray location 
+                              marker.</li> 
 
-                          <li>“Like” the current path to save it for later.</li>
+                              <li>Erase the top portion of the path and re-draw it going to the new 
+                              location marker you just added.</li>
 
-                          <li>You decide to make some changes to the path. You’re no longer 
-                          interested in the Sculpture Garden. Remove its location marker.</li>
+                              <li>You think the path you created is awesome. Share it with family and 
+                              friends.</li>
+                          </ol>  
 
-                          <li>You think the Spreckels Organ Pavilion on the left side of the map 
-                          is more interesting than the Sculpture Garden. Add its gray location 
-                          marker.</li> 
+                          <h2>Usability Test #1 Results</h2>
+                          
+                          <ul>
+                              <li>In-person recording with a digital camera while the user tested the prototype on a phone.</li>
+                              <li>She had trouble figuring out what to do next after adding her profile photo and bio.</li> 
+                              <li>She said the sequence of re-drawing the path before adding the new location marker felt unnatural.</li>
+                          </ul>
 
-                          <li>Erase the top portion of the path and re-draw it going to the new 
-                          location marker you just added.</li>
+                          <video controls class="wide-video">
+                              <source src="videos/tester-1-clip.mov" type="video/mp4">
+                              <source src="movie.ogg" type="video/ogg">
+                              Sorry, our video isn't working for you. Try the link above to open it.
+                          </video>
 
-                          <li>You think the path you created is awesome. Share it with family and 
-                          friends.</li>
-                      </ol>  
+                          <p>Press play to watch a clip or<a href="https://drive.google.com/file/d/0B9dkLvODiMG-aEhZa1RublpZcWc/view?usp=sharing" target="_blank"> open the full video in another window<i class="material-icons">open_in_new</i></a></p>
 
-                      <h2>Usability Test #1 Results</h2>
-                      
-                      <ul>
-                          <li>In-person recording with a digital camera while the user tested the prototype on a phone.</li>
-                          <li>She had trouble figuring out what to do next after adding her profile photo and bio.</li> 
-                          <li>She said the sequence of re-drawing the path before adding the new location marker felt unnatural.</li>
-                      </ul>
+                          <h2>Usability Test #2 Results</h2>
 
-                      <video controls class="wide-video">
-                          <source src="videos/tester-1-clip.mov" type="video/mp4">
-                          <source src="movie.ogg" type="video/ogg">
-                          Sorry, our video isn't working for you. Try the link above to open it.
-                      </video>
+                          <ul>
+                              <li>Remote video recording using Lookback.io with user testing the prototype on a phone.</li>
+                              <li>She also wasn't sure what to do next after uploading her profile photo and bio. At the end of the test, she mentioned she was looking for a "Save" or "Back" button.</li> 
+                          </ul>
 
-                      <p>Press play above or<a href="https://drive.google.com/file/d/0B9dkLvODiMG-aEhZa1RublpZcWc/view?usp=sharing" target="_blank"> watch full video in another window<i class="material-icons">open_in_new</i></a></p>
+                          <video controls>
+                              <source src="videos/tester-2.m4v" type="video/mp4">
+                              <source src="movie.ogg" type="video/ogg">
+                              Sorry, our video isn't working for you. Try the link above to open it.
+                          </video>
 
-                      <h2>Usability Test #2 Results</h2>
+                          <p class="text-align-center">Press play above or<a href="https://www.dropbox.com/s/vv8uc53dbpzpg1k/tester-4-trimmed.mov?dl=0"> open video in another window<i class="material-icons">open_in_new</i></a></p>
 
-                      <ul>
-                          <li>Remote video recording using Lookback.io with user testing the prototype on a phone.</li>
-                          <li>She also wasn't sure what to do next after uploading her profile photo and bio. At the end of the test, she mentioned she was looking for a "Save" or "Back" button.</li> 
-                      </ul>
+                          <h2>Usability Test #3 Results</h2>
+                          
+                          <ul>
+                              <li>Remote video recording using Lookback.io with user testing the prototype on a phone.</li>
+                              <li>He had trouble figuring out which button to click on to update his profile settings.</li>
+                              <li>He tried to click "Edit Path" when asked to remove location marker for the Sculpture Garden.</li>
+                              <li>In the map view, he attempted to zoom in and see the names of locations. He said, "I can't see the Sculpture Garden."</li> 
+                          </ul>
 
-                      <video controls>
-                          <source src="videos/tester-2.m4v" type="video/mp4">
-                          <source src="movie.ogg" type="video/ogg">
-                          Sorry, our video isn't working for you. Try the link above to open it.
-                      </video>
+                          <video controls>
+                              <source src="videos/tester-3.m4v" type="video/mp4">
+                              <source src="movie.ogg" type="video/ogg">
+                              Sorry, our video isn't working for you. Try the link above to open it.
+                          </video>
 
-                      <p class="text-align-center">Press play above or<a href="https://www.dropbox.com/s/vv8uc53dbpzpg1k/tester-4-trimmed.mov?dl=0"> watch video in another window<i class="material-icons">open_in_new</i></a></p>
+                          <p class="text-align-center">Press play above or<a href="https://www.dropbox.com/s/a5f228did3s3bwj/tester-3.m4v?dl=0" target="_blank"> open video in another window<i class="material-icons">open_in_new</i></a></p>
 
-                      <h2>Usability Test #3 Results</h2>
-                      
-                      <ul>
-                          <li>Remote video recording using Lookback.io with user testing the prototype on a phone.</li>
-                          <li>He had trouble figuring out which button to click on to update his profile settings.</li>
-                          <li>He tried to click "Edit Path" when asked to remove location marker for the Sculpture Garden.</li>
-                          <li>In the map view, he attempted to zoom in and see the names of locations. He said, "I can't see the Sculpture Garden."</li> 
-                      </ul>
+                          <h2>Usability Test #4 Results</h2>
+                          
+                          <ul>
+                              <li>In-person video recording using Quicktime with user testing the prototype on a laptop.</li>
+                              <li>She hesitated to click on the button for “Use current GPS location.”</li>
+                              <li>She took a moment to realize she needed to click on the form field to enter her email address.  </li>
+                              <li>She tried to click "Edit Path" when asked to remove the location marker for the Sculpture Garden.</li> 
+                          </ul>
 
-                      <video controls>
-                          <source src="videos/tester-3.m4v" type="video/mp4">
-                          <source src="movie.ogg" type="video/ogg">
-                          Sorry, our video isn't working for you. Try the link above to open it.
-                      </video>
+                          <video controls>
+                              <source src="videos/tester-4-clip.mov" type="video/mp4">
+                              <source src="movie.ogg" type="video/ogg">
+                              Sorry, our video isn't working for you. Try the link above to open it.
+                          </video>
 
-                      <p class="text-align-center">Press play above or<a href="https://www.dropbox.com/s/a5f228did3s3bwj/tester-3.m4v?dl=0" target="_blank"> watch video in another window<i class="material-icons">open_in_new</i></a></p>
+                          <p class="text-align-center">Press play above or<a href="https://drive.google.com/file/d/0B9dkLvODiMG-TndwbUJZQmdrZDA/view?usp=sharing" target="_blank"> open video in another window<i class="material-icons">open_in_new</i></a></p>
 
-                      <h2>Usability Test #4 Results</h2>
-                      
-                      <ul>
-                          <li>In-person video recording using Quicktime with user testing the prototype on a laptop.</li>
-                          <li>She hesitated to click on the button for “Use current GPS location.”</li>
-                          <li>She took a moment to realize she needed to click on the form field to enter her email address.  </li>
-                          <li>She tried to click "Edit Path" when asked to remove the location marker for the Sculpture Garden.</li> 
-                      </ul>
+                          <h2>Three key changes based on the usability test results:</h2>
+                          <ol>
+                            <li>Added name labels to the location markers.</li>
+                            <li>Allowed people to remove location markers from the edit path view.</li>
+                            <li>Added save buttons to allow people to confirm their edits, rather than use an auto-save feature.</li>
+                          </ol>
 
-                      <video controls>
-                          <source src="videos/tester-4-clip.mov" type="video/mp4">
-                          <source src="movie.ogg" type="video/ogg">
-                          Sorry, our video isn't working for you. Try the link above to open it.
-                      </video>
+                          <!-- Prototype -->
+                          <h1 class="section-title nav-menu-item">Prototype</h1>
+                          <hr>
+                          <p><a href="https://xd.adobe.com/view/41545c7a-8638-473b-92bd-716e5b0270c8/" target="_blank">Open Prototype and try out the usability tasks in the section above.<i class="material-icons">open_in_new</i></a></p> 
+                          <p>I used Adobe XD for rapid prototyping. Adobe XD was especially useful for creating flows for the many combinations of actions a person can take in the map view.</p>
 
-                      <p class="text-align-center">Press play above or<a href="https://drive.google.com/file/d/0B9dkLvODiMG-TndwbUJZQmdrZDA/view?usp=sharing" target="_blank"> watch video in another window<i class="material-icons">open_in_new</i></a></p>
+                          <div class="background-photo-scalable bottom-spacer" style="background-image:url(images/wander/prototype-map-flow@2x.png);"></div>
 
-                      <h2>Three key changes based on the usability test results:</h2>
-                      <ol>
-                        <li>Added name labels to the location markers.</li>
-                        <li>Allowed people to remove location markers from the edit path view.</li>
-                        <li>Added save buttons to allow people to confirm their edits, rather than use an auto-save feature.</li>
-                      </ol>
+                          <h2>Other lessons learned: touch target size matters</h2> 
 
-                      <h1 id="conclusion">Conclusion</h1>
+                          <p>Another lesson learned during the early stages of the prototype was to remember that touch target size matters for mobile devices. One person I randomly tested struggled to see anything happen when they tried to click on icons. In this case, the 24 x 24 dp icons were too small to register a response. </p>
 
-                      <p>I created a travel app that gives people more control in planning walking paths.</p>  
+                          <p class="bottom-spacer">Material Design says touch targets should be at least 48 x 48 dp to ensure a physical size of about 9mm regardless of screen size. There should also be at least 8 dp separation between them. I made changes to include the minimum suggested touch zone size and spacing. I immediately saw testers move more fluidly through the app.</p>
 
-                      <p>My biggest doubt was whether people would find Wander valuable. Testing showed that my app could benefit people in planning their travels.</p>
+                          <!-- Conclusion -->
+                          <h1 class="section-title nav-menu-item">Conclusion</h1>
+                          <hr>
 
-                      <p>What surprised me most was the amount of research, design, and testing required to solve for a relatively small list of tasks. There are so many other design features to add to make the app more complete and fully functioning.</p>
+                          <p>I created a travel app that gives people more control in planning walking paths.</p>  
 
-                      <p>If given more time, I would create a coded prototype to test how a person would navigate at Balboa Park. A proven navigation feature would add greater value to the app.</p>
+                          <p>My biggest doubt was whether people would find Wander valuable. Testing showed that my app could benefit people in planning their travels.</p>
 
-                      <p>I would also collaborate with experts in design, engineering, and business. They could offer valuable perspectives from their respective fields that I may not have considered. Their fresh ideas and teamwork would result in better solutions.</p> 
+                          <p>What surprised me most was the amount of research, design, and testing required to solve for a relatively small list of tasks. There are so many other design features to add to make the app more complete and fully functioning.</p>
 
-                      <p class="bottom-spacer">This project was challenging and helped me grow as a designer, more than any other project up to this point. I learned the value of discovering problems early and making smaller more manageable changes. I also learned the importance of being able to validate and defend my design decisions. I'll take these lessons learned and continue to improve my design process for the future. </p>
+                          <p>If given more time, I would create a coded prototype to test how a person would navigate at Balboa Park. A proven navigation feature would add greater value to the app.</p>
 
-                      <div class="case-study-contact">
-                          <h2>Do you like my UX work?</h2>
-                          <!-- Accent-colored raised button with ripple -->
-                          <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" href="https://neilranada.typeform.com/to/rkqu5I" data-hide-footer=true target="_blank">GET IN TOUCH</a>
-                      </div>
-                      <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>      
-                  </div>
-              </div>
+                          <p>I would also collaborate with experts in design, engineering, and business. They could offer valuable perspectives from their respective fields that I may not have considered. Their fresh ideas and teamwork would result in better solutions.</p> 
+
+                          <p class="bottom-spacer">This project was challenging and helped me grow as a designer, more than any other project up to this point. I learned the value of discovering problems early and making smaller more manageable changes. I also learned the importance of being able to validate and defend my design decisions. I'll take these lessons learned and continue to improve my design process for the future. </p>
+
+                          <div class="case-study-contact">
+                              <h2>Do you like my UX work?</h2>
+                              <!-- Accent-colored raised button with ripple -->
+                              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" href="https://neilranada.typeform.com/to/rkqu5I" data-hide-footer=true target="_blank">GET IN TOUCH</a>
+                          </div>
+
+                          </div> <!-- End of cotent items max width -->
+
+                          <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                        </div>          
+                </div>
           </div>
     <!-- Content section ends here -->
-    
-      <!-- footer section starts here -->
+    <!-- footer section starts here -->
       <footer class="mdl-mini-footer">
           <div class="footer-content">
               <div class="mdl-mini-footer__left-section">
@@ -620,51 +598,35 @@
           </div>
       </footer>
       <!-- footer section ends here -->
-
       </main>
+    
+
   </div>
     <script src="js/material.min.js"></script>
-    <script src="js/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jquery.scrollNav.js"></script>
+    <script>
+    //ScrollNav
 
-  <script>
-     $(document).ready(function () {
-        $(document).on("scroll", onScroll);
+    var $;
+var observer_target = document.querySelector('.content-items-max-width');
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function() {
+    $.fn.scrollNav('resetPos');
+  });
+});
+var observer_config = {
+  attributes: true,
+  childList: true,
+  characterData: true,
+  subtree: true
+};
+observer.observe(observer_target, observer_config);
 
-        $('a[href^="#"]').on('click', function (e) {
-          e.preventDefault();
-          $(document).off("scroll");
-
-          $('a').each(function () {
-            $(this).removeClass('active-drawer-link');
-          })
-          $(this).addClass('active-drawer-link');
-
-          var target = this.hash;
-          $target = $(target);
-          $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-          }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-          });
-        });
-      });
-
-      function onScroll(event){
-        var scrollPosition = $(document).scrollTop();
-        $('nav a').each(function () {
-          var currentLink = $(this);
-          var refElement = $(currentLink.attr("href"));
-          if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-            $('nav ul li a').removeClass("active-drawer-link");
-            currentLink.addClass("active-drawer-link");
-          }
-          else{
-            currentLink.removeClass("active-drawer-link");
-          }
-        });
-      }
+          //This tells scroll nav which container to scan and automatically adds a nav menu above it
+          $('.content-items-max-width').scrollNav();
   </script>
+</div>
 </body>
 
 </html>
