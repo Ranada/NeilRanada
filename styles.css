@@ -503,6 +503,12 @@ footer.mdl-mini-footer {
 .scroll-nav-adjustment .mdl-layout__header {
 	position: fixed;
 }
+.scroll-nav-adjustment .mdl-layout__obfuscator.is-visible { /* keeps modal fixed in view port */
+	position: fixed;
+}
+.scroll-nav-adjustment .mdl-layout__drawer.is-visible { /* keeps nav drawer fixed in view port */
+	position: fixed;
+}
 .scroll-nav {
 	position: fixed;
 	top: 64px;
