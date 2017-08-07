@@ -612,6 +612,9 @@ h6.remove-margin-top { /*poster above caption has white board. remove margin to 
 	padding: 24px;
 	border: 2px solid #7bbed1;
 }
+.case-study-contact h2 {
+	margin-bottom: 16px;
+}
 i.material-icons {
 	margin-left: 8px;
 	padding-bottom: 2px;
