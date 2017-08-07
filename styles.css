@@ -481,7 +481,7 @@ footer.mdl-mini-footer {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
-	margin: 16px 0 24px;
+	margin: 24px 0 16px;
 	padding: 0 16px;
 }
 
@@ -490,21 +490,21 @@ footer.mdl-mini-footer {
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
-    margin: 24px 24px;
+    margin: 24px 24px 16px;
 }
 .background-photo-portfolio-view-maintain-height {
 	height: 520px; /* 16:9 aspect ratio for photos in large screens is 672px width : 387px height */
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
-    margin: 24px 24px;
+    margin: 24px 24px 16px;
 }
 .background-photo-scalable {
 	height: 512px; /* 4:3 aspect ratio for photos in large screens is 688px width : 512px height */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 24px 16px 24px;
+    margin: 24px 16px 16px;
 }
 .header-photo-scalable {
 	height: 522px; /* 16:9 aspect ratio for photos in large screens is 928px width : 522px height */
@@ -517,7 +517,7 @@ footer.mdl-mini-footer {
 	background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 .mdl-layout .bottom-spacer {
 	margin-bottom: 40px;
@@ -773,6 +773,9 @@ video.wide-video {
 		margin-left: 4px;
 		vertical-align: middle;
 	}
+	.case-study img, .background-photo-maintain-height, .background-photo-portfolio-view-maintain-height, .background-photo-scalable, .background-photo-tall  {
+		margin-bottom: 8px;
+	}
 }
 	
 @media screen and (min-width: 840px) {
@@ -889,6 +892,12 @@ video.wide-video {
 	}
 	.background-photo-tall {
 		height: 535px;
+	}
+	.text-align-center {
+		text-align: initial;
+	}
+	.mdl-layout video {
+		margin-bottom: 16px;
 	}
 	.footer.mdl-mini-footer {
 		height: 92px;
