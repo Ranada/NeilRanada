@@ -8,16 +8,14 @@
 	color: #002443;
 	margin: 16px;
 }
-
 .mdl-layout h2 {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 34px;
 	line-height: 40px;
 	letter-spacing: 0;
 	color: #002443;
-	margin: 0 16px 16px;
+	margin: 0 16px 8px;
 }
-
 .mdl-layout h3 {
 	font-family: "Adobe-Caslon-Pro", Roboto, Helvetica, Arial, sans-serif;
 	font-size: 24px;
@@ -26,7 +24,6 @@
 	opacity: 0.54;
 	margin: 0 0 16px;
 }
-
 .mdl-layout h4 {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
@@ -36,30 +33,26 @@
 	opacity: 0.54;
 	margin: 0 16px 16px;
 }
-
 .mdl-layout a {
 	color: #006784;
 	text-decoration: none;
 }
-
 .hero-text h4 {
 	opacity: 0.87; /* Opacity increased to stand out from grey background */
 }
-
 .mdl-layout-title {
 	letter-spacing: 0.005em;
 	opacity: 1;
 }
-
 .mdl-layout h5 { /* Subheader used for cards */
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 16px;
-	margin: 0px;
 	letter-spacing: 0.01em;
 	line-height: 24px;
 	color: #000000;
 	opacity: 0.54;
 	font-weight: 400;
+	margin: 0;
 }
 .mdl-layout .mdl-card__supporting-text h5 {
 	opacity: 0.87;
@@ -67,15 +60,13 @@
 .mdl-layout p {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
-	margin: 0px;
 	letter-spacing: 0;
 	line-height: 32px;
 	color: #000000;
 	opacity: 0.87;
-	margin: 0 16px 24px;
 	-webkit-font-smoothing: antialiased;
+	margin: 0 16px 24px;
 }
-
 .mdl-layout h6 { /* caption */
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -86,86 +77,70 @@
 	font-weight: 400;
 	margin: 8px 16px 40px;
 }
-
 .case-study ol, .case-study ul {
-	margin: 24px 16px 40px;
-	padding-left: 24px;
 	-webkit-font-smoothing: antialiased;
+	padding-left: 24px;
+	margin: 24px 16px 40px;
 }
-
 .mdl-layout li {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	color: rgba(0,0, 0, 0.54);
 }
-
 .mdl-layout .mdl-card li {
 	font-size: 14px;
 }
-
 .case-study li {
 	font-size: 20px;
 	line-height: 32px;
-	margin-bottom: 8px;
+	margin-bottom: 24px;
 }
-
 a.mdl-navigation__link {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	margin: 0px;
 	letter-spacing: 0.01em;
 	line-height: 28px;
 	color: #FFFFFF;
 	opacity: 1.0;
+	margin: 0px;
 }
-
 .mdl-layout .content-header {
 	margin: 16px 8px 0;
 	width: 100%;
 }
-
 .scroll-nav-adjustment .content-header {
 	margin: 64px auto 16px;
 	max-width: 808px;
 }
-
 .content-items-max-width {
 	max-width: 720px;
 	padding: 24px 0;
 	margin: 0 auto;
 }
-
 .content-items-max-width .mdl-button{
 	margin-left: 16px;
 }
-
 .mdl-layout .mdl-button {
 	font-family: Avenir, Robot, Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
 	background-color: #006784;
 }
-
 .mdl-layout .mdl-button:hover {
     background-color: #7BBED1;
 }
-
 .mdl-card__supporting-text {
 
 	min-height: 192px;
 }
-
 .mdl-card p {
-	margin-top: 8px;
 	font-size: 16px;
 	line-height: 24px;
+	margin-top: 8px;
 }
-
 .mdl-card .mdl-button {
 	margin-top: 0;
 }
-
 .footer-font {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 }
-
 #footer-divider {
 	position: relative;
 	top: 2px;
@@ -173,14 +148,13 @@ a.mdl-navigation__link {
 	color: #FFFFFF;
 	margin: 0px 6px;
 }
-
 .mdl-mini-footer__link-list li a {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	margin: 0px;
 	letter-spacing: 0.01em;
 	line-height: 24px;
 	color: #FFFFFF;
+	margin: 0;
 }
 
 /*  Navigation bar styling */
@@ -188,40 +162,33 @@ a.mdl-navigation__link {
 header.mdl-layout__header {
 	background-color: #002443;
 }
-
 .mdl-layout-title .logo-title {
 	display: inline-block;
 	font-family: "Adobe-Caslon-Pro";
 	color: #FFFFFF;
 	opacity: 1;
 }
-
 .mdl-layout-title .divider {
 	display: inline;
 	font-size: 24px;
 	color: #FFFFFF;
 	margin: 0px 8px;
 }
-
 .mdl-layout-title .logo-title-highlight {
 	color: #FFFFFF;
 	font-family: "Adobe-Caslon-Pro";
 	display: inline-block;
 	opacity: 1;
 }
-
 .mdl-layout__header-row .mdl-navigation__link {
 	opacity: 0.50;
 }
-
 .mdl-layout__header-row .mdl-navigation__link:hover {
 	opacity: 1;
 }
-
 .mdl-navigation__link.active-link {
 	opacity: 1;
 }
-
 .mdl-layout--no-desktop-drawer-button .mdl-layout__header-row {
 	padding-right: 16px;
 }
@@ -550,6 +517,7 @@ footer.mdl-mini-footer {
 
 .case-study .scroll-nav li {
 	line-height: 20px;
+	margin-bottom: 8px;
 }
 
 .case-study li.scroll-nav__item {
@@ -611,9 +579,6 @@ li.scroll-nav__item.active li.scroll-nav__sub-item.active > a {
 .case-study h4 {
 	line-height: 32px;
 }
-.case-study .snapshot {
-	margin: 24px 16px 40px;
-}
 .case-study .section-title {
 	margin-bottom: 0; /* to bring hr closer to section title */
 	position: relative; /* used to give reference point for section title underline */
@@ -624,14 +589,9 @@ li.scroll-nav__item.active li.scroll-nav__sub-item.active > a {
     background-color: #002443;
     margin: 0 16px 24px;
 }
-
 ul.quotes {
 	padding-left: 0;
 	list-style-type: none;
-}
-
-.case-study .quotes li {
-	margin-bottom: 40px;
 }
 .case-study .remove-padding-margin { /*poster has white border. remove padding to make poster appear to align with text */
 	padding: 0;
