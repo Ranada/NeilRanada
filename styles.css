@@ -615,7 +615,7 @@ h6.remove-margin-top { /*poster above caption has white board. remove margin to 
 .case-study-contact h2 {
 	margin-bottom: 16px;
 }
-i.material-icons {
+.case-study .material-icons {
 	margin-left: 8px;
 	padding-bottom: 2px;
 	vertical-align: middle;
@@ -731,7 +731,7 @@ video.wide-video {
 	.case-study .quotes li {
 	margin-bottom: 24px;
 	}
-	i.material-icons {
+	.case-study .material-icons {
 		font-size: 18px;
 		margin-left: 4px;
 		vertical-align: middle;
