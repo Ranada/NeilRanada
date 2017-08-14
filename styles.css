@@ -365,6 +365,13 @@ h2.mdl-card__title-text {
 	background: url('images/wander/wander-header-photo@2x.jpg');
 }
 
+/*Hydrocephalus Walk case study styling */
+
+.case-study .ha-walk-header-photo {
+	background: url('images/ha-walk/ha-walk-header-photo.jpg');
+	background-size: 100%;
+	background-position: center 0;
+}
 /* Footer Styling */
 
 footer.mdl-mini-footer {
@@ -855,6 +862,10 @@ video.wide-video {
 	}
 	.header-photo-scalable {
 		height: 448px;
+	}
+	.case-study .ha-walk-header-photo {
+		background-size: 190%;
+		background-position: 47% 0;
 	}
 	.about-me-photo {
 		background-position: 35% center;
