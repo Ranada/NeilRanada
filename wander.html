@@ -84,21 +84,41 @@
 
                           <!-- Discovery -->
                           <h2>Discovery</h2>
-                          <p>I once went on a trip to Kyoto, Japan. The old capital is full of incredible history and sights. I underestimated its vastness and had only two days to see it.</p>
+                          <p class="bottom-spacer">I once went on a trip to Kyoto, Japan. The old capital is full of incredible history and sights. I underestimated its vastness and had only two days to see it.</p>
 
-                          <div class="background-photo-scalable" style="background-image:url(images/wander/fushima-inari-shrine.jpg);"></div>
-                          <h6>Fushimi Inari Shrine, Kyoto, Japan. Photo by Neil Ranada.</h6>
+                          <!-- Slideshow -->
 
-                          <div class="background-photo-scalable" style="background-image:url(images/wander/golden-pavilion.jpg);"></div>
-                          <h6>Golden Pavilion, Kyoto, Japan. Photo by Neil Ranada.</h6>
+                          <div class="slideshow-container">
 
-                          <div class="background-photo-scalable" style="background-image:url(images/wander/higashiyama-district.jpg);"></div>
-                          <h6>Higashiyama Historic District, Kyoto, Japan. Photo by Neil Ranada.</h6>
+                              <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="images/wander/fushima-inari-shrine.jpg" alt="" style="width:100%">
+                                <div class="text">Fushimi Inari Shrine, Kyoto, Japan. Photo by Neil Ranada.</div>
+                              </div>
 
-                          <p>It turns out Kyoto is a walkable city. A Japanese travel guide gave me paper maps breaking down the city into sections with suggested walking routes. But it was raining, and it became a pain to use my rain-soaked maps without tearing them apart.</p>
+                              <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="images/wander/golden-pavilion.jpg" alt="Golden Pavilion, Kyoto, Japan" style="width:100%">
+                                <div class="text">Golden Pavilion, Kyoto, Japan. Photo by Neil Ranada.</div>
+                              </div>
 
-                          <img src="images/wander/kyoto-map@2x.png" alt="Kyoto map">
-                          <h6>Kyoto Walks paper map. Source: http://www.jnto.go.jp</h6>
+                              <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="images/wander/higashiyama-district.jpg" align="Higashiyama Historic District, Kyoto, Japan" style="width:100%">
+                                <div class="text">Higashiyama Historic District, Kyoto, Japan. Photo by Neil Ranada.</div>
+                              </div>
+
+                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                          </div>
+                              <br>
+
+                              <div class="bottom-spacer" style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                              </div>    
 
                           <p>I tried using Kyoto’s travel website instead. It has digital maps with similar walking routes. But it wasn’t mobile-friendly, and I couldn’t expand the maps to fill my phone’s screen.</p>
 
@@ -624,6 +644,35 @@ observer.observe(observer_target, observer_config);
 
           //This tells scroll nav which container to scan and automatically adds a nav menu above it
           $('.content-items-max-width').scrollNav();
+
+    // Slideshow
+    var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+
   </script>
 </div>
 </body>

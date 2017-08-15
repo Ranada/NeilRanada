@@ -451,14 +451,6 @@ footer.mdl-mini-footer {
 	background-color: #FFFFFF;
 }
 
-.case-study img {
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-	margin: 24px 0 16px;
-	padding: 0 16px;
-}
-
 .background-photo-maintain-height {
 	height: 387px; /* 16:9 aspect ratio for photos in large screens is 672px width : 387px height */
     background-repeat: no-repeat;
@@ -492,6 +484,9 @@ footer.mdl-mini-footer {
     background-size: auto 100%;
     background-position: center;
     margin-bottom: 16px;
+}
+.mdl-layout {
+	margin-bottom: 40px;
 }
 .mdl-layout .bottom-spacer {
 	margin-bottom: 40px;
@@ -649,6 +644,100 @@ video.wide-video {
 }
 .text-align-center {
 	text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto 16px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.36);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #7bbed1;
+}
+
+a.prev, a.next {
+	color: rgba(255, 255, 255, 0.7);
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
 /* Media queries to adjust to different screen sizes */
