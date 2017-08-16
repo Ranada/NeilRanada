@@ -450,7 +450,11 @@ footer.mdl-mini-footer {
 .content-background-color {
 	background-color: #FFFFFF;
 }
-
+.photo {
+	display: block;
+	width: 100%;
+	padding: 0 16px;
+}
 .background-photo-maintain-height {
 	height: 387px; /* 16:9 aspect ratio for photos in large screens is 672px width : 387px height */
     background-repeat: no-repeat;
@@ -988,9 +992,6 @@ a.prev, a.next {
 	}
 	.background-photo-tall {
 		height: 448px;
-	}
-	.text-align-center {
-		text-align: initial;
 	}
 	.mdl-layout video {
 		margin-bottom: 16px;
