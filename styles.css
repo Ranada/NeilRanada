@@ -479,17 +479,31 @@ footer.mdl-mini-footer {
     background-position: center;
 }
 .background-photo-tall {
-	height: 775px;
+	height: 535px;
+	display: block;
 	background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
 }
 .mdl-layout {
 	margin-bottom: 40px;
 }
 .mdl-layout .bottom-spacer {
 	margin-bottom: 40px;
+}
+
+/* Modal */
+
+.mdl-layout .w3-modal {
+	padding-top: 132px;
+}
+
+.mdl-layout .w3-modal-content {
+	background-color: transparent;
+}
+.mdl-layout .w3-display-topright {
+	top: 64px;
 }
 
 /* Scroll Nav Styling */
@@ -788,6 +802,9 @@ a.prev, a.next {
 	.mdl-layout .mdl-layout__header-row {
 		max-width: initial; /* returns gap to original position from alignment with card edge in large screens */
 	}
+	.mdl-layout .w3-display-topright {
+		top: 56px;
+	}
 }
 
 
@@ -970,7 +987,7 @@ a.prev, a.next {
 		background-position: 35% center;
 	}
 	.background-photo-tall {
-		height: 535px;
+		height: 448px;
 	}
 	.text-align-center {
 		text-align: initial;
@@ -1024,7 +1041,7 @@ a.prev, a.next {
 		height: 192px; /* 4:3 aspect ratio gives 256px height and 192px width */
 	}
 	.background-photo-tall {
-		height: 452px;
+		height: 382px;
 	}
 	.mdl-layout .mdl-mini-footer__link-list li {
 		margin-right: 16px;
