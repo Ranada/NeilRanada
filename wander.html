@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="material.min.css">
+    <link rel="stylesheet" type="text/css" href="slide-show.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://use.typekit.net/bbp2cem.js"></script>
@@ -88,42 +89,47 @@
                           <p class="bottom-spacer">I once went on a trip to Kyoto, Japan. The old capital is full of incredible history and sights. I underestimated its vastness and had only two days to see it.</p>
 
                           <!-- Slideshow -->
-
                           <div class="slideshow-container">
 
-                              <div class="mySlides fade">
-                                <div class="numbertext">1 / 3</div>
-                                <img src="images/wander/fushima-inari-shrine.jpg" alt="" style="width:100%">
-                                <div class="text">Fushimi Inari Shrine, Kyoto, Japan. Photo by Neil Ranada.</div>
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                              </div>
+                          <div class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                                  <div class="image-container" style="position:relative;">
+                                      <img src="images/wander/fushimi-inari-shrine.jpg" alt="Fushimi Inari Shrine. Kyoto, Japan." style="width:100%;">
+                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                  </div>
+                              <div class="text">Fushimi Inari Shrine. Kyoto, Japan. Photo by Neil Ranada.</div>
+                          </div>
 
-                              <div class="mySlides fade">
-                                <div class="numbertext">2 / 3</div>
-                                <img src="images/wander/golden-pavilion.jpg" alt="Golden Pavilion, Kyoto, Japan" style="width:100%">
-                                <div class="text">Golden Pavilion, Kyoto, Japan. Photo by Neil Ranada.</div>
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                              </div>
+                          <div class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                                  <div class="image-container" style="position:relative;">
+                                      <img src="images/wander/golden-pavilion.jpg" alt="Golden Pavilion. Kyoto,Japan" style="width:100%;">
+                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                  </div>
+                              <div class="text">Golden Pavilion. Kyoto, Japan. Photo by Neil Ranada.</div>
+                          </div>
 
-                              <div class="mySlides fade">
-                                <div class="numbertext">3 / 3</div>
-                                <img src="images/wander/higashiyama-district.jpg" align="Higashiyama Historic District, Kyoto, Japan" style="width:100%">
-                                <div class="text">Higashiyama Historic District, Kyoto, Japan. Photo by Neil Ranada.</div>
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                              </div>
+                          <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                                  <div class="image-container" style="position:relative;">
+                                      <img src="images/wander/higashiyama-district.jpg" alt="Higashiyama District, Kyoto, Japan" style="width:100%;">
+                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                  </div>
+                              <div class="text">Higashiyama Historic District. Kyoto, Japan. Photo by Neil Ranada.</div>
+                          </div>
 
                           </div>
 
-                              <div class="bottom-spacer" style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span> 
-                                <span class="dot" onclick="currentSlide(2)"></span> 
-                                <span class="dot" onclick="currentSlide(3)"></span> 
-                              </div>    
+                          <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                          </div>
 
-                          <p>It turns out Kyoto is a walkable city. A Japanese travel guide gave me paper maps breaking down the city into sections with suggested walking routes. But it was raining, and it became a pain to use my rain-soaked maps without tearing them apart.</p>
+                          <p class="top-spacer">It turns out Kyoto is a walkable city. A Japanese travel guide gave me paper maps breaking down the city into sections with suggested walking routes. But it was raining, and it became a pain to use my rain-soaked maps without tearing them apart.</p>
 
                           <!-- Kyoto map modal -->
                           <img class="background-photo-tall" src="images/wander/kyoto-map@2x.png" alt="Kyoto map" style="cursor:zoom-in" onclick="document.getElementById('modal01').style.display='block'"">
@@ -650,29 +656,33 @@
     <script src="js/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/jquery.scrollNav.js"></script>
-    <script>
-    //ScrollNav
 
-    var $;
-var observer_target = document.querySelector('.content-items-max-width');
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function() {
-    $.fn.scrollNav('resetPos');
-  });
-});
-var observer_config = {
-  attributes: true,
-  childList: true,
-  characterData: true,
-  subtree: true
-};
-observer.observe(observer_target, observer_config);
+    <script>
+        //ScrollNav
+
+        var $;
+        var observer_target = document.querySelector('.content-items-max-width');
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function() {
+            $.fn.scrollNav('resetPos');
+          });
+        });
+        var observer_config = {
+          attributes: true,
+          childList: true,
+          characterData: true,
+          subtree: true
+        };
+        observer.observe(observer_target, observer_config);
 
           //This tells scroll nav which container to scan and automatically adds a nav menu above it
           $('.content-items-max-width').scrollNav();
 
-    // Slideshow
-    var slideIndex = 1;
+    </script>
+
+    <script>
+        //Slide show
+        var slideIndex = 1;
         showSlides(slideIndex);
 
         function plusSlides(n) {
@@ -698,8 +708,7 @@ observer.observe(observer_target, observer_config);
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
         }
-
-  </script>
+    </script>
 </div>
 </body>
 
