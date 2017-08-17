@@ -512,6 +512,9 @@ footer.mdl-mini-footer {
 .mdl-layout .w3-display-topright {
 	top: 64px;
 }
+.modal-hover:hover {
+	opacity: 0.6;
+}
 
 /* Scroll Nav Styling */
 
