@@ -669,6 +669,11 @@ video.wide-video {
 .text-align-center {
 	text-align: center;
 }
+.standard-image {
+	width: calc(100% - 32px);
+	padding: 0 16px;
+	margin: 0 auto 8px;
+}
 
 /* Media queries to adjust to different screen sizes */
 
@@ -781,6 +786,9 @@ video.wide-video {
 		margin-top: 24px;
 	}
 	.mdl-layout .bottom-spacer {
+		margin-bottom: 24px;
+	}
+	.case-study ol, .case-study ul {
 		margin-bottom: 24px;
 	}
 }
