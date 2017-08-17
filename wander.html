@@ -138,7 +138,7 @@
                           <p class="bottom-spacer">I tried using Kyoto’s travel website instead. It has digital maps with similar walking routes. But it wasn’t mobile-friendly, and I couldn’t expand the maps to fill my phone’s screen.</p>
 
                            <!-- Kyoto digital map modal -->
-                          <img class="background-photo-tall modal-hover" src="images/wander/kyoto-digital-map-mockup@2x.png" alt="Kyoto map" style="cursor:zoom-in" onclick="document.getElementById('modal02').style.display='block'"">
+                          <img class="background-photo-tall modal-hover" src="images/wander/kyoto-digital-map-mockup@2x.png" alt="Kyoto map" style="cursor:zoom-in" onclick="document.getElementById('modal02').style.display='block'">
 
                           <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
                             <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
@@ -354,8 +354,17 @@
 
                           <p>I also downloaded Triposo. Out of the list of travel apps I analyzed, Triposo had the most advanced tool for planning a walking itinerary.</p>
 
-                          <div class="background-photo-tall" style="background-image:url(images/wander/triposo-city-walks@2x.png);"></div>
-                          <h6 class="text-align-center">Screenshot from Triposo iPhone app.</h6>
+                          <!-- Triposo City Walks map modal -->
+                          <img class="background-photo-tall modal-hover" src="images/wander/triposo-city-walks@2x.png" alt="Triposo City Walks competitive analysis" style="cursor:zoom-in" onclick="document.getElementById('triposo').style.display='block'">
+
+                          <div id="triposo" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/wander/triposo-city-walks@2x.png" style="width:70%; min-width: 300px; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
+
+                          <h6 class="text-align-center">Screenshot from Triposo iPhone app.<br>Click map to enlarge</h6>
 
                           <h2>Top three strengths to include in the design:</h2>
 
@@ -413,7 +422,7 @@
                           <p>I created a spreadsheet with a list of tasks to meet the goals of the user personas.</p> 
                           <h4>"As a __________, I want to __________ so that I can __________."</h4>
 
-                          <img src="images/wander/user-stories.png" alt="user stories">
+                          <img src="images/wander/user-stories.png" alt="user stories" class="standard-image">
 
                           <p class="bottom-spacer"><a href="https://docs.google.com/spreadsheets/d/1JWyp_YQT-n9wX2OgGR10xUt9OwbBY5JPKilEnlvO9Oo/edit?usp=sharing" target="_blank">Open Google Sheets for User Stories in another tab<i class="material-icons">open_in_new</i></a></p> 
 
@@ -422,13 +431,13 @@
                           <p>I created User Flows to visually depict how people completed each task set out in the User Stories.</p>
 
                           <h4>Search flow</h4>
-                          <img src="images/wander/user-flow-search.jpg" alt="user search flow" class="bottom-spacer">
+                          <img src="images/wander/user-flow-search.jpg" alt="user search flow" class="standard-image bottom-spacer">
 
                           <h4>Map view flow</h4>
-                          <img src="images/wander/user-flow-onboarding.jpg" alt="user onboarding flow" class="bottom-spacer">
+                          <img src="images/wander/user-flow-onboarding.jpg" alt="user onboarding flow" class="standard-image bottom-spacer">
 
                           <h4>Onboarding flow</h4>
-                          <img src="images/wander/user-flow-map-view.jpg" alt="user map view flow" class="bottom-spacer">
+                          <img src="images/wander/user-flow-map-view.jpg" alt="user map view flow" class="standard-image bottom-spacer">
 
                           <p class="bottom-spacer"><a href="https://drive.google.com/file/d/0B9dkLvODiMG-ZmtRRjJXQkNaY1U/view?usp=sharing" target="_blank">Open Draw.io for User Flows in another tab<i class="material-icons">open_in_new</i></a></p>
 
@@ -441,10 +450,10 @@
                           <p>Here are a couple of early wireframe sketches attempting to solve for the following user story:<p> 
                           <p class="highlight">"As a user...I want to search recommended paths...so that I can find the best way to see popular sights."</p>
 
-                          <img src="images/wander/wireframe-search-cards@2x.png" alt="paper wireframes">
+                          <img src="images/wander/wireframe-search-cards@2x.png" alt="paper wireframes" class="standard-image">
                           <h6>Flowing from a collection of cards to a map.</h6>
 
-                          <img src="images/wander/wireframe-search-list@2x.png" alt="paper wireframes">
+                          <img src="images/wander/wireframe-search-list@2x.png" alt="paper wireframes" class="standard-image">
                           <h6>Flowing from list view to a page with information and photos for a point of interest.</h6>
 
                           <p>User testing later revealed that I needed to use a blend of the two ideas above. A list for easier skimming instead of cards. And a map view instead of an info page with photos because that’s what testers expected after selecting a path.</p>
@@ -453,10 +462,10 @@
 
                           <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
 
-                          <img src="images/wander/wireframe-change-path-early@2x.png" alt="high-fidelity wireframes">
+                          <img src="images/wander/wireframe-change-path-early@2x.png" alt="high-fidelity wireframes" class="standard-image">
                           <h6>Early version.</h6>
 
-                          <img src="images/wander/wireframe-change-path-later@2x.png" alt="high-fidelity wireframes">
+                          <img src="images/wander/wireframe-change-path-later@2x.png" alt="high-fidelity wireframes" class="standard-image">
                           <h6>Later version.</h6>
 
                           <p>Testing revealed that most people could not associate the unlabeled Floating Action Button with making changes to a path. I discuss this issue later under the "Testing" section.</p>
@@ -477,19 +486,16 @@
 
                           <p>I used nostalgic travel posters for color inspiration and created a mood board using Pinterest. Then I looked to Dribbble's color picker to find a color palette to match the theme I wanted to achieve. I also used Adobe's Color Wheel to find a complimentary color.</p>
 
-                          <img src="images/wander/nostalgic-travel-poster.jpg" alt="nostalgic travel poster" class="remove-padding-margin">
-                          <h6 class="remove-margin-top">Istanbul vintage inspired travel poster from ideastorm.bigcartel.com</h6>
+                          <img src="images/wander/nostalgic-travel-poster.jpg" alt="nostalgic travel poster" class="background-photo-tall remove-padding-margin">
+                          <h6 class="remove-margin-top text-align-center">Istanbul vintage inspired travel poster from ideastorm.bigcartel.com</h6>
 
-                          <img src="images/wander/dribbble-color-picker@2x.png" alt="dribble color picker">
-                          <h6>Color finder on Dribbble.com.</h6>
+                          <img src="images/wander/dribbble-color-picker@2x.png" alt="dribble color picker" class="standard-image image-series-spacer thumb-nail" style="width:33.333%">
 
-                          <img src="images/wander/dribbble-color-palette@2x.png" alt="dribble color palette">
-                          <h6>Desert color palette created by X-design on Dribble.com.</h6>
+                          <img src="images/wander/dribbble-color-palette@2x.png" alt="dribble color palette" class="standard-image image-series-spacer thumb-nail" style="width:33.333%">
 
-                          <img src="images/wander/adobe-color-wheel@2x.png" alt="Adobe color wheel">
-                          <h6>Adobe Color Wheel used to pick a complementary color.</h6>
+                          <img src="images/wander/adobe-color-wheel@2x.png" alt="Adobe color wheel" class="standard-image image-series-spacer thumb-nail" style="width:33.333%">
 
-                          <h2>Typography</h2>
+                          <h2 class="top-spacer">Typography</h2>
 
                           <p class="bottom-spacer">I chose Courgette for the brand name and titles throughout the app. The typeface designer, Karolina Lach, describes Courgette as a medium-contrast, brushy, italic-script typeface to give a loose, wispy feel to the Wander brand name.</p>
 
@@ -497,7 +503,7 @@
 
                           <p>Lastly, I used Google's Material Design guidelines for typography details to complete the style guide.</p>
 
-                          <img src="images/wander/style-guide-wander@2x.png" alt="style guide">
+                          <img src="images/wander/style-guide-wander@2x.png" alt="style guide" class="standard-image">
 
                           <p class="bottom-spacer"><a href="https://www.dropbox.com/s/siqsvbdcciwn76y/Style-Guide-Wander.png?dl=0" target="_blank">Open Style Guide in another tab<i class="material-icons">open_in_new</i></a></p>
 
