@@ -508,12 +508,16 @@ footer.mdl-mini-footer {
 
 .mdl-layout .w3-modal-content {
 	background-color: transparent;
+	width: 70%;
 }
 .mdl-layout .w3-display-topright {
 	top: 64px;
 }
 .modal-hover:hover {
 	opacity: 0.6;
+}
+img.standard-image.modal-hover.thumb-nail {
+	width: 50%;
 }
 
 /* Scroll Nav Styling */
@@ -670,10 +674,14 @@ video.wide-video {
 	text-align: center;
 }
 .standard-image {
-	width: calc(100% - 32px);
+	width: 100%;
 	padding: 0 16px;
 	margin: 0 auto 8px;
 }
+.image-series-spacer {
+	margin-bottom: 24px;
+}
+
 
 /* Media queries to adjust to different screen sizes */
 
@@ -789,7 +797,13 @@ video.wide-video {
 		margin-bottom: 24px;
 	}
 	.case-study ol, .case-study ul {
-		margin-bottom: 24px;
+		margin-bottom: 24px;modal
+	}
+	img.standard-image.modal-hover.thumb-nail {
+		width: 100%;
+	}
+	img.image-series-spacer {
+	margin-bottom: 24px;
 	}
 }
 	

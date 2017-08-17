@@ -54,6 +54,7 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  z-index: 2;
 }
 
 /* The dots/bullets/indicators */
@@ -94,6 +95,10 @@
 
 a.prev, a.next {
   color: #FFFFFF;
+}
+
+.mySlides img {
+  width: 100%;
 }
 
 /* On smaller screens, decrease text size */
