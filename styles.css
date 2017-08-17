@@ -504,11 +504,15 @@ footer.mdl-mini-footer {
 
 .mdl-layout .w3-modal {
 	padding-top: 132px;
+	background-color: rgba(0, 0, 0, 0.7);
 }
-
 .mdl-layout .w3-modal-content {
 	background-color: transparent;
 	width: 70%;
+}
+.w3-modal-content .text {
+	color: #FFFFFF;
+	opacity: 1;
 }
 .mdl-layout .w3-display-topright {
 	top: 64px;
@@ -944,6 +948,9 @@ video.wide-video {
 	}
 	.background-photo-scalable {
 		height: 252px; /* 4:3 aspect ratio with 336px width and 252px height */
+	}
+	.text {
+		display: none;
 	}
 }
 

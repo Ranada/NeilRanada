@@ -2,7 +2,17 @@
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto 16px;
+  margin: auto 16px 16px;
+}
+
+/* Nav container position */
+
+.slideshow-nav {
+  position: absolute;
+  width: 100%;
+  top: -76px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  padding: 49px 0 0;
 }
 
 /* Next & previous buttons */
@@ -13,7 +23,7 @@
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -28,7 +38,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0);
 }
 
 /* Caption text */
@@ -38,7 +48,7 @@
   letter-spacing: 0.01em;
   line-height: 24px;
   color: #000000;
-  opacity: 0.54;
+  opacity: 0.87;
   font-weight: 400;
   position: static;
   bottom: 8px;
@@ -94,7 +104,11 @@
 /* MDL overide */
 
 a.prev, a.next {
-  color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.prev:hover, .next:hover, .text:hover {
+  color: #7bbed1;
 }
 
 .mySlides img {
