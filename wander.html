@@ -422,7 +422,15 @@
                           <p>I created a spreadsheet with a list of tasks to meet the goals of the user personas.</p> 
                           <h4>"As a __________, I want to __________ so that I can __________."</h4>
 
-                          <img src="images/wander/user-stories.png" alt="user stories" class="standard-image">
+                          <!-- Modal User Stories -->
+                          <img class="standard-image modal-hover" src="images/wander/user-stories.png" alt="user stories" style="cursor:zoom-in" onclick="document.getElementById('user-stories').style.display='block'">
+
+                          <div id="user-stories" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/wander/user-stories.png" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
 
                           <p class="bottom-spacer"><a href="https://docs.google.com/spreadsheets/d/1JWyp_YQT-n9wX2OgGR10xUt9OwbBY5JPKilEnlvO9Oo/edit?usp=sharing" target="_blank">Open Google Sheets for User Stories in another tab<i class="material-icons">open_in_new</i></a></p> 
 
@@ -430,16 +438,43 @@
 
                           <p>I created User Flows to visually depict how people completed each task set out in the User Stories.</p>
 
-                          <h4>Search flow</h4>
-                          <img src="images/wander/user-flow-search.jpg" alt="user search flow" class="standard-image bottom-spacer">
+                          <h4>Search path flow</h4>
 
-                          <h4>Map view flow</h4>
-                          <img src="images/wander/user-flow-onboarding.jpg" alt="user onboarding flow" class="standard-image bottom-spacer">
+                          <!-- Modal Search flow -->
+                          <img class="standard-image modal-hover" src="images/wander/user-flows-search-path.png" alt="search user flows" style="cursor:zoom-in" onclick="document.getElementById('user-flows-search-path').style.display='block'">
+
+                          <div id="user-flows-search-path" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/wander/user-flows-search-path.png" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
 
                           <h4>Onboarding flow</h4>
-                          <img src="images/wander/user-flow-map-view.jpg" alt="user map view flow" class="standard-image bottom-spacer">
 
-                          <p class="bottom-spacer"><a href="https://drive.google.com/file/d/0B9dkLvODiMG-ZmtRRjJXQkNaY1U/view?usp=sharing" target="_blank">Open Draw.io for User Flows in another tab<i class="material-icons">open_in_new</i></a></p>
+                          <!-- Modal onboarding flow -->
+                          <img class="standard-image modal-hover" src="images/wander/user-flows-onboarding.png" alt="onboarding user flows" style="cursor:zoom-in" onclick="document.getElementById('user-flows-onboarding').style.display='block'">
+
+                          <div id="user-flows-onboarding" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/wander/user-flows-onboarding.png" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
+
+                          <h4>Map View</h4>
+                        
+                           <!-- Modal map flow -->
+                          <img class="standard-image modal-hover" src="images/wander/user-flows-map.png" alt="map user flows" style="cursor:zoom-in" onclick="document.getElementById('user-flows-map').style.display='block'">
+
+                          <div id="user-flows-map" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/wander/user-flows-map.png" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
+
+                          <p class="bottom-spacer"><a href="https://drive.google.com/file/d/0B9dkLvODiMG-M3ZkY3QxRVlXdUE/view?usp=sharing" target="_blank">Open Draw.io for User Flows in another tab<i class="material-icons">open_in_new</i></a></p>
 
                           <h2 class="nav-sub-menu-item">Paper Wireframes</h2>
 
@@ -448,27 +483,27 @@
                           <p>I went through each user story and wrote the task in the top left corner of each page to focus on the particular problem I needed to solve.</p>
 
                           <p>Here are a couple of early wireframe sketches attempting to solve for the following user story:<p> 
-                          <p class="highlight">"As a user...I want to search recommended paths...so that I can find the best way to see popular sights."</p>
+                          <p class="highlight bottom-spacer">"As a user...I want to search recommended paths...so that I can find the best way to see popular sights."</p>
 
-                          <img src="images/wander/wireframe-search-cards@2x.png" alt="paper wireframes" class="standard-image">
-                          <h6>Flowing from a collection of cards to a map.</h6>
-
-                          <img src="images/wander/wireframe-search-list@2x.png" alt="paper wireframes" class="standard-image">
-                          <h6>Flowing from list view to a page with information and photos for a point of interest.</h6>
-
+                          <h4>Flowing from a collection of cards to a map view:</h4>
+                          <img src="images/wander/wireframe-search-cards@2x.png" alt="paper wireframes" class="standard-image bottom-spacer">
+                          
+                          <h4>Flowing from a list view to a page with information and photos for a point of interest:</h4>
+                          <img src="images/wander/wireframe-search-list@2x.png" alt="paper wireframes" class="standard-image bottom-spacer">
+                          
                           <p>User testing later revealed that I needed to use a blend of the two ideas above. A list for easier skimming instead of cards. And a map view instead of an info page with photos because that’s what testers expected after selecting a path.</p>
 
                           <p>The most challenging problem I focused on was how people could seamlessly make changes to customize their walking path. Here is a progression of wireframe sketches designing for the user story:</p>
 
-                          <p class="highlight">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
+                          <p class="highlight bottom-spacer">“As a user…I want to change the path on my map…so that I can modify my path.”</p>
 
-                          <img src="images/wander/wireframe-change-path-early@2x.png" alt="high-fidelity wireframes" class="standard-image">
-                          <h6>Early version.</h6>
-
-                          <img src="images/wander/wireframe-change-path-later@2x.png" alt="high-fidelity wireframes" class="standard-image">
-                          <h6>Later version.</h6>
-
-                          <p>Testing revealed that most people could not associate the unlabeled Floating Action Button with making changes to a path. I discuss this issue later under the "Testing" section.</p>
+                          <h4>Early version of edit path feature:</h4>
+                          <img src="images/wander/wireframe-change-path-early@2x.png" alt="high-fidelity wireframes" class="standard-image bottom-spacer">
+                          
+                          <h4>Later version of edit path feature:</h4>
+                          <img src="images/wander/wireframe-change-path-later@2x.png" alt="high-fidelity wireframes" class="standard-image bottom-spacer">
+                          
+                          <p class="bottom-spacer">Testing revealed that most people could not associate the unlabeled Floating Action Button with making changes to a path. I discuss this issue later under the "Testing" section.</p>
 
                           <h2 class="nav-sub-menu-item">Visual Design</h2>
 
