@@ -968,6 +968,9 @@ video.wide-video {
 	.header-photo-scalable {
 		height: 328px;
 	}
+	.background-photo-tall {
+		height: 435px;
+	}
 }
 
 @media screen and (max-width: 320px) {
