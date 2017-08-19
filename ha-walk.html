@@ -136,11 +136,19 @@
 
                           <p class="highlight">"Your friend’s daughter, Mary, has a medical condition. How would you donate to her fundraiser?"</p>
 
-                          <img src="images/ha-walk/ha-walk-original.png" alt="click test for Hydrocephalus Walk homepage">
+                          <!-- Modal Original HA Walk website -->
+                          <img class="standard-image modal-hover bottom-spacer" src="images/ha-walk/ha-walk-original.png" alt="Original user test on Hydrocephalus Walk website" style="cursor:zoom-in" onclick="document.getElementById('ha-walk').style.display='block'">
+
+                          <div id="ha-walk" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/ha-walk/ha-walk-original.png" alt="Original user test on Hydrocephalus Walk website" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
 
                           <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/479226983fe7/results/47170e5dd15" target="_blank">Open Usability Hub test results in another tab<i class="material-icons">open_in_new</i></a></p>
 
-                          <p>Of the 15 responses, most people were able to identify the buttons to start the donation process: “Donate to a Walker” and “Give.” However, both of these buttons are misleading. The “Donate to a Walker” button leads to a page that lets you search for a person who is registered to walk in the event and is raising funds on behalf of a person with hydrocephalus. The “Give” button leads to a page for making a general donation.</p>
+                          <p>Of the 15 responses, most people were able to identify the buttons to start the donation process: “Donate to a Walker” and “Give.” However, both of these buttons are misleading. The “Donate to a Walker” button leads to a page that lets you search for a person who is registered to walk in the event and raising funds on behalf of a person with hydrocephalus. The “Give” button leads to a page for making a general donation.</p>
 
                           <p>Neither button allows you to search for the person who has hydrocephalus, whom you are ultimately trying to support with the given scenario.</p>
 
@@ -154,23 +162,49 @@
 
                           <ul>
                               <li>Unable to find a fundraising campaign using the name of a person with hydrocephalus</li>
-                              <li>She felt filling out the payment information form lengthy</li>
+                              <li>She felt it took a long time to fill out the payment information form</li>
                               <li>Became flustered when she realized that she accidentally subscribed to email notifications after completing the checkout process</li>
-                              <li>Surprised that clicking the “Continue” button on the payment information page and charged her credit card</li> 
+                              <li>Surprised that clicking the “Continue” button on the payment information page charged her credit card</li> 
                               <li>Credit card was double-charged after jumping too quickly back to the payment information form after clicking “continue” despite a warning not to do so</li>
                           </ul>
 
-                          <p>With this single tester, it was apparent that there were areas of the customer checkout process that needed improvement. It also reinforced the point found in the Usability Hub test from earlier that there needs to be a way to search for a campaign using the name of a person with hydrocephalus.</p>
+                          <p>With this single tester, it was apparent that there were areas of the customer checkout process that needed improvement. It also reinforced the point from the Usability Hub test result from earlier that there needs to be a way to search for a campaign using the name of a person with hydrocephalus.</p>
 
                           <h2 class="nav-sub-menu-item">User Personas</h2>
 
                           <p>I identified three people to interview and used them as models to create the User Personas. I focused on learning about their past experiences with donating.</p>
 
-                          <p>The User Personas represent the varying degrees of relationship a donor can have with a person with hydrocephalus. Often times when people donate, it’s because they know someone who will benefit, whether they are a close family member or an acquaintance.</p>
+                          <p class="bottom-spacer">The User Personas represent the varying degrees of relationship a donor can have with a person with hydrocephalus. Often times when people donate, it’s because they know someone who will benefit, whether they are a close family member or an acquaintance.</p>
 
-                          <img src="images/ha-walk/user-personas-primary-acquaintance.jpg" alt="acquaintance is a primary user persona" class="bottom-spacer">
-                          <img src="images/ha-walk/user-personas-secondary-mom.jpg" alt="mom is a secondary user persona" class="bottom-spacer">
-                          <img src="images/ha-walk/user-personas-secondary-family-friend.jpg" alt="family friend is a secondary user persona">
+                          <!-- Modal User Persona Acquaintance -->
+                          <img class="standard-image image-series-spacer modal-hover" src="images/ha-walk/user-personas-acquaintance.png" alt="acquaintance is a primary user persona" style="cursor:zoom-in" onclick="document.getElementById('user-personas-acquaintance').style.display='block'">
+
+                          <div id="user-personas-acquaintance" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/ha-walk/user-personas-acquaintance.png" alt="acquaintance is a primary user persona" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
+
+                          <!-- Modal User Persona Mom -->
+                          <img class="standard-image image-series-spacer modal-hover thumb-nail" src="images/ha-walk/user-personas-mom.png" alt="mom is a secondary user persona" style="cursor:zoom-in;" onclick="document.getElementById('user-personas-mom').style.display='block'">
+
+                          <div id="user-personas-mom" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/ha-walk/user-personas-mom.png" alt="mom is a secondary user persona" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
+
+                          <!-- Modal User Persona famiy friend -->
+                          <img class="standard-image image-series-spacer modal-hover thumb-nail" src="images/ha-walk/user-personas-family-friend.png" alt="family friend is a secondary user persona" style="cursor:zoom-in;" onclick="document.getElementById('user-personas-family-friend').style.display='block'">
+
+                          <div id="user-personas-family-friend" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/ha-walk/user-personas-family-friend.png" alt="family friend is a secondary user persona" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
 
                           <p class="bottom-spacer"><a href="https://www.dropbox.com/s/gr1rysn04zic26w/ha-walk-user-personas.pdf?dl=0" target="_blank">Open PDF file for User Personas in another tab<i class="material-icons">open_in_new</i></a></p>
 
