@@ -1,4 +1,4 @@
-/* Typography styling */
+t/* Typography styling */
 
 .mdl-layout h1 {
 	font-family: "Adobe-Caslon-Pro", Avenir, Roboto, Helvetica, Arial, sans-serif;
@@ -523,6 +523,9 @@ footer.mdl-mini-footer {
 img.standard-image.modal-hover.thumb-nail {
 	width: 50%;
 }
+img.standard-image.modal-hover.thumb-nail-thirds {
+	width: 33.333%;
+}
 
 /* Scroll Nav Styling */
 
@@ -805,6 +808,9 @@ video.wide-video {
 	}
 	img.standard-image.modal-hover.thumb-nail {
 		width: 100%;
+	}
+	img.standard-image.modal-hover.thumb-nail-thirds {
+	width: 100%;
 	}
 	img.image-series-spacer {
 	margin-bottom: 24px;
