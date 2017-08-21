@@ -423,7 +423,7 @@ footer.mdl-mini-footer {
 /* About page styling starts here */
 
 .about-me-photo {
-	background-image: url(images/neil-ranada-about@2x.png);
+	background-image: url(images/neil-ranada-about-2@2x.png);
 }
 .about-content h1 {
 	margin-bottom: 0;
@@ -931,7 +931,7 @@ video.wide-video {
 		background-position: 47% 0;
 	}
 	.about-me-photo {
-		background-position: 35% center;
+		background-position: 48% center;
 	}
 	.background-photo-tall {
 		height: 448px;
