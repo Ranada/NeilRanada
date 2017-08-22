@@ -372,6 +372,13 @@ h2.mdl-card__title-text {
 	background-size: 100%;
 	background-position: center 0;
 }
+
+/* Kollect case study styling */
+
+.kollect-header-photo {
+	background: url('images/kollect/kollect-mockup.jpg');
+}
+
 /* Footer Styling */
 
 footer.mdl-mini-footer {
