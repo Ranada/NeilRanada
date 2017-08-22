@@ -460,7 +460,7 @@ footer.mdl-mini-footer {
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
-    margin: 24px 24px 16px;
+    margin: 24px 16px 16px;
 }
 .background-photo-portfolio-view-maintain-height {
 	height: 520px; /* 16:9 aspect ratio for photos in large screens is 672px width : 387px height */
