@@ -522,102 +522,41 @@
                           <h1 class="section-title nav-menu-item">Testing</h1>
                           <hr>
 
-                          <p>I tested early and often during every phase of the design process: wireframes, mockups, and prototype. I took every opportunity to test in person or remotely online to refine my design solutions.</p>
+                          <p>I tested often during every stage of the design process from low-fidelity wireframes to high-fidelity mockups and prototype.</p>
 
                           <h2 class="nav-sub-menu-item">Low-Fidelity Tests</h2>
+
+                          <p>I used a combination of in-person and remote testing with family, friends, and strangers to solve for the various user stories.</p>
+
+                          <p>Using the dashboard wireframe as an example.</p>
+
+                          <!-- Modal dashboard -->
+                          <img src="images/kollect/wireframe-dashboard-blank.jpg" alt="wireframe dashboard" class="standard-image bottom-spacer" style="cursor:zoom-in;" onclick="document.getElementById('wireframe-dashboard-blank').style.display='block'">
+
+                          <div id="wireframe-dashboard-blank-dashboard" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-xlarge w3-display-topright" style="color: #FFFFFF; background-color: rgba(0, 0, 0, 0.4);">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                              <img src="images/kollect/wireframe-dashboard-blank.jps" alt="wireframe dashboard blank" style="width:100%; display:block; margin: 0 auto;">
+                            </div>
+                          </div>
                           
-                          <p>I tested wireframes using click tests and navigation tests posted on UsabilityHub.com.</p>
+                          <p>When testers were asked to add a note, image, or link:</p>
 
-                          <p>The first User Story I needed to solve for was:</p>
+                          <ul>
+                              <li>All were distracted by the unfinished wireframe items on the dashboard.</li>
+                              <li>One user was confused about the function of the left side menu bar and attempted to add an item by clicking there.</li>
+                              <li>All users eventually used the "Add" button in the top right corner. Some were faster than others.</li>
+                          </ul>
 
-                          <p class="highlight">“As a donor…I want to search the name of a person with hydrocephalus…so that I can view their fundraising campaign.”</p>
+                          <p>Based on these observations, the vertical side bar was too distracting and was removed. The navigation links were relocated to a top horizontal menu bar. It was also clear that higher fidelity images were needed to provide context.
 
-                          <p>The first version of the layout showed that 62.5% successfully click the “Donate” button. However, 37.5% were distracted by either the “Sign In” button or the content in the Walk section:</p>
+                          <p>Using the same dashboard wireframe above, when testers were asked to go to account setting and upgrade to a professional account:
 
-                          <img src="images/ha-walk/low-fi-search-1.png" alt="wireframes low fidelity testing for searching fundraiser campaign" class="standard-image">
-                          <h6 class="text-align-center">Homepage layout</h6>
+                          <ul>
+                              <li>All users struggled to find the avatar and gear symbol in the button left-hand corner. Most users did not scroll down to find it. </li>
+                          </ul>
 
-                          <img src="images/ha-walk/low-fi-search-2.png" alt="wireframes low fidelity testing for searching fundraiser campaign" class="standard-image">
-                          <h6 class="text-align-center">Campaign search modal</h6>
-                          
-                          <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/be3ffc73a652/results/91c1f55c3f49" target="_blank">Open Usability Hub test results in another tab<i class="material-icons">open_in_new</i></a></p>
-
-                          <p>With these results, I knew that I needed to minimize distractions from getting people to donate. As you will see later in the high-fidelity mockup, I tucked the “Sign In” button away in the navigation menu. I also made the Walk section look less prominent relative to the Donation section while eliminating the “Join Walk” button.</p> 
-
-                          <p>The next part of this flow was the customer checkout process which covers the User Story:</p>
-
-                          <p class="highlight">“As a donor, I want to donate to a hydrocephalus person’s campaign so that I can support medical research.”</p>
-
-                          <p>The layout for the customer checkout was successful with an 81% completion rate on the campaign profile page and 100% completion rate on the modals that followed:</p>
-
-                          <img src="images/ha-walk/low-fi-donate-1.png" alt="wireframes low fidelity testing for donating" class="standard-image">
-                          <h6 class="text-align-center">Campaign profile for person with hydrocephalus</h6>
-
-                          <img src="images/ha-walk/low-fi-donate-2.png" alt="wireframes low fidelity testing for donating" class="standard-image" style="max-width:500px; display:block; margin:initial auto;">
-                          <h6 class="text-align-center">Payment Amount modal</h6>
-
-                          <img src="images/ha-walk/low-fi-donate-3.png" alt="wireframes low fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Payment Information modal</h6>
-
-                          <img src="images/ha-walk/low-fi-donate-4.png" alt="wireframes low fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Payment Confirmation modal</h6>
-
-                          <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/8a8878c4891c/results/65238fdd3f7e" target="_blank">Open Usability Hub test results in another tab<i class="material-icons">open_in_new</i></a></p>
-
-                          <h2 class="nav-sub-menu-item">High-Fidelity Tests</h2> 
-
-                          <p>Again, I tested people’s ability to search for a campaign to solve for the User Story:</p>
-
-                          <p class="highlight">“As a donor…I want to search the name of a person with hydrocephalus…so that I can view their fundraising campaign.”</p>
-
-                          <p>I saw high success rates while testing high-fidelity mockups which was carried over from the success of the wireframes during the low-fidelity tests:</p>
-
-                          <img src="images/ha-walk/hi-fi-search-1.png" alt="mockups high-fidelity testing for donating" class="standard-image">
-                          <h6 class="text-align-center">Homepage with high success rate of testers initiating the search process</h6>
-
-                          <img src="images/ha-walk/hi-fi-search-2.png" alt="mockups high-fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Modal asking testers if they want to donate for someone specific</h6>
-
-                          <img src="images/ha-walk/hi-fi-search-3.png" alt="mockups high-fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Modal that lets testers search and select a campaign</h6>
-
-                          <img src="images/ha-walk/hi-fi-search-4.png" alt="mockups high-fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Campaign search modal with field filled with test scenario girl's name, Mary</h6>
-
-                          <img src="images/ha-walk/hi-fi-search-5.png" alt="mockups high-fidelity testing for donating" class="standard-image">
-                          <h6 class="text-align-center">Testers successfully donating to the campaign dedicated to a girl named Mary</h6>
-
-                          <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/a51b19f98fc6/results/92bddc8d46d6" target="_blank">Open Usability Hub test results in another tab<i class="material-icons">open_in_new</i></a></p>
-
-                          <p>Next, I tested the customer checkout process to solve for the User Story:</p>
-
-                           <p class="highlight">“As a donor, I want to donate to a hydrocephalus person’s campaign so that I can support medical research.”
-                          </p>
-
-                          <img src="images/ha-walk/hi-fi-donate-1.png" alt="mockups high fidelity testing for donating" class="standard-image">
-                          <h6 class="text-align-center">Testers successfully starting the donation process</h6>
-
-                          <img src="images/ha-walk/hi-fi-donate-2.png" alt="mockups high fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Testers were asked to make a $5 one-time donation</h6>
-
-                          <img src="images/ha-walk/hi-fi-donate-3.png" alt="mockups high fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Continuing to complete the Payment Amount modal</h6>
-
-                          <img src="images/ha-walk/hi-fi-donate-4.png" alt="mockups high fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Completing the Payment Amount modal and moving on to Payment Information</h6>
-
-                          <img src="images/ha-walk/hi-fi-donate-5.png" alt="mockups high fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Testers thought the prototype was a real website, skipped filling out the form, and clicked the "Payment Confirmation" button</h6>
-
-                          <img src="images/ha-walk/hi-fi-donate-6.png" alt="mockups high fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Completing Payment Information modal and moving on to Payment Confirmation</h6>
-
-                          <img src="images/ha-walk/hi-fi-donate-7.png" alt="mockups high fidelity testing for donating" class="standard-image" style="max-width:500px; display:block;">
-                          <h6 class="text-align-center">Payment Confirmation modal with open ended options to see what testers wanted to do next</h6>
-
-                          <p class="bottom-spacer"><a href="https://usabilityhub.com/tests/176ea92d8240/results/8c4e18d774a9" target="_blank">Open Usability Hub test results in another tab<i class="material-icons">open_in_new</i></a></p>
-
-                          <p class="bottom-spacer">Success rates for completing each step was greater than 90%. The exception was 40% success rate for the payment information step. Testers said they didn't go through the motions of filling out the form because they didn’t think it was required. They jumped ahead and clicked the “Payment Confirmation” button. I chalked it up to a test-ism and deemed the results an overall success.</p>
+                          <p>As a result, the avatar and settings symbol were relocated to the top right corner of the main menu where it is more visible.</p>
 
                           <h2 class="usability-testing nav-sub-menu-item">Usability Testing</h2> 
 
