@@ -193,7 +193,7 @@ header.mdl-layout__header {
 	padding-right: 16px;
 }
 
-/* Displays acitve link in menu for large screens */
+/* Displays active link in menu for large screens */
 
 .active-link {
 	border-bottom: 3px solid #7BBED1;
@@ -808,7 +808,7 @@ video.wide-video {
 		margin-bottom: 24px;
 	}
 	.case-study ol, .case-study ul {
-		margin-bottom: 24px;modal
+		margin-bottom: 24px;
 	}
 	img.standard-image.modal-hover.thumb-nail {
 		width: 100%;
