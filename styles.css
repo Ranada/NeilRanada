@@ -981,6 +981,10 @@ video.wide-video {
 	.background-photo-tall {
 		height: 435px;
 	}
+	.kollect-header-photo {
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 @media screen and (max-width: 320px) {
