@@ -75,25 +75,24 @@
                           <!-- Summary -->
                           <h1 class="section-title nav-menu-item">Summary</h1>
                           <hr>
-                          <p>Kollect was a study on a web application for easily managing notes, images, and links. I explored solutions for people's frustrations to organizing things that matter to them.</p> 
 
-                          <p>For example, sometimes people forget where they saved a great meme they wanted to share with family and friends.</p>
-
+                          <p>People like to collect and share notes, images, and links and share their great finds with family and friends.</p>
+                           
                           <img src="images/kollect/t-rex-meme.jpg" alt="t-rex meme" class="standard-image" style="max-width:400px; display:block;">
                           <h6 class="text-align-center">Source: Pinterest</h6>
 
-                          <p>Whether it's a photo, link, or note you took the other day, sometimes you struggle to remember where you saved things. Is it on a post-it? In your notebook? In your phone? In your laptop?! You may end up feeling like Batman.</p>
+                          <p>But sometimes you struggle to remember where you saved things. Did you scribble it on a post-it? Jot it in your notebook? Save it in your phone? Save it your laptop?! You may end up feeling like Batman.</p>
 
                           <img src="images/kollect/batman-meme.jpg" alt="batman where is it meme" class="standard-image" style="display:block;">
                           <h6 class="text-align-center">Source: Quickmeme</h6>
 
-                          <p>The goal was to create a web application using the <a href="https://www.dropbox.com/s/faguw8v2tlb6rsq/3.%20Blocbox-BusinessRequirements.pdf?dl=0" target="_blank">business requirements</a> laid out by this design challenge.<p>
+                          <p>Kollect is a web application design that lets you easily manage your notes, images, and links all in one place.
 
                           <h2>Problem</h2>
-                          <p>People have a difficult time remembering where they save notes, images, and links. </p>
+                          <p>People have a difficult time remembering where they saved notes, images, and links. </p>
 
-                          <h2>Solution</h2>
-                          <p>A web application where people can save content all in one place and access it anywhere.</p>
+                          <h2 >Solution</h2>
+                          <p class="bottom-spacer">A web application where people can save content all in one place and access it anywhere.</p>
 
                           <!-- Research -->
                           <h1 class="section-title nav-menu-item">Research</h1>
@@ -131,7 +130,7 @@
                           <p>When asked about their note taking behaviors:</p>
 
                           <ul>
-                              <li>50% wrote notes often, 41.2% wrote notes sometimes, while 8.8% never wrote notes</li>
+                              <li>At varying levels, more than half said they take notes.</li>
                           </ul>
 
                           <img src="images/kollect/note-taking.png" alt="notetaking behavior" class="standard-image" style="max-width:500px; display:block;">
@@ -141,7 +140,7 @@
 
                           <ul>
                               <li>75.8% used smartphones</li>
-                              <li>Other tools were noted as widely used: Other (33.3%), Evernote (15.2%), Microsoft Word (18.2%), Desktop applications (15.2%), and None (9.1%)</li>
+                              <li>There are many note-taking tools available on the market, but none relatively stand out: Other (33.3%), Evernote (15.2%), Microsoft Word (18.2%), Desktop applications (15.2%), and None (9.1%)</li>
                           </ul>
 
                           <p>What some said they liked <strong>MOST</strong> about note taking tools they used:</p>
@@ -174,13 +173,13 @@
 
                           <h2>What I learned from survey results</h2>
 
-                          <p>Most people save images and links by either downloading them or using a browser bookmark. With regards to notes, most people use a phone app. They say that the tools they use are simple, user-friendly, and intuitive.</p>
+                          <p>Most people don't have a problem saving things with whatever tool they are using.</p>
 
                           <p>However, despite the ease of saving items, people complained that their files eventually become disorganized and difficult to find and sort later. </p>
 
                           <h2>Finding an opportunity to solve a problem</h2>
 
-                          <p>I began with an assumption: people need a website that allows them to easily save, share, and collaborate with content from any device. To validate this assumption, I needed to answer three questions:</p>
+                          <p>I needed to dig deeper and move beyond a feeler survey. I began with an assumption: people need a website that allows them to easily save, share, and collaborate with content from any device. To validate this assumption, I needed to answer three questions:</p>
 
                           <ol>
                               <li>Do people need a single point for saving, sharing, and collaborating on content?</li>
@@ -191,8 +190,6 @@
                           <h2 class="nav-sub-menu-item">User Personas</h2>
 
                           <p>I identified three people to interview and used them as models to create the User Personas. I focused on learning about their past experiences with saving and organizing things that interest them most.</p>
-
-                          <p class="bottom-spacer">Stephen is the primary persona and the focus for the design. Out of the three personas, meeting his goals and addressing his frustrations would also address the needs of the secondary and tertiary personas.</p>
 
                           <!-- Modal User Persona Primary -->
                           <img class="standard-image image-series-spacer modal-hover" src="images/kollect/user-personas-primary.png" alt="primary user persona" style="cursor:zoom-in" onclick="document.getElementById('user-personas-primary').style.display='block'">
@@ -226,12 +223,14 @@
 
                           <p class="bottom-spacer"><a href="https://www.dropbox.com/s/u2r9us0x2vjfa2d/user-personas.pdf?dl=0" target="_blank">Open PDF file for User Personas in another tab<i class="material-icons">open_in_new</i></a></p>
 
+                          <p class="bottom-spacer">Stephen is the primary persona and the focus for the design. Out of the three personas, meeting his goals and addressing his frustrations would also address the needs for the secondary and tertiary personas.</p>
+
                           <p>The User Personas have different interests for managing content: fitness, photography, and business. However, they share <strong>three common goals:</strong></p>
 
                           <ol>
-                              <li>Centralized way of organizing content.</li>
-                              <li>Easily save notes, images, and links.</li> 
-                              <li>Ability to easily share content with a community.</li>
+                              <li>One place for saving and organizing things they can access anywhere.</li>
+                              <li>Quickly save simple notes, images, and links.</li> 
+                              <li>Easily share things with other people.</li>
                           </ol>
 
                           <p>I used these three goals as the focus for my design decisions.</p>
@@ -240,7 +239,7 @@
 
                           <p>I needed to learn from the design patterns of more popular web applications. I identified three: Evernote, Google Keep, and Ember.</p> 
 
-                          <p class="bottom-spacer">I created matrixes such as the one below to assess the strengths, weaknesses, opportunities, and threats of each website (SWOT analysis).</p>
+                          <p class="bottom-spacer">I created matrixes such as the one below to assess the strengths, weaknesses, opportunities, and threats of each web application (SWOT analysis).</p>
 
                           <!-- SWOT Analysis Ember -->
                           <img class="standard-image image-series-spacer modal-hover" src="images/kollect/evernote.png" alt="Evernote competitive analysis" style="cursor:zoom-in" onclick="document.getElementById('evernote').style.display='block'">
@@ -452,13 +451,13 @@
                             </div>
                           </div>
 
-                          <p class="bottom-spacer">I use examples in the <a href="#scrollNav-4-1">Testing section</a> on how I solved for some of the user stories.</p>
+                          <p class="bottom-spacer">I describe how I tested wireframes to solve for some of the user stories under the <a href="#scrollNav-4-1">Testing section</a>.</p>
 
                           <h2 class="nav-sub-menu-item">Visual Design</h2>
 
-                          <p>I began by brainstorming some brand names and logo designs. I looked to well-known brands that I admire, such as Uniqlo, for inspiration. They use carefully selected typography and simple logos that are scalable to small sizes but still recognizable.</p>
+                          <p>To create a brand name and logo design, I looked to well-known brands that I admire, such as Uniqlo, for inspiration. The common pattern that I saw with popular brands is that they use carefully selected typography and simple logos. The logos also scale well to smaller sizes but are still recognizable.</p>
 
-                          <p>Initially, the brand name was Blocbox. I went through a number of ideas for a name and logo.</p>
+                          <p>I went through some ideas for a brand name and logo.</p>
 
                           <img src="images/kollect/logo-1.png" alt="logo idea" class="standard-image" style="max-width:450px; display: block;">
 
@@ -468,7 +467,7 @@
 
                           <img src="images/kollect/logo-5.png" alt="logo idea" class="standard-image" style="max-width:520px; display: block;">
 
-                          <p style="margin-bottom:0;">I eventually settled on the name Kollect. It was a slight spin on the word "collect," which is what people are doing when they use this app.  For the logo, I applied gestalt-ism with a group of small triangles to form a simple, clean, modern looking box that scales well to small sizes. </p>
+                          <p style="margin-bottom:0;">I eventually settled on the name Kollect. I needed to be straight forward in communicating what people can do with the web application, which is to collect things. It was just a slight play on the word collect, swapping the "C" out for a "K."  I carried the collection theme into designing the logo. I grouped small triangles using gestalt-ism to form a simple, clean, modern box that scales well to smaller sizes.</p>
 
                           <img src="images/kollect/logo-kollect.png" alt="logo idea" class="standard-image" style="max-width:475px; display: block;">
 
@@ -478,7 +477,7 @@
 
                           <h2>Style Guide</h2>
 
-                          <p>Lastly, I worked on color to finalize the style guide. I chose a light blue to give the app a light, fresh feel. I used the Adobe wheel to build a monochromatic palette.</p>
+                          <p>Lastly, I worked on color to finalize the style guide. I chose a light blue to give the app a light, fresh feel. I used the Adobe's Color Wheel to build a monochromatic palette.</p>
 
                           <!-- Modal Style Guide -->
                           <img class="standard-image modal-hover" src="images/kollect/style-guide.png" alt="style guide" style="cursor:zoom-in;" onclick="document.getElementById('style-guide').style.display='block'">
@@ -533,11 +532,11 @@
 
                           <ul>
                               <li>All were distracted by the unfinished wireframe items on the dashboard.</li>
-                              <li>One user was confused about the function of the left side menu bar and attempted to add an item by clicking there.</li>
-                              <li>All users eventually used the "Add" button in the top right corner. Some were faster than others.</li>
+                              <li>One person was confused about the purpose of the left side menu bar and attempted to add an item by clicking there.</li>
+                              <li>All testers eventually found the "Add" button in the top right corner. Some were faster than others.</li>
                           </ul>
 
-                          <p>Based on these observations, I removed the vertical side bar because it was too distracting. I also relocated the navigation links to the top horizontal menu bar. It was also clear that I needed higher fidelity to provide context.</p>
+                          <p>Based on these observations, I removed the vertical side bar because it was too distracting. I also relocated the navigation links to the top horizontal menu bar. It was also clear that I needed higher fidelity wireframes and mockups to give people more context.</p>
 
                           <p>Using the same dashboard wireframe above, when testers were asked to go to account settings and upgrade to a professional account:</p>
 
@@ -546,7 +545,9 @@
                               <li>Most users did not scroll down to find it.</li>
                           </ul>
 
-                          <p>As a result, the settings link was relocated to the top right corner of the main menu for more visibility. Here are the changes applied to a higher fidelity mockup of the dashboard:</p>
+                          <p>As a result, the settings link was relocated to the top right corner of the main menu for more visibility.</p> 
+
+                          <p>Here are changes applied from the lessons learned above to a higher fidelity version of the dashboard:</p>
 
                           <!-- Modal dashboard -->
                           <img src="images/kollect/mockup-dashboard-filled.png" alt="dashboard mockup" class="standard-image bottom-spacer" style="cursor:zoom-in;" onclick="document.getElementById('mockup-dashboard').style.display='block'">
@@ -560,7 +561,9 @@
 
                           <h2 class="usability-testing nav-sub-menu-item">Usability Testing</h2> 
 
-                          <p>I conducted three usability tests using a high-fidelity prototype created with InVision and posted on UserTesting.com. I came up with three test objectives:</p>
+                          <p>I conducted three usability tests. I used a high-fidelity prototype created with Sketch and InVision. I then posted it on UserTesting.com.</p> 
+
+                          <p>I came up with three test objectives:</p>
 
                           <ol>
                               <li>Do people understand the services and features of Kollect?</li>
@@ -585,7 +588,7 @@
                           <ul>
                               <li>Understood that the web application was used for content management</li>
                               <li>Was unsure of what the "boxes" meant in the price description section of the homepage. However, she correctly assessed it as a way to collect items.</li>
-                              <li>Easily added an item, however, was unable to navigate back to the dashboard. The top portion of the modal was hidden, and she was not able to scroll to see the navigation options. Eventually she clicked outside of the modal to exit.</li>
+                              <li>Easily added an item, however, was unable to navigate back to the dashboard. The top portion of the modal was hidden, and she was not able to scroll to see the navigation options. Eventually, she clicked outside of the modal to exit.</li>
                           </ul>
 
                           <video controls class="wide-video">
@@ -594,7 +597,7 @@
                               Sorry, our video isn't working for you. Try the link above to open it.
                           </video>
 
-                          <p>Press play above or<a href="http://www.usertesting.com/v/9ad44188-5044-4b7a-8d92-4ad6c5e10bc4?encrypted_video_handle=jKQHCP_D-Z_TLYrZYVMphg&shared=bx1aQKkf" target="_blank"> watch video in another tab<i class="material-icons">open_in_new</i></a></p>
+                          <p class="bottom-spacer">Press play above or<a href="http://www.usertesting.com/v/9ad44188-5044-4b7a-8d92-4ad6c5e10bc4?encrypted_video_handle=jKQHCP_D-Z_TLYrZYVMphg&shared=bx1aQKkf" target="_blank"> watch video in another tab<i class="material-icons">open_in_new</i></a></p>
 
                           <h2>Usability Test #2 Results</h2>
 
@@ -611,7 +614,7 @@
                               Sorry, our video isn't working for you. Try the link above to open it.
                           </video>
 
-                          <p>Press play above or<a href="http://www.usertesting.com/v/b95801ec-96ba-492d-be82-e598c95af026?encrypted_video_handle=m4e_WruxmYtwIRGBnChbFA&shared=j4Yg2K5Q" target="_blank"> watch video in another tab<i class="material-icons">open_in_new</i></a></p>
+                          <p class="bottom-spacer">Press play above or<a href="http://www.usertesting.com/v/b95801ec-96ba-492d-be82-e598c95af026?encrypted_video_handle=m4e_WruxmYtwIRGBnChbFA&shared=j4Yg2K5Q" target="_blank"> watch video in another tab<i class="material-icons">open_in_new</i></a></p>
 
                           <h2>Usability Test #3 Results</h2>
                           
@@ -628,7 +631,7 @@
                               Sorry, our video isn't working for you. Try the link above to open it.
                           </video>
 
-                          <p>Press play above or<a href="http://www.usertesting.com/v/47d678a2-07be-4b49-969a-4f27cfb11aa1?encrypted_video_handle=vQ2B35Cj5dH6-k9N0q_Jmw&shared=5LOtn2N4" target="_blank"> watch video in another tab<i class="material-icons">open_in_new</i></a></p>
+                          <p class="bottom-spacer">Press play above or<a href="http://www.usertesting.com/v/47d678a2-07be-4b49-969a-4f27cfb11aa1?encrypted_video_handle=vQ2B35Cj5dH6-k9N0q_Jmw&shared=5LOtn2N4" target="_blank"> watch video in another tab<i class="material-icons">open_in_new</i></a></p>
 
                           <h2>Going back to answering the test objectives:</h2>
                           
@@ -641,7 +644,7 @@
                               </li>
 
                               <li>Do they feel that they can add and organize content?
-                              <br><span class="highlight">In general, the testers were able to add content. All testers correctly attempted to exit the modals by clicking outside, as expected. However, as a limitation of the overlay feature with InVision, testers returned to the blank dashboard since the modal overlays began over them. All testers, however, talked about how they might use the dashboard for organizing content.
+                              <br><span class="highlight">In general, the testers were able to add content. All testers correctly attempted to exit the modals by clicking outside, as expected. However, as a limitation of the overlay feature with InVision, testers returned to the blank dashboard which is where the modal overlays started. All testers, however, talked about how they might use the dashboard for organizing content.
                               </span>
                               </li>
                           </ol>
@@ -667,13 +670,15 @@
                           <h1 class="section-title nav-menu-item">Conclusion</h1>
                           <hr>
 
-                          <p>I was able to create a web application for simple content management.</p>
+                          <p>I was able to design a web application where people can easily sign up and add content.</p>
 
-                          <p>What surprised me the most was how testers during the usability test clicked outside of the modals to exit them. Unfortunately, they returned to the blank dashboard as a limitation of the overlay feature with InVision. If I were to test that interaction pattern again, I would create mockups mimicking a modal overlay and set up touch zones around the box to transition to the filled dashboard. The "Back" would have led them to the filled dashboard none of the testers used that option.</p>
+                          <p>It was pleasing to see how people during usability tests clicked outside of the modals to exit them. Unfortunately, they returned to the blank dashboard which is a limitation of the overlay feature in InVision. The "Back" button would have led them to the filled dashboard, but none of the testers used this option.</p>
 
-                          <p>If given more time, I would have liked the opportunity to collaborate with other people that specialize in business, design, and development. Although I created a simple design that works, there are many perspectives from other areas of expertise that need consideration for Kollect to be valuable to other people.</p>
+                          <p> If I were to test that interaction pattern again, I would create mockups mimicking a modal overlay and set up touch zones around the box so that testers can transition to the filled version of the dashboard.</p>
 
-                          <p>Designing Kollect was fun. I hope to build more things that people find useful in the future.</p>
+                          <p>If given more time, I would have liked the opportunity to collaborate with other people that specialize in business, design, and development. Although I created a simple design that works, there are many perspectives from other areas of expertise that should be incorporated to build more value into Kollect.</p>
+
+                          <p>Designing Kollect was enjoyable, and I hope to build more things that people find useful in the future.</p>
 
                           <div class="case-study-contact">
                               <h2>Do you like my UX work?</h2>
