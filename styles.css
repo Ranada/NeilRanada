@@ -376,7 +376,7 @@ h2.mdl-card__title-text {
 /* Kollect case study styling */
 
 .kollect-header-photo {
-	background: url('images/kollect/kollect-header-mockup.jpg');
+	background: url('images/wander/wander-header-photo@2x.jpg');
 }
 
 /* Footer Styling */
@@ -980,10 +980,6 @@ video.wide-video {
 	}
 	.background-photo-tall {
 		height: 435px;
-	}
-	.kollect-header-photo {
-		background-size: cover;
-		background-position: center;
 	}
 }
 
