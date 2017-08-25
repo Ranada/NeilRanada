@@ -39,7 +39,7 @@
       animated: true,
       speed: 500,
       insertLocation: 'insertBefore',
-      arrowKeys: true,
+      arrowKeys: false,
       scrollToHash: true,
       onInit: null,
       onRender: null,
