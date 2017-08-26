@@ -137,6 +137,7 @@ a.mdl-navigation__link {
 }
 .mdl-card .mdl-button {
 	margin-top: 0;
+	width: calc(100% - 32px);
 }
 .footer-font {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
