@@ -5,10 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neil Ranada | UX Designer Portfolio - About page</title>
+    <title>Neil Ranada | UX Designer Portfolio - Kollect Case Study</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="material.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://use.typekit.net/bbp2cem.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -16,10 +17,9 @@
 </head>
 
 <body>
-	
+<div class="scroll-nav-adjustment">	
 	<!-- Header section starts here. Div shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
-      
       <header class="mdl-layout__header">
           <div class="mdl-layout__header-row">
               <!-- Title -->
@@ -34,7 +34,7 @@
               <nav class="mdl-navigation mdl-layout--large-screen-only">
                   <a class="mdl-navigation__link" href="index.html">PROJECTS</a>
                   <a class="mdl-navigation__link" href="resume.html">RESUME</a>
-                  <a class="mdl-navigation__link active-link" href="about.html">ABOUT</a>
+                  <a class="mdl-navigation__link active-link-2" href="about.html">ABOUT</a>
                   <a class="mdl-navigation__link" href="contact.html">CONTACT</a>
               </nav>
           </div>
@@ -46,37 +46,48 @@
     		<nav class="mdl-navigation">
       			<a class="mdl-navigation__link" href="index.html">PROJECTS</a>
             <a class="mdl-navigation__link" href="resume.html">RESUME</a>
-      			<a class="mdl-navigation__link" id="active-drawer-link" href="about.html">ABOUT</a>
+      			<a class="mdl-navigation__link" href="about.html">ABOUT</a>
       			<a class="mdl-navigation__link" href="contact.html">CONTACT</a>
     		</nav>
   		</div>
 
   	<!-- Content section starts here -->
       <main class="mdl-layout__content">
-          <div class="mdl-grid about-page max-width">
-              <h4 class="content-header">ABOUT</h4>
-              <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp content-background-color">
-                  <div class="about-me-photo header-photo-scalable"></div>
-                  <div class="about-content content-items-max-width">    
-                      <h1>Neil Ranada</h1>
-                      <h2 class="highlight">User Experience Research & Design</h2>
-                      <h4>LOS ANGELES, CA</h4>
-                      <p>Hi, I’m Neil. I’m a User Experience Researcher and Designer based out of Los Angeles, CA.</p>
-                      <p>I have 10 years of professional experience with a background in Aviation, Aerospace, and Defense. I was a Navy Helicopter Pilot and held various program management roles. I’ve been solving problems in small teams throughout my career.</p>
-                      <p>I’m interested in making mobile apps, websites, and other digital products easier to use. Technology should make our lives easier not harder. A well-intentioned but poorly designed product can lead to a person experiencing frustration.</p>
-                      <p>Frustration can cost you. It can result in customers being discouraged from buying your products or using your services. It can also distract your workers from doing productive work. That’s time, resources, and money $$$ I’d like to help you save!</p>
-                      <p>In my free time, I like to surf, hike, and travel.</p>
-                      <p>Get in touch if you want to collaborate on a project or get to know me better. I'd love to chat with you.</p>
 
-                      <!-- Accent-colored raised button with ripple -->
-                      <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" href="https://neilranada.typeform.com/to/rkqu5I" data-hide-footer=true target="_blank">GET IN TOUCH</a>
-                      <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>      
-                  </div>
-              </div>
+          <!-- Table of contents vertical navigation menu -->
+          <div class="mdl-grid">
+
+              <!-- Content starts here -->
+              <h4 class="content-header">About</h4>
+      
+                  
+                <div class="case-study content-background-color">
+  
+                        <div class=" mdl-shadow--4dp case-study-card"> 
+                            <div class="about-me-photo header-photo-scalable"></div>
+
+                            <div class="content-items-max-width"> <!-- start of content items max width -->
+
+                                <h1 style="margin-bottom:0;">Neil Ranada</h1>
+                                <h2 class="highlight">User Experience Research & Design</h2>
+                                <h4 style="margin:24px 16px;">LOS ANGELES, CA</h4>
+                                <p>Hi, I’m Neil. I’m a User Experience Researcher and Designer based out of Los Angeles, CA.</p>
+                                <p>I have 10 years of professional experience with a background in Aviation, Aerospace, and Defense. I was a Navy Helicopter Pilot and held various program management roles. I’ve been solving problems in small teams throughout my career.</p>
+                                <p>I’m interested in making mobile apps, websites, and other digital products easier to use. Technology should make our lives easier not harder. A well-intentioned but poorly designed product can lead to a person experiencing frustration.</p>
+                                <p>Frustration can cost you. It can result in customers being discouraged from buying your products or using your services. It can also distract your workers from doing productive work. That’s time, resources, and money $$$ I’d like to help you save!</p>
+                                <p>In my free time, I like to surf, hike, and travel.</p>
+                                <p>Get in touch if you want to collaborate on a project or get to know me better. I'd love to chat with you.</p>
+
+                                <!-- Accent-colored raised button with ripple -->
+                                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised typeform-share button" data-mode="drawer_left" href="https://neilranada.typeform.com/to/rkqu5I" data-hide-footer=true target="_blank">GET IN TOUCH</a>
+                                <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>      
+
+                            </div> <!-- End of cotent items max width -->
+                        </div>          
+                </div>
           </div>
     <!-- Content section ends here -->
-
-      <!-- footer section starts here -->
+    <!-- footer section starts here -->
       <footer class="mdl-mini-footer">
           <div class="footer-content">
               <div class="mdl-mini-footer__left-section">
@@ -95,11 +106,36 @@
               </div>
           </div>
       </footer>
-     <!-- footer section ends here -->
-     
+      <!-- footer section ends here -->
       </main>
+    
+
   </div>
-    <script type="text/javascript" src="js/material.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.scrollNav.js"></script>
+    <script>
+    //ScrollNav
+
+    var $;
+var observer_target = document.querySelector('.content-items-max-width');
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function() {
+    $.fn.scrollNav('resetPos');
+  });
+});
+var observer_config = {
+  attributes: true,
+  childList: true,
+  characterData: true,
+  subtree: true
+};
+observer.observe(observer_target, observer_config);
+
+          //This tells scroll nav which container to scan and automatically adds a nav menu above it
+          $('.content-items-max-width').scrollNav();
+  </script>
+</div>
 </body>
 
 </html>

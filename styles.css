@@ -186,7 +186,7 @@ header.mdl-layout__header {
 .mdl-layout__header-row .mdl-navigation__link:hover {
 	opacity: 1;
 }
-.mdl-navigation__link.active-link {
+.mdl-navigation__link.active-link, .mdl-navigation__link.active-link-2 {
 	opacity: 1;
 }
 .mdl-layout--no-desktop-drawer-button .mdl-layout__header-row {
@@ -198,6 +198,11 @@ header.mdl-layout__header {
 .active-link {
 	border-bottom: 3px solid #7BBED1;
 	height: 60px;
+}
+
+.active-link-2 {
+	border-bottom: 3px solid #7BBED1;
+	height: 63px;
 }
 
 /* Displays active link in menu for small screens */
@@ -646,9 +651,6 @@ ul.quotes {
 }
 h6.remove-margin-top { /*poster above caption has white board. remove margin to close white space. */
 	margin-top: 0;
-}
-.case-study .tabel-of-contents a:hover {
-	color: #7BBED1;
 }
 .case-study p a:hover {
 	color: #7BBED1;
