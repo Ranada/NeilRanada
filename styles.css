@@ -20,8 +20,7 @@
 	font-family: "Adobe-Caslon-Pro", Roboto, Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 28px;
-	color: #000000;
-	opacity: 0.54;
+	color: rgba(0, 0, 0, 0.54);
 	margin: 0 0 16px;
 }
 .mdl-layout h4 {
@@ -29,8 +28,7 @@
 	font-size: 20px;
 	letter-spacing: 0.01em;
 	line-height: 28px;
-	color: #000000;
-	opacity: 0.54;
+	color: rgba(0, 0, 0, 0.54);
 	margin: 0 16px 16px;
 }
 .mdl-layout a {
@@ -346,7 +344,7 @@ h2.mdl-card__title-text {
 	}
 .ha-walk-card {
 	height: 500px;
-	background: url('images/hawalk-mockup@2x.jpg');
+	background: url('images/hawalk-mockup.jpg');
 	background-color: #006784;
 	background-repeat: no-repeat;
 	background-size: cover;
