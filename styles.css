@@ -103,8 +103,10 @@ a.mdl-navigation__link {
 	margin: 0px;
 }
 .mdl-layout .content-header {
-	margin: 16px 8px 0;
 	width: 100%;
+	max-width: 826px;
+	padding: 0 8px;
+	margin: 16px auto 8px;
 }
 .scroll-nav-adjustment .content-header {
 	margin: 64px auto 16px;
@@ -509,6 +511,9 @@ footer.mdl-mini-footer {
 .mdl-layout .bottom-spacer {
 	margin-bottom: 40px;
 }
+.case-study.cancel-case-study-top { /* Use layout from projects so need to remove large gap at top used for Scroll Nav */
+	margin-top: 36px;
+}
 
 /* Modal */
 
@@ -733,6 +738,9 @@ video.wide-video {
 		display: none;
 	}
 	.case-study {
+		margin-top: 0;
+	}
+	.case-study.cancel-case-study-top {
 		margin-top: 0;
 	}
 }
