@@ -366,6 +366,9 @@ h2.mdl-card__title-text {
 .mdl-card__actions.mdl-card--border {
 	padding: 8px 16px;
 }
+.mdl-card.mdl-shadow--4dp:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
+}
 
 /* Wander case study styling */
 
