@@ -512,7 +512,7 @@ footer.mdl-mini-footer {
 	margin-bottom: 40px;
 }
 .case-study.cancel-case-study-top { /* Use layout from projects so need to remove large gap at top used for Scroll Nav */
-	margin-top: 36px;
+	margin-top: 16px;
 }
 
 /* Modal */
