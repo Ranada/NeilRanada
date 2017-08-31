@@ -1,4 +1,4 @@
-Hi, I'm Neil.
+Hi! I'm Neil.
 
 I'm a designer with over 10 years of professional experience in aviation, aerospace, and defense. I practice design thinking backed by quantitative and qualitative research. I solve challenging problems by making mobile apps, websites, and other digital products easier to use so that people can focus on what matters most to them.
 
