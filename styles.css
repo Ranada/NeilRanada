@@ -28,7 +28,7 @@
 	font-size: 20px;
 	letter-spacing: 0.01em;
 	line-height: 28px;
-	color: rgba(0, 0, 0, 0.54);
+	color: rgba(0, 0, 0, 0.87);
 	margin: 0 16px 16px;
 }
 .mdl-layout a {
@@ -79,10 +79,11 @@
 }
 .mdl-layout li {
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
-	color: rgba(0,0, 0, 0.54);
+	color: rgba(0,0, 0, 0.87);
 }
 .mdl-layout .mdl-card li {
 	font-size: 14px;
+	color: rgba(0, 0, 0, 0.54);
 }
 .case-study li {
 	font-size: 20px;
@@ -135,6 +136,9 @@ a.mdl-navigation__link {
 .mdl-card .mdl-button {
 	margin-top: 0;
 	width: calc(100% - 32px);
+}
+.bold {
+	font-weight: bold;
 }
 .footer-font {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
