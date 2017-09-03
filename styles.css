@@ -639,6 +639,7 @@ li.scroll-nav__item.active li.scroll-nav__sub-item.active > a {
 }
 .case-study h4 {
 	line-height: 32px;
+	font-weight: bold;
 }
 .case-study .section-title {
 	margin-bottom: 0; /* to bring hr closer to section title */
