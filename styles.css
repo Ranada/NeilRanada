@@ -284,6 +284,7 @@ div {
 
 .hero-text h4 {
 	margin: 16px 0 0 0;
+	color: rgba(0, 0, 0, 0.87);
 }
 
 #hero-divider {
@@ -869,13 +870,19 @@ video.wide-video {
 	.header-photo-scalable {
 		height: 387px;
 	}
-}
-
-@media screen and (max-width: 719px) {
-
 	.footer-content {
 		display: block; /* returns footer nav links from flex to block to re-position to bottom of page */
 	}
+}
+
+@media screen and (min-width: 657px) {
+	.mdl-layout .mdl-logo {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 656px) {
+
 	.mdl-mini-footer__link-list li a {
 		color: #002443;	/* changed footer links to dark blue to contast against white background after display block */
 	}
