@@ -432,6 +432,18 @@ footer.mdl-mini-footer {
 	margin: 8px auto;
 }
 
+.icon-margin-right {
+	margin-right: 8px;
+}
+
+.mdl-layout .h2-margin-bottom {
+	margin-bottom: 32px;
+}
+
+.mdl-layout .resume-section-spacer {
+	margin-bottom: 60px;
+}
+
 /* Process page styling starts here */
 
 .design-process {
@@ -680,7 +692,7 @@ h6.remove-margin-top { /*poster above caption has white board. remove margin to 
 	vertical-align: middle;
 }
 .mdl-layout .case-study-contact .mdl-button {
-	margin: initial; /* removes left padding used to align with paragraphs */ 
+	margin: initial; /* removes left padding used to align with paragraphs */
 }
 .mdl-layout video {
 	display: block;
@@ -835,7 +847,7 @@ video.wide-video {
 	margin-bottom: 24px;
 	}
 }
-	
+
 @media screen and (min-width: 840px) {
 
 	.mdl-layout .mdl-cell {
@@ -896,7 +908,7 @@ video.wide-video {
 @media screen and (max-width: 600px) {
 
 	.background-photo-scalable {
-		height: 402px; /* 4:3 aspect ratio is 536px width and 402px height*/ 
+		height: 402px; /* 4:3 aspect ratio is 536px width and 402px height*/
 	}
 	.card-background-style {
 		height: 244px;
@@ -1025,14 +1037,3 @@ video.wide-video {
 		font-size: 12px;
 	}
 }
-
-
-
-
-	
-
-
-
-
-
-
