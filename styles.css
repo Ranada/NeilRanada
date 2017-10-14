@@ -380,8 +380,9 @@ h2.mdl-card__title-text {
 
 .case-study .ha-walk-header-photo {
 	background: url('images/ha-walk/ha-walk-header-photo.jpg');
-	background-size: 100%;
-	background-position: center 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /* Kollect case study styling */
