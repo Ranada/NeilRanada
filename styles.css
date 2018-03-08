@@ -234,10 +234,6 @@ div {
     position: relative;
     height: 388px;
     margin-top: 0;
-    background-image: url(images/hero-background@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 100%;
 }
 
 .hero-content {
