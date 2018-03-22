@@ -13,19 +13,25 @@
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://use.typekit.net/bbp2cem.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 </head>
 
 <body>
-	  <!-- Header section starts here. Div shows a header, even in smaller screens. -->
-	  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
+    <!-- Header section starts here. Div shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button portfolio-background-color">
         <header class="mdl-layout__header">
-        		<div class="mdl-layout__header-row">
+            <div class="mdl-layout__header-row">
                 <!-- Title -->
                 <a href="index.html">
-          			   <div class="mdl-layout-title">
-          				      <span class="logo-title">Neil Ranada</span><span class="divider"> | </span><span class="logo-title-highlight">UX</span>
-          			   </div>
+                    <div class="mdl-layout-title">
+                        <span class="logo-title">NR<span class="divider">//</span>UX</span>
+                    </div>
                 </a>
                 <!-- Spacer added to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
@@ -37,169 +43,138 @@
                     <a class="mdl-navigation__link" href="contact.html">CONTACT</a>
                 </nav>
             </div>
-    		</header>
+        </header>
 
-    		<!-- Left sliding menu drawer for smaller screen sizes -->
-    		<div class="mdl-layout__drawer">
-        		<span class="mdl-layout-title">Menu</span>
-        		<nav class="mdl-navigation">
-          			<a class="mdl-navigation__link" id="active-drawer-link" href="index.html">PROJECTS</a>
+        <!-- Left sliding menu drawer for smaller screen sizes -->
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" id="active-drawer-link" href="index.html">PROJECTS</a>
                 <a class="mdl-navigation__link" href="resume.html">RESUME</a>
-          			<a class="mdl-navigation__link" href="about.html">ABOUT</a>
-          			<a class="mdl-navigation__link" href="contact.html">CONTACT</a>
-        		</nav>
-    		</div>
-
-  	<!-- Main content section starts here -->
-  		  <main class="mdl-layout__content">
-      		    <div class="mdl-grid portfolio-page max-width">
-              <!-- Hero section starts here -->
-              <div class="mdl-cell mdl-cell--12-col hero-cell">
-                  <div class="hero-text-banner">
-                  </div>
-                  <div class="hero-content">
-                      <div class="avatar">
-                          <img src="images/neil-ranada.jpg" alt="Neil Ranada" style="box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);">
-                      </div><!-- remove extra space
-                   --><div class="hero-text">
-                          <h1>Neil Ranada</h1>
-                          <h2 class="highlight">User Experience Research & Design</h2>
-                          <h4>I help companies understand their customers to create meaningful products and services</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Projects section starts here -->
-                      <h2 style="display:block; width:100%; margin: 16px 8px 0;">Projects</h2>
-
-              <!-- Wander project card -->
-
-      			  <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
-                  <a href="wander.html">
-      				    <div class="wander-card mdl-card__title card-background-style" id="wander-card-smaller-screen">
-      					      <div class="card-title">
-                          <h3 class="mdl-card__title-text">Wander</h3>
-                      </div>
-                      <div class="card-banner">
-                      </div>
-      				    </div>
-                  </a>
-      				    <div class="mdl-card__supporting-text">
-      					      <h5>Increased user control over map experience</h5>
-                          <ul>
-                              <li>Travel app mobile interactions</li>
-                              <li>Competitive Analysis</li>
-                              <li>Paper wireframes</li>
-                              <li>Usability testing</li>
-                              <li>Adobe XD prototype</li>
-                          </ul>
-      				    </div>
-      				    <div class="mdl-card__actions mdl-card--border">
-                      <!-- Accent-colored raised button with ripple -->
-  						        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" href="wander.html">VIEW PROJECT</a>
-      				    </div>
-      			  </div>
-
-              <!-- Hydrocephalus Walk project card -->
-
-      			  <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
-                  <a href="ha-walk.html">
-      				    <div class="ha-walk-card mdl-card__title card-background-style">
-      					      <div class="card-title">
-                          <h3 class="mdl-card__title-text">Hydrocephalus Walk</h3>
-                      </div>
-                      <div class="card-banner">
-                      </div>
-      				    </div>
-                  </a>
-      				    <div class="mdl-card__supporting-text">
-      					      <h5>Streamlined customer checkout process</h5>
-  						            <ul>
-                              <li>Website re-design study</li>
-                              <li>Customer checkout flows</li>
-                              <li>Whiteboard wireframes</li>
-                              <li>Usability testing</li>
-                              <li>InVision prototype</li>
-                          </ul>
-      				    </div>
-      				    <div class="mdl-card__actions mdl-card--border">
-
-                      <!-- Accent-colored raised button with ripple -->
-  						        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" href="ha-walk.html">VIEW PROJECT</a>
-      				    </div>
-      			  </div>
-
-
-              <!-- Kollect project card -->
-
-      			  <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp">
-                  <a href="kollect.html">
-      				    <div class="kollect-card mdl-card__title card-background-style">
-      					      <div class="card-title">
-                          <h3 class="mdl-card__title-text">Kollect</h3>
-                      </div>
-                      <div class="card-banner"></div>
-      				    </div>
-                  </a>
-      				    <div class="mdl-card__supporting-text">
-      					       <h5>Simple user onboarding and content management</h5>
-  						            <ul>
-                              <li>Desktop website design</li>
-                              <li>User interviews and personas</li>
-                              <li>Competitive analysis</li>
-                              <li>Balsamiq wireframes</li>
-                              <li>Invision Prototype</li>
-                          </ul>
-      				    </div>
-      				    <div class="mdl-card__actions mdl-card--border">
-
-                      <!-- Accent-colored raised button with ripple -->
-  						        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" href="kollect.html">VIEW PROJECT</a>
-      				    </div>
-      		    </div>
-
-        <!-- End of Projects section -->
+                <a class="mdl-navigation__link" href="about.html">ABOUT</a>
+                <a class="mdl-navigation__link" href="contact.html">CONTACT</a>
+            </nav>
         </div>
 
-      <!-- footer section starts here -->
-      <footer class="mdl-mini-footer">
-          <div class="footer-content">
-              <div class="mdl-mini-footer__left-section">
-                  <div class="mdl-logo footer-font">
-                      &copy; 2017 Neil Ranada<span id="footer-divider">|</span>UX. All rights reserved.
-                  </div>
-              </div>
-              <div class="mdl-mini-footer__right-section">
-                  <ul class="mdl-mini-footer__link-list">
-                      <li><a href="mailto:neil.ranada@gmail.com" target="_blank">neil.ranada@gmail.com</a></li>
-                      <li><a href="https://github.com/Ranada" target="_blank"><i class="fa fa-github-alt fa-lg"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/neilranada/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-                      <li><a href="https://twitter.com/NeilRanada" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-                      <li><a href="https://www.instagram.com/neilranada/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
-                  </ul>
-              </div>
-          </div>
-      </footer>
-      <!-- footer section ends here -->
+        <!-- Main content section starts here -->
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-page max-width">
+                <!-- Hero section starts here -->
+                <div class="mdl-cell mdl-cell--12-col hero-cell">
+                    <div class="hero-content">
+                        <h1>Neil Ranada</h1>
+                        <h4 class="highlight bottom-spacer">USER EXPERIENCE RESEARCH & DESIGN</h4>
+                        <h4>I help companies understand their customers to create meaningful products and services</h4>
+                    </div>
+                </div>
+                <!-- Projects section starts here -->
+                <h2 style="display:block; width:100%; margin: 16px 8px 24px;">Projects</h2>
 
-      </main>
+                <!-- Gearo project card -->
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <a href="wander.html">
+                        <div class="gearo-card mdl-card__title card-background-style">
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <h2>Gearoe.com</h2>
+                            <h4>Understanding a startup's customers to design and prioritize features for their next product &mdash; a rental booking platform</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Wander project card -->
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <a href="wander.html">
+                        <div class="wander-card mdl-card__title card-background-style" id="wander-card-smaller-screen">
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <h2>Wander</h2>
+                            <h4>Dial back technology and use a time-tested way of getting directions &mdash; having another person draw directions for you on a map</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hydrocephalus Walk project card -->
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <a href="ha-walk.html">
+                        <div class="ha-walk-card mdl-card__title card-background-style">
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <h2>Hydrocephalus Walk Fundraiser</h2>
+                            <h4>A streamlined customer checkout experience for donating to medical research</h4>
+                        </div>
+                    </a>
+                </div>
 
 
-	</div>
+                <!-- Kollect project card -->
 
-<!-- Script Section starts here -->
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <a href="kollect.html">
+                        <div class="kollect-card mdl-card__title card-background-style">
+                        </div>
 
-  <script type="text/javascript" src="js/material.min.js"></script>
+                        <div class="mdl-card__supporting-text">
+                            <h2>Kollect</h2>
+                            <h4>Simple user onboarding and content management</h4>
+                        </div>
+                    </a>
+                </div>
 
-  <!-- Google Analytics -->
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                <!-- End of Projects section -->
+            </div>
 
-      ga('create', 'UA-105670251-1', 'auto');
-      ga('send', 'pageview');
-  </script>
+            <!-- footer section starts here -->
+            <footer class="mdl-mini-footer">
+                <div class="footer-content">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo footer-font">
+                            &copy; Designed and Developed by Neil Ranada, All rights reserved, 2018
+                        </div>
+                    </div>
+                    <div class="mdl-mini-footer__right-section">
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="mailto:neil.ranada@gmail.com" target="_blank">neil.ranada@gmail.com</a></li>
+                            <li><a href="https://github.com/Ranada" target="_blank"><i class="fa fa-github-alt fa-lg"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/neilranada/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                            <li><a href="https://twitter.com/NeilRanada" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+                            <li><a href="https://www.instagram.com/neilranada/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer section ends here -->
+
+        </main>
+
+
+    </div>
+
+    <!-- Script Section starts here -->
+
+    <script type="text/javascript" src="js/material.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-105670251-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 </body>
+
 </html>

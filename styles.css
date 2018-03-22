@@ -1,10 +1,10 @@
 /* Typography styling */
 
 .mdl-layout h1 {
-	font-family: "Adobe-Caslon-Pro", Avenir, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 45px;
+	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 56px;
 	line-height: 48px;
-	letter-spacing: 0px;
+	letter-spacing: initial;
 	color: #002443;
 	margin: 16px;
 }
@@ -27,7 +27,7 @@
 	font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	letter-spacing: 0.01em;
-	line-height: 28px;
+	line-height: 1.6em;
 	color: rgba(0, 0, 0, 0.87);
 	margin: 0 16px 16px;
 }
@@ -124,10 +124,6 @@ a.mdl-navigation__link {
 .mdl-layout .mdl-button:hover {
     background-color: #7BBED1;
 }
-.mdl-card__supporting-text {
-
-	min-height: 192px;
-}
 .mdl-card p {
 	font-size: 16px;
 	line-height: 24px;
@@ -166,7 +162,7 @@ header.mdl-layout__header {
 }
 .mdl-layout-title .logo-title {
 	display: inline-block;
-	font-family: "Adobe-Caslon-Pro";
+	font-family: Avenir;
 	color: #FFFFFF;
 	opacity: 1;
 }
@@ -175,12 +171,6 @@ header.mdl-layout__header {
 	font-size: 24px;
 	color: #FFFFFF;
 	margin: 0px 8px;
-}
-.mdl-layout-title .logo-title-highlight {
-	color: #FFFFFF;
-	font-family: "Adobe-Caslon-Pro";
-	display: inline-block;
-	opacity: 1;
 }
 .mdl-layout__header-row .mdl-navigation__link {
 	opacity: 0.50;
@@ -237,10 +227,9 @@ div {
 }
 
 .hero-content {
-	position: relative;
 	height: 100%;
-	max-width: 800px;
-	padding: 118px 24px;
+	max-width: 900px;
+	padding: 88px 24px;
 	margin: 0 auto;
 	z-index: 3;
 }
@@ -262,16 +251,6 @@ div {
 	display: inline-block;
 	max-width: 565px;
 	margin-left: 24px;
-}
-
-.hero-text-banner {
-	position: absolute;
-	height: 100%;
-	bottom: 0px;
-	background-color: #F8F8F9;
-	opacity: 0.74;
-	width: 100%;
-	z-index: 1;
 }
 
 .hero-text h1 {
@@ -297,6 +276,8 @@ div {
 
 .mdl-layout .highlight {
 	color: #4b4b4b;
+	letter-spacing: 0.10em;
+	font-weight: 100;
 }
 
 /* Projects section styling */
@@ -332,6 +313,14 @@ h2.mdl-card__title-text {
 .mdl-card__title {
 	position: relative; /* position made relative to allow card-banner to align properly */
 }
+.gearo-card {
+	height: 500px;
+	background: url('images/gearo-business-performance.jpg');
+	background-color: #006784;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	}
 .wander-card {
 	height: 500px;
 	background: url('images/wander-card@2x.jpg');
@@ -364,6 +353,9 @@ h2.mdl-card__title-text {
 }
 .mdl-card.mdl-shadow--4dp:hover {
 	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
+}
+.mdl-card__supporting-text {
+    height: 100%;
 }
 
 /* Wander case study styling */
@@ -854,7 +846,7 @@ video.wide-video {
 		margin-top: 0;
 	}
 	.card-background-style {
-		height: 298px;
+		height: 618px;
 	}
 }
 
