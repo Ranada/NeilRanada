@@ -272,6 +272,8 @@ div {
 	display: inline-block;
 	max-width: 600px;
 	margin-left: 80px;
+	position: relative;
+	top: 16%;
 }
 
 .hero-text-banner {
