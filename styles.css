@@ -249,30 +249,29 @@ div {
 
 .hero-content {
 	position: relative;
-	height: 100%;
-	max-width: 800px;
-	padding: 118px 24px;
-	margin: 0 auto;
+	height: 72%;
+	max-width: 100%;
+	padding: 0;
+	margin: 60px auto 0;
 	z-index: 3;
 }
 
 .avatar {
-	height: 152px;
-	width: 152px;
+	height: 100%;
 	display: inline-block;
 	position: relative;
-	bottom: 74px;
 }
 
 .avatar img {
 	height: 100%;
-	width: 100%;
+	position: relative;
+	top: -4px;
 }
 
 .hero-text {
 	display: inline-block;
-	max-width: 565px;
-	margin-left: 24px;
+	max-width: 600px;
+	margin-left: 80px;
 }
 
 .hero-text-banner {
