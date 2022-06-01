@@ -1,11 +1,8 @@
-Hi! I'm Neil.
+I coded this UX portfolio back in 2017 after completing my UX online bootcamp using HTML, CSS, Material Design Lite library, and jQuery. 
 
-I'm a User Experience (UX) researcher and designer with over 10 years of professional experience in aviation, aerospace, and defense. I practice design thinking backed by quantitative and qualitative research. I solve challenging problems by making mobile apps, websites, and other digital products easier to use so that people can focus on what matters most to them.
+I'm in the process of **professional re-branding and will update it to reflect my current UX  and software engineering skills.** 
 
-This repository is for my UX research and design portfolio.
+Much of my best UX work is under NDA from my three years at UEGroup, a Silicon Valley-based UX firm. I'm keeping my early-career UX projects since it still captures my thought process, and **start adding my coding projects.**
 
-I'm currently available for remote work. Learn more about me at:
-
+In the meantime, you can check out my portfolio at:
 www.neilranada.com
-
-
